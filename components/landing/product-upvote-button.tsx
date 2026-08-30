@@ -28,10 +28,12 @@ function formatPesos(amountCentavos: number) {
 }
 
 export function ProductUpvoteButton({
+  buttonLabel,
   productId,
   productName,
   upvoteCount,
 }: {
+  buttonLabel?: string
   productId: string
   productName: string
   upvoteCount: number
@@ -71,9 +73,7 @@ export function ProductUpvoteButton({
   function getAmount() {
     const parsed = Number.parseInt(amountPesos, 10)
 
-    return Number.isFinite(parsed) && parsed >= 1
-      ? Math.min(parsed, 10_000)
-      : 1
+    return Number.isFinite(parsed) && parsed >= 1 ? Math.min(parsed, 10_000) : 1
   }
 
   function updateAmount(next: number) {
@@ -114,14 +114,18 @@ export function ProductUpvoteButton({
     <>
       <Button
         type="button"
-        size="icon-sm"
-        variant="outline"
-        className="shrink-0 rounded-lg bg-teal-700 hover:bg-teal-900"
+        size={buttonLabel ? "default" : "icon-sm"}
+        variant={buttonLabel ? "default" : "outline"}
+        className={
+          buttonLabel
+            ? "w-full"
+            : "shrink-0 rounded-lg bg-teal-700 hover:bg-teal-900"
+        }
         onClick={() => setOpen(true)}
         aria-label={`Upvote ${productName}`}
       >
-        <ChevronUpIcon className="text-white" />
-        
+        <ChevronUpIcon className={buttonLabel ? undefined : "text-white"} />
+        {buttonLabel ? <span>{buttonLabel}</span> : null}
         <span className="sr-only">{upvoteCount} upvotes</span>
       </Button>
 
