@@ -1,8 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Outfit } from "next/font/google"
 
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import type { Metadata, Viewport } from "next"
 import { cn } from "@/lib/utils";
+import SiteHeader from "@/components/layout/navbar";
+import { Toaster } from "@/components/ui/sonner"
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
@@ -10,6 +12,17 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit-family",
+})
+
+export const metadata: Metadata = {
+  title: "ShipBits",
+  description: "See what Filipinos are shipping.",
+}
+
 
 export default function RootLayout({
   children,
@@ -19,11 +32,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
+      className={cn(
+        "antialiased",
+        fontMono.variable,
+        "font-sans",
+        geist.variable,
+        outfit.variable,
+      )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="min-h-screen bg-background font-sans antialiased" >
+        <SiteHeader />
+        {children}
+        <Toaster />
       </body>
     </html>
   )
