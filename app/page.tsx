@@ -3,11 +3,13 @@ import FeaturedSection from "@/components/landing/featured-section"
 import { ProductDirectory } from "@/components/landing/product-directory"
 import { LandingSubmissionCta } from "@/components/submissions/landing-submission-cta"
 import { getCategories } from "@/features/products/queries"
-import { getPublicDirectoryProducts } from "@/features/products/public-queries"
+import { getPublicCategories, getPublicDirectoryProducts } from "@/features/products/public-queries"
+import Link from "next/link"
 
 export default async function Page() {
-  const [categories, products] = await Promise.all([
+  const [categories, publicCategories, products] = await Promise.all([
     getCategories(),
+    getPublicCategories(),
     getPublicDirectoryProducts(),
   ])
 
@@ -28,6 +30,16 @@ export default async function Page() {
           <LandingSubmissionCta categories={categories} />
           <FeaturedSection products={products.slice(0, 3)} />
           <ProductDirectory products={products.slice(3, 10)} startRank={4} />
+          {publicCategories.some((category) => category.productCount > 0) ? (
+            <section id="categories" className="w-full border-t py-10">
+              <h2 className="font-outfit text-2xl font-semibold">Browse by category</h2>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {publicCategories.filter((category) => category.productCount > 0).map((category) => (
+                  <li key={category.id}><Link href={`/categories/${category.slug}`} className="inline-flex rounded-full border px-3 py-1.5 text-sm transition-colors hover:border-foreground/30">{category.name} <span className="ml-1 text-muted-foreground">{category.productCount}</span></Link></li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
         </div>
       </SiteContainer>
     </main>

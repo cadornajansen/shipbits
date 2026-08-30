@@ -19,6 +19,7 @@ export type Submission = {
   shortDescription: string | null
   slug: string | null
   tagline: string | null
+  tags: string[]
   status: "draft" | "pending_payment" | "submitted"
   updatedAt: string
   websiteUrl: string
@@ -31,7 +32,7 @@ export async function getUserSubmissions(
   const { data, error } = await supabase
     .from("listing_submissions")
     .select(
-      "id, website_url, normalized_domain, name, slug, tagline, short_description, long_description, category_id, status, updated_at, archived_at, product_id, categories(name)"
+      "id, website_url, normalized_domain, name, slug, tagline, tags, short_description, long_description, category_id, status, updated_at, archived_at, product_id, categories(name)"
     )
     .eq("user_id", userId)
     .order("updated_at", { ascending: false })
@@ -112,6 +113,7 @@ export async function getUserSubmissions(
       slug: string | null
       status: Submission["status"]
       tagline: string | null
+      tags: string[]
       updated_at: string
       website_url: string
     }
@@ -140,6 +142,7 @@ export async function getUserSubmissions(
       slug: row.slug,
       status: row.status,
       tagline: row.tagline,
+      tags: row.tags ?? [],
       updatedAt: row.updated_at,
       websiteUrl: row.website_url,
     }

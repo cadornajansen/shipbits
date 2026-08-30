@@ -6,6 +6,10 @@ import { scrapeWebsite } from "@/lib/firecrawl/client"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { deleteProductObject, uploadRemoteProductImage } from "@/lib/storage/r2"
 import { getNormalizedDomain, slugify } from "@/features/products/validation"
+import {
+  normalizeProductTags,
+  toCanonicalProductTags,
+} from "@/features/products/tags"
 
 import type { ImportStatus } from "./types"
 import { generateProductMetadataFromEvidence } from "./extraction"
@@ -293,6 +297,14 @@ export async function runProductImportPipeline(importId: string) {
     }
 
     const categoryId = await findCategoryId(generated.suggested_category)
+    const { data: category } = await supabase
+      .from("categories")
+      .select("name, slug")
+      .eq("id", categoryId)
+      .single()
+    const tags = normalizeProductTags(toCanonicalProductTags(generated.tags), category, {
+      generated: true,
+    })
     const slug = await getAvailableSlug(name || normalizedDomain)
     const { data: product, error: productError } = await supabase
       .from("products")
@@ -307,6 +319,7 @@ export async function runProductImportPipeline(importId: string) {
         short_description: shortDescription,
         slug,
         tagline,
+        tags,
         website_url: importJob.source_url,
       })
       .select("id")

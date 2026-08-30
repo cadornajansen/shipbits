@@ -13,6 +13,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { ProductTagInput } from "@/components/products/product-tag-input"
 import {
   Select,
   SelectContent,
@@ -32,6 +33,7 @@ import {
   productStatuses,
   suggestedSlugFromUrl,
 } from "@/features/products/validation"
+import { normalizeProductTags } from "@/features/products/tags"
 
 type EditableProduct = {
   categoryId: string
@@ -44,6 +46,7 @@ type EditableProduct = {
   shortDescription: string
   slug: string
   tagline: string
+  tags: string[]
   websiteUrl: string
 }
 
@@ -80,6 +83,7 @@ export function ProductForm({
   const [slug, setSlug] = useState(product?.slug ?? "")
   const [slugWasEdited, setSlugWasEdited] = useState(Boolean(product))
   const [categoryId, setCategoryId] = useState(product?.categoryId ?? "")
+  const [tags, setTags] = useState(product?.tags ?? [])
   const [status, setStatus] =
     useState<(typeof productStatuses)[number]>("draft")
   const [logoPreview, setLogoPreview] = useState<string | null>(null)
@@ -105,6 +109,7 @@ export function ProductForm({
     setFieldErrors({})
     const formData = new FormData(event.currentTarget)
     formData.set("category_id", categoryId)
+    formData.set("tags", JSON.stringify(tags))
     formData.set("moderation_status", product?.moderationStatus ?? status)
 
     startTransition(async () => {
@@ -213,7 +218,14 @@ export function ProductForm({
           <Field data-invalid={Boolean(fieldErrors.categoryId?.length)}>
             <FieldLabel htmlFor="category_id">Category</FieldLabel>
             <input name="category_id" type="hidden" value={categoryId} />
-            <Select value={categoryId} onValueChange={setCategoryId}>
+            <Select
+              value={categoryId}
+              onValueChange={(value) => {
+                setCategoryId(value)
+                const category = categories.find((item) => item.id === value)
+                setTags((current) => normalizeProductTags(current, category))
+              }}
+            >
               <SelectTrigger
                 id="category_id"
                 aria-invalid={Boolean(fieldErrors.categoryId?.length)}
@@ -266,6 +278,17 @@ export function ProductForm({
             </Field>
           )}
         </FieldGroup>
+        <Field data-invalid={Boolean(fieldErrors.tags?.length)}>
+          <FieldLabel>Tags</FieldLabel>
+          <input name="tags" type="hidden" value={JSON.stringify(tags)} />
+          <ProductTagInput
+            category={categories.find((category) => category.id === categoryId)}
+            tags={tags}
+            onChange={setTags}
+          />
+          <p className="text-xs text-muted-foreground">Up to 5 specific descriptors.</p>
+          <FieldMessage errors={fieldErrors.tags} />
+        </Field>
         <FieldGroup className="grid gap-4 sm:grid-cols-2">
           <Field>
             <FieldLabel htmlFor="logo">Logo</FieldLabel>

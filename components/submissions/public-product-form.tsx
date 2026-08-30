@@ -2,16 +2,27 @@
 
 import { useMemo, useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
-import { ImageIcon, SparklesIcon } from "lucide-react"
+import { ImageIcon, SparklesIcon, Trash2Icon } from "lucide-react"
 import { toast } from "sonner"
 
 import { Button } from "@/components/ui/button"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog"
 import {
   Field,
   FieldError,
   FieldGroup,
   FieldLabel,
 } from "@/components/ui/field"
+import { ProductTagInput } from "@/components/products/product-tag-input"
 import { Input } from "@/components/ui/input"
 import {
   Select,
@@ -24,11 +35,13 @@ import { Spinner } from "@/components/ui/spinner"
 import { Textarea } from "@/components/ui/textarea"
 import {
   autocompleteSubmissionAction,
+  deleteOwnedProductAction,
   saveSubmissionDraftAction,
 } from "@/features/submissions/actions"
 import type { Submission } from "@/features/submissions/queries"
 import type { Category } from "@/features/products/types"
 import { suggestedSlugFromUrl } from "@/features/products/validation"
+import { normalizeProductTags } from "@/features/products/tags"
 
 type FieldName =
   | "categoryId"
@@ -37,6 +50,7 @@ type FieldName =
   | "shortDescription"
   | "slug"
   | "tagline"
+  | "tags"
   | "websiteUrl"
 
 function FieldMessage({ errors }: { errors?: string[] }) {
@@ -57,6 +71,9 @@ export function PublicProductForm({
   const router = useRouter()
   const [isSaving, startSaving] = useTransition()
   const [isAutocompleting, startAutocomplete] = useTransition()
+  const [isDeleting, startDeleting] = useTransition()
+  const [deleteOpen, setDeleteOpen] = useState(false)
+  const [deleteConfirmation, setDeleteConfirmation] = useState("")
   const [autocompletePhase, setAutocompletePhase] = useState<
     "extracting" | "generating" | null
   >(null)
@@ -77,6 +94,7 @@ export function PublicProductForm({
     submission?.longDescription ?? ""
   )
   const [categoryId, setCategoryId] = useState(submission?.categoryId ?? "")
+  const [tags, setTags] = useState(submission?.tags ?? [])
   const [logoPreview, setLogoPreview] = useState(submission?.logoUrl ?? null)
   const [coverPreview, setCoverPreview] = useState(submission?.coverUrl ?? null)
   const [importedLogoUrl, setImportedLogoUrl] = useState<string | null>(null)
@@ -122,9 +140,16 @@ export function PublicProductForm({
       if (!touched.has("slug"))
         setSlug(suggestedSlugFromUrl(result.data.websiteUrl))
       if (!touched.has("categoryId")) {
-        setCategoryId(
+        const suggestedCategoryId =
           categoryByName.get(result.data.suggestedCategory.toLowerCase()) ?? ""
-        )
+        setCategoryId(suggestedCategoryId)
+        if (!touched.has("tags")) {
+          const category = categories.find((item) => item.id === suggestedCategoryId)
+          setTags(normalizeProductTags(result.data.tags, category, { generated: true }))
+        }
+      } else if (!touched.has("tags")) {
+        const category = categories.find((item) => item.id === categoryId)
+        setTags(normalizeProductTags(result.data.tags, category, { generated: true }))
       }
 
       if (result.data.logoImageUrl) {
@@ -145,6 +170,7 @@ export function PublicProductForm({
     setFieldErrors({})
     const formData = new FormData(event.currentTarget)
     formData.set("category_id", categoryId)
+    formData.set("tags", JSON.stringify(tags))
     if (importedLogoUrl) formData.set("imported_logo_url", importedLogoUrl)
     if (importedCoverUrl) formData.set("imported_cover_url", importedCoverUrl)
 
@@ -298,6 +324,8 @@ export function PublicProductForm({
             onValueChange={(value) => {
               markTouched("categoryId")
               setCategoryId(value)
+              const category = categories.find((item) => item.id === value)
+              setTags((current) => normalizeProductTags(current, category))
             }}
           >
             <SelectTrigger
@@ -317,9 +345,27 @@ export function PublicProductForm({
           </Select>
           <FieldMessage errors={fieldErrors.categoryId} />
         </Field>
+        <Field data-invalid={Boolean(fieldErrors.tags?.length)}>
+          <FieldLabel>Tags</FieldLabel>
+          <input name="tags" type="hidden" value={JSON.stringify(tags)} />
+          <ProductTagInput
+            category={categories.find((category) => category.id === categoryId)}
+            tags={tags}
+            onChange={(value) => {
+              markTouched("tags")
+              setTags(value)
+            }}
+          />
+          <p className="text-xs text-muted-foreground">
+            Up to 5 specific descriptors.
+          </p>
+          <FieldMessage errors={fieldErrors.tags} />
+        </Field>
         <FieldGroup className="grid gap-3 sm:grid-cols-2">
           <Field>
-            <FieldLabel htmlFor="logo">Logo <span className="text-destructive">*</span></FieldLabel>
+            <FieldLabel htmlFor="logo">
+              Logo <span className="text-destructive">*</span>
+            </FieldLabel>
             <Input
               id="logo"
               name="logo"
@@ -332,16 +378,30 @@ export function PublicProductForm({
                 setLogoPreview(URL.createObjectURL(file))
               }}
             />
-            {logoPreview ? (
-              // This preview can be a temporary third-party Firecrawl URL before it is copied into R2.
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={logoPreview} alt="Logo preview" className="h-10 w-10 rounded-md border object-contain" />
-            ) : (
-              <p className="text-xs text-muted-foreground">Required before payment.</p>
-            )}
+            <div>
+              <div className="flex size-24 items-center justify-center overflow-hidden rounded-full border bg-muted/40">
+                {logoPreview ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={logoPreview}
+                    alt="Logo preview"
+                    className="size-full object-contain p-1"
+                  />
+                ) : (
+                  <ImageIcon className="size-4 text-muted-foreground" />
+                )}
+              </div>
+            </div>
+            {!logoPreview ? (
+              <p className="text-xs text-muted-foreground">
+                Required before payment.
+              </p>
+            ) : null}
           </Field>
           <Field>
-            <FieldLabel htmlFor="cover">OG / cover image <span className="text-destructive">*</span></FieldLabel>
+            <FieldLabel htmlFor="cover">
+              OG / cover image <span className="text-destructive">*</span>
+            </FieldLabel>
             <Input
               id="cover"
               name="cover"
@@ -354,20 +414,44 @@ export function PublicProductForm({
                 setCoverPreview(URL.createObjectURL(file))
               }}
             />
-            {coverPreview ? (
-              // This preview can be a temporary third-party Firecrawl URL before it is copied into R2.
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={coverPreview} alt="OG cover preview" className="h-20 w-full rounded-md border object-cover" />
-            ) : (
-              <p className="text-xs text-muted-foreground">Required before payment.</p>
-            )}
+            <div className="flex aspect-video w-full items-center justify-center overflow-hidden rounded-md border bg-muted/40">
+              {coverPreview ? (
+                // This preview can be a temporary third-party Firecrawl URL before it is copied into R2.
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={coverPreview}
+                  alt="OG cover preview"
+                  className="size-full object-cover"
+                />
+              ) : (
+                <ImageIcon className="size-4 text-muted-foreground" />
+              )}
+            </div>
+            {!coverPreview ? (
+              <p className="text-xs text-muted-foreground">
+                Required before payment.
+              </p>
+            ) : null}
           </Field>
         </FieldGroup>
         <p className="flex items-center gap-1 text-xs text-muted-foreground">
-          <ImageIcon className="size-3" /> Autocomplete tries your site’s logo and OG image first; upload either one if it is missing.
+          <ImageIcon className="size-3" /> Autocomplete tries your site’s logo
+          and OG image first; upload either one if it is missing.
         </p>
       </FieldGroup>
-      <div className="flex flex-col-reverse gap-2 border-t pt-3 sm:flex-row sm:justify-end">
+      <div className="flex flex-col-reverse gap-2 border-t pt-3 sm:flex-row sm:items-center">
+        {submission?.productId && submission.name ? (
+          <Button
+            type="button"
+            variant="ghost"
+            className="text-destructive hover:bg-destructive/10 hover:text-destructive sm:mr-auto"
+            onClick={() => setDeleteOpen(true)}
+            disabled={isSaving || isDeleting}
+          >
+            <Trash2Icon data-icon="inline-start" />
+            Delete
+          </Button>
+        ) : null}
         <Button
           type="button"
           variant="outline"
@@ -386,6 +470,68 @@ export function PublicProductForm({
           {isSaving ? "Saving..." : "Save draft"}
         </Button>
       </div>
+      {submission?.productId && submission.name ? (
+        <AlertDialog
+          open={deleteOpen}
+          onOpenChange={(open) => {
+            setDeleteOpen(open)
+            if (!open) setDeleteConfirmation("")
+          }}
+        >
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Delete {submission.name}?</AlertDialogTitle>
+              <AlertDialogDescription>
+                This permanently removes this ShipBits listing and cannot be
+                undone.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <div className="grid gap-2">
+              <label htmlFor="delete-product-confirmation" className="text-sm">
+                To confirm, type{" "}
+                <span className="font-semibold">{submission.name}</span>
+              </label>
+              <Input
+                id="delete-product-confirmation"
+                value={deleteConfirmation}
+                onChange={(event) => setDeleteConfirmation(event.target.value)}
+                autoComplete="off"
+              />
+            </div>
+            <AlertDialogFooter>
+              <AlertDialogCancel disabled={isDeleting}>
+                Cancel
+              </AlertDialogCancel>
+              <AlertDialogAction
+                variant="destructive"
+                disabled={
+                  deleteConfirmation.trim() !== submission.name || isDeleting
+                }
+                onClick={(event) => {
+                  event.preventDefault()
+                  startDeleting(async () => {
+                    const result = await deleteOwnedProductAction(
+                      submission.id,
+                      deleteConfirmation
+                    )
+                    if (!result.ok) {
+                      toast.error(result.error)
+                      return
+                    }
+                    toast.success("Product deleted.")
+                    setDeleteOpen(false)
+                    router.refresh()
+                    onSuccess()
+                  })
+                }}
+              >
+                {isDeleting ? <Spinner data-icon="inline-start" /> : null}
+                {isDeleting ? "Deleting..." : "Delete product"}
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      ) : null}
     </form>
   )
 }

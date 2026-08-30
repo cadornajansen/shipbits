@@ -9,6 +9,7 @@ export type OwnedProduct = {
   logoUrl: string | null
   moderationStatus: "draft" | "published" | "rejected"
   name: string
+  slug: string
   tagline: string
   updatedAt: string
   upvoteValuePesos: number
@@ -21,6 +22,7 @@ export async function getUserProducts(userId: string): Promise<OwnedProduct[]> {
     .from("product_builders")
     .select("product_id")
     .eq("user_id", userId)
+    .eq("role", "owner")
 
   if (builderLinksError) {
     throw new Error(
@@ -36,7 +38,7 @@ export async function getUserProducts(userId: string): Promise<OwnedProduct[]> {
   const { data, error } = await supabase
     .from("products")
     .select(
-      "id, name, tagline, website_url, moderation_status, updated_at, categories(name), product_assets(public_url, type), product_upvotes(amount_centavos, status)"
+      "id, slug, name, tagline, website_url, moderation_status, updated_at, categories(name), product_assets(public_url, type), product_upvotes(amount_centavos, status)"
     )
     .in("id", productIds)
     .is("archived_at", null)
@@ -57,6 +59,7 @@ export async function getUserProducts(userId: string): Promise<OwnedProduct[]> {
       amount_centavos: number
       status: "pending" | "paid" | "failed" | "expired"
     }>
+    slug: string
     tagline: string
     updated_at: string
     website_url: string
@@ -85,6 +88,7 @@ export async function getUserProducts(userId: string): Promise<OwnedProduct[]> {
           ?.public_url ?? null,
       moderationStatus: product.moderation_status,
       name: product.name,
+      slug: product.slug,
       tagline: product.tagline,
       updatedAt: product.updated_at,
       upvoteValuePesos: listingAmountPesos + paidUpvotePesos,

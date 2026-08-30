@@ -1,4 +1,6 @@
 import assert from "node:assert/strict"
+import { mkdir, rm, writeFile } from "node:fs/promises"
+import os from "node:os"
 import path from "node:path"
 import test from "node:test"
 
@@ -84,5 +86,20 @@ test("all four starter articles validate and include useful internal and primary
     assert.ok(article.headings.length >= 3)
     assert.match(article.content, /\]\(\/(blog|resources|products|categories)/)
     assert.match(article.content, /https:\/\/(developers\.google\.com|help\.producthunt\.com|news\.ycombinator\.com)/)
+  }
+})
+
+test("blog catalog accepts Markdown and MDX files", async () => {
+  const directory = path.join(os.tmpdir(), `shipbits-blog-${Date.now()}`)
+  await mkdir(directory)
+  try {
+    await Promise.all([
+      writeFile(path.join(directory, "one.md"), fixture({ slug: "one" })),
+      writeFile(path.join(directory, "two.mdx"), fixture({ slug: "two" })),
+      writeFile(path.join(directory, "ignored.txt"), fixture({ slug: "ignored" })),
+    ])
+    assert.deepEqual((await readArticleFiles(directory)).map((article) => article.slug).sort(), ["one", "two"])
+  } finally {
+    await rm(directory, { recursive: true, force: true })
   }
 })

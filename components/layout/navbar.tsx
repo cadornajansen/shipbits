@@ -23,7 +23,12 @@ export default async function SiteHeader() {
           <span className="text-base font-bold md:text-xl">ShipBits</span>
         </Link>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-3 sm:gap-5">
+          <nav aria-label="Primary" className="hidden items-center gap-5 md:flex">
+            <Link href="/products" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Browse</Link>
+            <Link href="/blog" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Blog</Link>
+            <Link href="/resources" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Resources</Link>
+          </nav>
           {user ? (
             <Link
               href="/dashboard"

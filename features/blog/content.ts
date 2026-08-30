@@ -132,7 +132,7 @@ export async function readArticleFiles(directory: string): Promise<BlogArticle[]
   const entries = await readdir(directory, { withFileTypes: true })
   const articles = await Promise.all(
     entries
-      .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md")
+      .filter((entry) => entry.isFile() && /\.mdx?$/.test(entry.name) && entry.name !== "README.md")
       .map(async (entry) => {
         // File paths come only from directory entries, never from route parameters.
         const source = await readFile(path.join(directory, entry.name), "utf8")

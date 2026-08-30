@@ -16,7 +16,7 @@ export async function getProductBoardData(): Promise<ProductBoardData> {
     supabase
       .from("products")
       .select(
-        "id, name, slug, category_id, normalized_domain, website_url, tagline, short_description, long_description, listing_source, moderation_status, created_at, categories(name), product_assets(public_url, type)"
+        "id, name, slug, category_id, normalized_domain, website_url, tagline, tags, short_description, long_description, listing_source, moderation_status, created_at, categories(name), product_assets(public_url, type)"
       )
       .eq("moderation_status", "draft")
       .is("archived_at", null)
@@ -24,7 +24,7 @@ export async function getProductBoardData(): Promise<ProductBoardData> {
     supabase
       .from("products")
       .select(
-        "id, name, slug, category_id, normalized_domain, website_url, tagline, short_description, long_description, listing_source, moderation_status, created_at, published_at, categories(name), product_assets(public_url, type)"
+        "id, name, slug, category_id, normalized_domain, website_url, tagline, tags, short_description, long_description, listing_source, moderation_status, created_at, published_at, categories(name), product_assets(public_url, type)"
       )
       .eq("moderation_status", "published")
       .is("archived_at", null)
@@ -67,6 +67,7 @@ export async function getProductBoardData(): Promise<ProductBoardData> {
     short_description: string
     slug?: string
     tagline?: string
+    tags?: string[]
     website_url?: string
   }
 
@@ -104,6 +105,7 @@ export async function getProductBoardData(): Promise<ProductBoardData> {
         sourceUrl: importJob?.source_url ?? null,
         slug: product.slug ?? "",
         tagline: product.tagline ?? "",
+        tags: product.tags ?? [],
         warning: importJob?.error_message ?? null,
         websiteUrl: product.website_url ?? "",
       }
@@ -136,6 +138,7 @@ export async function getProductBoardData(): Promise<ProductBoardData> {
         shortDescription: product.short_description,
         slug: product.slug ?? "",
         tagline: product.tagline ?? "",
+        tags: product.tags ?? [],
         websiteUrl: product.website_url ?? "",
       })
     ),

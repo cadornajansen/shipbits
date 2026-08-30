@@ -9,5 +9,10 @@ export function invalidatePublicProducts(): void {
   // listing once more while a stale-while-revalidate refresh runs.
   revalidateTag(PUBLIC_PRODUCTS_TAG, { expire: 0 })
   revalidatePath("/")
+  revalidatePath("/products")
+  revalidatePath("/products/[slug]", "page")
+  revalidatePath("/products/[slug]/og", "page")
+  revalidatePath("/categories/[slug]", "page")
+  revalidatePath("/badges/listed/[filename]", "page")
   revalidatePath("/sitemap.xml")
 }

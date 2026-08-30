@@ -9,6 +9,7 @@ import {
   taglineSchema,
   websiteUrlSchema,
 } from "@/features/products/validation"
+import { MAX_PRODUCT_TAGS, parseProductTags } from "@/features/products/tags"
 
 const optionalLongDescriptionSchema = z
   .union([longDescriptionSchema, z.literal("")])
@@ -44,5 +45,6 @@ export const listingSubmissionSchema = z.object({
   shortDescription: optionalShortDescriptionSchema,
   slug: optionalSlugSchema,
   tagline: optionalTaglineSchema,
+  tags: z.preprocess(parseProductTags, z.array(z.string()).max(MAX_PRODUCT_TAGS)),
   websiteUrl: websiteUrlSchema,
 })

@@ -1,5 +1,7 @@
 import { z } from "zod"
 
+import { MAX_PRODUCT_TAGS, parseProductTags } from "@/features/products/tags"
+
 export const productStatuses = ["draft", "published", "rejected"] as const
 
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
@@ -44,8 +46,12 @@ export const websiteUrlSchema = z
   .trim()
   .url("Enter a valid URL.")
   .refine((value) => {
-    const protocol = new URL(value).protocol
-    return protocol === "http:" || protocol === "https:"
+    try {
+      const protocol = new URL(value).protocol
+      return protocol === "http:" || protocol === "https:"
+    } catch {
+      return false
+    }
   }, "URL must use http or https.")
 
 export const normalizedDomainSchema = z
@@ -65,6 +71,7 @@ export const productSchema = z.object({
   shortDescription: shortDescriptionSchema,
   slug: slugSchema,
   tagline: taglineSchema,
+  tags: z.preprocess(parseProductTags, z.array(z.string()).max(MAX_PRODUCT_TAGS)),
   websiteUrl: websiteUrlSchema,
 })
 

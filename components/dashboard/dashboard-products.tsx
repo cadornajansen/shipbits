@@ -3,6 +3,7 @@
 import { ExternalLinkIcon, PencilIcon } from "lucide-react"
 import { useState } from "react"
 
+import { ProductBadge } from "@/components/dashboard/product-badge"
 import { PublicSubmissionDialog } from "@/components/submissions/public-submission-dialog"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -65,7 +66,7 @@ export function DashboardProducts({
             return (
               <article
                 key={product.id}
-                className="flex flex-col gap-4 p-4 sm:flex-row sm:items-center"
+                className="grid gap-4 p-4 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:items-center"
               >
                 <Avatar className="size-11 shrink-0 rounded-md">
                   {product.logoUrl ? (
@@ -111,6 +112,9 @@ export function DashboardProducts({
                       Edit
                     </Button>
                   ) : null}
+                  {product.moderationStatus === "published" ? (
+                    <ProductBadge productId={product.id} slug={product.slug} />
+                  ) : null}
                   <Button asChild size="sm" variant="ghost">
                     <a
                       href={product.websiteUrl}
@@ -122,6 +126,14 @@ export function DashboardProducts({
                     </a>
                   </Button>
                 </div>
+                {product.moderationStatus !== "published" ? (
+                  <div className="border-t pt-3 sm:col-start-2 sm:col-end-4">
+                    <p className="text-sm font-medium">ShipBits Badge</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
+                      Available after your product is published.
+                    </p>
+                  </div>
+                ) : null}
               </article>
             )
           })}

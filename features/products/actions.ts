@@ -18,6 +18,7 @@ import {
   normalizeWebsiteUrl,
   productSchema,
 } from "./validation"
+import { normalizeProductTags, validateProductTags } from "./tags"
 
 function getOptionalFile(value: FormDataEntryValue | null) {
   return value instanceof File && value.size > 0 ? value : null
@@ -266,6 +267,7 @@ export async function createProductAction(
     shortDescription: formData.get("short_description"),
     slug: formData.get("slug"),
     tagline: formData.get("tagline"),
+    tags: formData.get("tags"),
     websiteUrl: formData.get("website_url"),
   })
 
@@ -302,6 +304,19 @@ export async function createProductAction(
     }
   }
   const supabase = createAdminClient()
+  const { data: category, error: categoryError } = await supabase
+    .from("categories")
+    .select("name, slug")
+    .eq("id", parsed.data.categoryId)
+    .maybeSingle()
+  if (categoryError || !category) {
+    return { error: "The selected category is unavailable.", ok: false }
+  }
+  const tagError = validateProductTags(parsed.data.tags, category)
+  if (tagError) {
+    return { error: tagError, fieldErrors: { tags: [tagError] }, ok: false }
+  }
+  const tags = normalizeProductTags(parsed.data.tags, category)
 
   const { data: product, error: productError } = await supabase
     .from("products")
@@ -320,6 +335,7 @@ export async function createProductAction(
       short_description: parsed.data.shortDescription,
       slug: parsed.data.slug,
       tagline: parsed.data.tagline,
+      tags,
       website_url: websiteUrl,
     })
     .select("id")
@@ -395,6 +411,7 @@ export async function updateProductAction(
     shortDescription: formData.get("short_description"),
     slug: formData.get("slug"),
     tagline: formData.get("tagline"),
+    tags: formData.get("tags"),
     websiteUrl: formData.get("website_url"),
   })
 
@@ -430,6 +447,19 @@ export async function updateProductAction(
   }
 
   const supabase = createAdminClient()
+  const { data: category, error: categoryError } = await supabase
+    .from("categories")
+    .select("name, slug")
+    .eq("id", parsed.data.categoryId)
+    .maybeSingle()
+  if (categoryError || !category) {
+    return { error: "The selected category is unavailable.", ok: false }
+  }
+  const tagError = validateProductTags(parsed.data.tags, category)
+  if (tagError) {
+    return { error: tagError, fieldErrors: { tags: [tagError] }, ok: false }
+  }
+  const tags = normalizeProductTags(parsed.data.tags, category)
   const { data, error } = await supabase
     .from("products")
     .update({
@@ -440,6 +470,7 @@ export async function updateProductAction(
       short_description: parsed.data.shortDescription,
       slug: parsed.data.slug,
       tagline: parsed.data.tagline,
+      tags,
       website_url: websiteUrl,
     })
     .eq("id", productId)

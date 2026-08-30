@@ -6,7 +6,10 @@ type EventProperties = {
   blog_view: { slug: string }
   seo_check_started: { score?: number }
   seo_check_completed: { score: number }
-  badge_copied: { productId: string; format: "html" | "markdown" }
+  badge_copied: {
+    productId: string
+    format: "html" | "markdown" | "badge_url"
+  }
   newsletter_signup: Record<string, never>
 }
 

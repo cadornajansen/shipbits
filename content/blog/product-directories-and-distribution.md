@@ -64,7 +64,7 @@ Pair a listing with work that you control: a useful landing page, helpful docume
 
 For example, if you build a design tool, publish a short walkthrough of a task someone can complete with it. Link to that walkthrough from your own documentation or appropriate community discussions. Then make sure the directory description reflects the same task. This gives each piece a clear purpose without copying the same sales paragraph everywhere.
 
-Review listings when you change pricing, branding, availability, or the main feature set. An old listing can send a visitor to a promise you no longer keep. Once your product is publicly listed, the [ShipBits badge tool](/resources/badges) provides a small link back to its directory page; it is an optional reference, not a requirement or a ranking guarantee.
+Review listings when you change pricing, branding, availability, or the main feature set. An old listing can send a visitor to a promise you no longer keep. Once your product is publicly listed, its ShipBits badge is available automatically from your founder dashboard; it is an optional reference, not a requirement or a ranking guarantee.
 
 ## Decide whether to continue
 

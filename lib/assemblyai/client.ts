@@ -7,6 +7,7 @@ export const generatedProductSchema = z.object({
   name: z.string().max(120),
   short_description: z.string().max(280),
   suggested_category: z.string().max(120),
+  tags: z.array(z.string().max(80)).min(2).max(5),
   tagline: z
     .string()
     .min(1)
@@ -41,6 +42,7 @@ const responseSchema = {
     name: { type: "string" },
     short_description: { type: "string" },
     suggested_category: { type: "string" },
+    tags: { items: { type: "string" }, type: "array" },
     tagline: { type: "string" },
   },
   required: [
@@ -49,6 +51,7 @@ const responseSchema = {
     "long_description",
     "suggested_category",
     "tagline",
+    "tags",
   ],
   type: "object",
 }
@@ -99,7 +102,7 @@ export async function generateProductFromEvidence({
         messages: [
           {
             content:
-              "You write factual product-directory metadata. Use only the supplied website evidence. Do not invent claims, metrics, customers, integrations, or features. Return concise, factual copy. tagline must be a factual phrase of 15 words or fewer. If the evidence does not support a claim, omit it. For suggested_category, return one ShipBits category name when supported by the evidence; otherwise return Other.",
+              "You write factual product-directory metadata. Use only the supplied website evidence. Do not invent claims, metrics, customers, integrations, or features. Return concise, factual copy. tagline must be a factual phrase of 15 words or fewer. For suggested_category, return one ShipBits category name when supported by the evidence; otherwise return Other. Return 2-5 concise, specific tags supported by the evidence. Tags must not duplicate the category or use generic filler such as software, website, app, or SaaS.",
             role: "system",
           },
           {

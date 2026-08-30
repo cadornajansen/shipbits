@@ -10,6 +10,11 @@ import {
   normalizeWebsiteUrl,
 } from "@/features/products/validation"
 import {
+  normalizeProductTags,
+  toCanonicalProductTags,
+  validateProductTags,
+} from "@/features/products/tags"
+import {
   attachQrPhPayment,
   createQrPhPayment,
   retrievePaymentIntent,
@@ -29,6 +34,65 @@ import { listingSubmissionSchema } from "./validation"
 export type SubmissionActionResult =
   | { error: string; fieldErrors?: Record<string, string[]>; ok: false }
   | { id: string; mediaWarning?: string; ok: true }
+
+export async function deleteOwnedProductAction(
+  submissionId: string,
+  confirmationName: string
+): Promise<{ error: string; ok: false } | { ok: true }> {
+  const user = await requireUser()
+  const supabase = createAdminClient()
+  const { data: submission, error: submissionError } = await supabase
+    .from("listing_submissions")
+    .select("id, product_id, name")
+    .eq("id", submissionId)
+    .eq("user_id", user.id)
+    .not("product_id", "is", null)
+    .maybeSingle()
+
+  if (submissionError || !submission?.product_id) {
+    return { error: "This listing is no longer available.", ok: false }
+  }
+  if (!submission.name || confirmationName.trim() !== submission.name) {
+    return { error: "Type the exact product name to confirm deletion.", ok: false }
+  }
+
+  const { data: product, error: productError } = await supabase
+    .from("products")
+    .select("id, name")
+    .eq("id", submission.product_id)
+    .maybeSingle()
+  if (productError || !product || product.name !== submission.name) {
+    return { error: "This listing is no longer available.", ok: false }
+  }
+
+  const { data: assets } = await supabase
+    .from("product_assets")
+    .select("object_key")
+    .eq("product_id", product.id)
+  const { data: submissionAssets } = await supabase
+    .from("listing_submission_assets")
+    .select("object_key")
+    .eq("submission_id", submission.id)
+  const { data: deleted, error: deleteError } = await supabase
+    .from("products")
+    .delete()
+    .eq("id", product.id)
+    .select("id")
+    .maybeSingle()
+
+  if (deleteError || !deleted) {
+    return { error: "Unable to delete this listing. Please try again.", ok: false }
+  }
+
+  await Promise.allSettled(
+    [...new Set([...(assets ?? []), ...(submissionAssets ?? [])].map((item) => item.object_key))]
+      .map((objectKey) => deleteProductObject(objectKey))
+  )
+  revalidatePath("/dashboard")
+  revalidatePath("/admin/products")
+  invalidatePublicProducts()
+  return { ok: true }
+}
 
 type CheckoutResult =
   | {
@@ -396,6 +460,7 @@ export async function autocompleteSubmissionAction(websiteUrl: string): Promise<
         shortDescription: string
         tagline: string
         suggestedCategory: string
+        tags: string[]
         coverImageUrl: string | null
         logoImageUrl: string | null
         websiteUrl: string
@@ -415,6 +480,17 @@ export async function autocompleteSubmissionAction(websiteUrl: string): Promise<
         shortDescription: data.short_description,
         tagline: data.tagline,
         suggestedCategory: data.suggested_category,
+        tags: normalizeProductTags(
+          toCanonicalProductTags(data.tags),
+          {
+            name: data.suggested_category,
+            slug: data.suggested_category
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-|-$/g, ""),
+          },
+          { generated: true }
+        ),
         coverImageUrl: data.media.cover[0] ?? null,
         logoImageUrl: data.media.logo[0] ?? null,
         websiteUrl: data.websiteUrl,
@@ -444,6 +520,7 @@ export async function saveSubmissionDraftAction(
     shortDescription: formData.get("short_description"),
     slug: formData.get("slug"),
     tagline: formData.get("tagline"),
+    tags: formData.get("tags"),
     websiteUrl: formData.get("website_url"),
   })
 
@@ -456,6 +533,21 @@ export async function saveSubmissionDraftAction(
   }
 
   const websiteUrl = normalizeWebsiteUrl(parsed.data.websiteUrl)
+  const category = parsed.data.categoryId
+    ? await createAdminClient()
+        .from("categories")
+        .select("name, slug")
+        .eq("id", parsed.data.categoryId)
+        .maybeSingle()
+    : null
+  if (category?.error) {
+    return { error: "Unable to validate the selected category.", ok: false }
+  }
+  const tagError = validateProductTags(parsed.data.tags, category?.data ?? null)
+  if (tagError) {
+    return { error: tagError, fieldErrors: { tags: [tagError] }, ok: false }
+  }
+  const tags = normalizeProductTags(parsed.data.tags, category?.data ?? null)
   const values = {
     category_id: parsed.data.categoryId,
     long_description: parsed.data.longDescription,
@@ -464,6 +556,7 @@ export async function saveSubmissionDraftAction(
     short_description: parsed.data.shortDescription,
     slug: parsed.data.slug,
     tagline: parsed.data.tagline,
+    tags,
     website_url: websiteUrl,
   }
   const logo = getOptionalFile(formData.get("logo"))
@@ -514,6 +607,7 @@ export async function saveSubmissionDraftAction(
         short_description: values.short_description,
         slug: values.slug,
         tagline: values.tagline,
+        tags: values.tags,
         website_url: values.website_url,
       })
       .eq("id", productId)

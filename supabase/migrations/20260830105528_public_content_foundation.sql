@@ -59,7 +59,9 @@ begin
 
   -- Always take the global row before the visitor row to keep lock order stable.
   insert into public.public_request_limits as counters (scope, identifier_hash, request_count, expires_at)
-  values (p_scope, 'global', 1, v_now + interval '1 hour')
+  -- The all-zero digest is the reserved global bucket; identifiers otherwise
+  -- remain indistinguishable keyed hashes.
+  values (p_scope, repeat('0', 64), 1, v_now + interval '1 hour')
   on conflict (scope, identifier_hash) do update
   set request_count = case when counters.expires_at <= v_now then 1
     else least(counters.request_count + 1, p_global_limit + 1) end,

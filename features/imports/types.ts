@@ -23,6 +23,7 @@ export type DraftBoardProduct = ProductListItem & {
   sourceUrl: string | null
   slug: string
   tagline: string
+  tags: string[]
   websiteUrl: string
   warning: string | null
 }
@@ -40,6 +41,7 @@ export type ProductBoardData = {
       shortDescription: string
       slug: string
       tagline: string
+      tags: string[]
       websiteUrl: string
     }
   >
