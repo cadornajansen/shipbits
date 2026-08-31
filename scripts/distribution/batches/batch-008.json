@@ -1,0 +1,2010 @@
+{
+  "source": {
+    "name": "ShipBits Curated Distribution Batch 008",
+    "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+    "license": "Source repository terms apply; review before redistributing.",
+    "attribution": "Candidate compilation from an external curated source. ShipBits did not independently verify reachability, submission flow, pricing, or domain metrics in this batch."
+  },
+  "records": [
+    {
+      "name": "Once.tools",
+      "website_url": "https://once.tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-319",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 319,
+        "domain": "once.tools",
+        "domain_rating": 32,
+        "link_type": "Dofollow",
+        "pricing": "Free",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Project Hatch",
+      "website_url": "https://www.projecthatch.co/your-story",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-320",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 320,
+        "domain": "projecthatch.co",
+        "domain_rating": 32,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startups of London",
+      "website_url": "https://startupsoflondon.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-321",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 321,
+        "domain": "startupsoflondon.com",
+        "domain_rating": 32,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Superbcrew",
+      "website_url": "https://www.superbcrew.com/about",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-322",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 322,
+        "domain": "superbcrew.com",
+        "domain_rating": 32,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "ToolHub",
+      "website_url": "https://toolhub.me",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-323",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 323,
+        "domain": "toolhub.me",
+        "domain_rating": 32,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Tools for Makers",
+      "website_url": "https://toolsformakers.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-324",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 324,
+        "domain": "toolsformakers.com",
+        "domain_rating": 32,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Launched!",
+      "website_url": "https://launched.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-327",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 327,
+        "domain": "launched.io",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "AppAgg",
+      "website_url": "https://appagg.com/?hl=en",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-329",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 329,
+        "domain": "appagg.com",
+        "domain_rating": 45,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Breakout List",
+      "website_url": "https://breakoutlist.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-330",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 330,
+        "domain": "breakoutlist.com",
+        "domain_rating": 45,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Fintech News iLounge",
+      "website_url": "https://fintechnews.sq/submit-your-fintec",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-331",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 331,
+        "domain": "fintechnews.sq",
+        "domain_rating": 45,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "TechBehemoths",
+      "website_url": "https://techbehemoths.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-332",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 332,
+        "domain": "techbehemoths.com",
+        "domain_rating": 45,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "FindYourSaaS",
+      "website_url": "https://www.findyoursaas.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-334",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 334,
+        "domain": "findyoursaas.com",
+        "domain_rating": 31,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Kyi AI Directory",
+      "website_url": "https://kyi.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-335",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 335,
+        "domain": "kyi.ai",
+        "domain_rating": 23,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "AI directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "AI Listing",
+      "website_url": "https://ailisting.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-336",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 336,
+        "domain": "ailisting.ai",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Cipinet",
+      "website_url": "https://www.cipinet.com/suggest.php?ac",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-338",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 338,
+        "domain": "cipinet.com",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Growth Junkie",
+      "website_url": "https://growthiunkie.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-339",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 339,
+        "domain": "growthiunkie.com",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Insanely Cool Tools",
+      "website_url": "https://insanelycooltools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-340",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 340,
+        "domain": "insanelycooltools.com",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Make.rs",
+      "website_url": "https://make.rs",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-341",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 341,
+        "domain": "make.rs",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "PromptZone",
+      "website_url": "https://promptzone.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-342",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 342,
+        "domain": "promptzone.com",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Tools NoCode",
+      "website_url": "https://toolsnocode.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-344",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 344,
+        "domain": "toolsnocode.com",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "WhatTheAI",
+      "website_url": "https://whattheai.tech",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-345",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 345,
+        "domain": "whattheai.tech",
+        "domain_rating": 30,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Indie Gamer Reviewer",
+      "website_url": "https://indiegamereviewer.com/contact-ir",
+      "submission_url": null,
+      "channel_type": "review_site",
+      "source_record_id": "mezmer90:priority-346",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 346,
+        "domain": "indiegamereviewer.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "Review / comparison",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "SuitApp",
+      "website_url": "https://suitapp.de",
+      "submission_url": null,
+      "channel_type": "review_site",
+      "source_record_id": "mezmer90:priority-347",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 347,
+        "domain": "suitapp.de",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "Review / comparison",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "startuplist.ing",
+      "website_url": "https://startuplist.ing",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-349",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 349,
+        "domain": "startuplist.ing",
+        "domain_rating": 43,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Compare Software",
+      "website_url": "https://www.comparasoftware.com",
+      "submission_url": null,
+      "channel_type": "review_site",
+      "source_record_id": "mezmer90:priority-350",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 350,
+        "domain": "comparasoftware.com",
+        "domain_rating": 38,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "Review / comparison",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Crowd Reviews",
+      "website_url": "https://www.crowdreviews.com",
+      "submission_url": null,
+      "channel_type": "review_site",
+      "source_record_id": "mezmer90:priority-351",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 351,
+        "domain": "crowdreviews.com",
+        "domain_rating": 38,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "Review / comparison",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "toolfolio",
+      "website_url": "https://toolfolio.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-353",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 353,
+        "domain": "toolfolio.io",
+        "domain_rating": 35,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Ant Directory",
+      "website_url": "https://antdirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-354",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 354,
+        "domain": "antdirectory.com",
+        "domain_rating": 29,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Daily Pings",
+      "website_url": "https://dailypings.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-355",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 355,
+        "domain": "dailypings.com",
+        "domain_rating": 29,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Text Link Directory",
+      "website_url": "https://www.textlinkdirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-356",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 356,
+        "domain": "textlinkdirectory.com",
+        "domain_rating": 29,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "American Startups",
+      "website_url": "https://americanstartups.com/share-your-s",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-357",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 357,
+        "domain": "americanstartups.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Lachief.io",
+      "website_url": "https://lachief.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-359",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 359,
+        "domain": "lachief.io",
+        "domain_rating": 21,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "AI directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "App Spy",
+      "website_url": "https://www.appspy.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-360",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 360,
+        "domain": "appspy.com",
+        "domain_rating": 42,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Best App for Kids",
+      "website_url": "https://www.bestappsforkids.com/submit",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-361",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 361,
+        "domain": "bestappsforkids.com",
+        "domain_rating": 42,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Cabinet",
+      "website_url": "https://www.cabinetm.com/information/m",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-362",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 362,
+        "domain": "cabinetm.com",
+        "domain_rating": 42,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Makerlog",
+      "website_url": "https://getmakerlog.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-363",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 363,
+        "domain": "getmakerlog.com",
+        "domain_rating": 42,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Online Genuises",
+      "website_url": "https://onlinegeniuses.com/marketplace-",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-365",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 365,
+        "domain": "onlinegeniuses.com",
+        "domain_rating": 42,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "AffordHunt",
+      "website_url": "https://affordhunt.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-367",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 367,
+        "domain": "affordhunt.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "FiveTaco",
+      "website_url": "https://fivetaco.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-370",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 370,
+        "domain": "fivetaco.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Future of Saas",
+      "website_url": "https://www.futureofsaas.io/contributor-",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-371",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 371,
+        "domain": "futureofsaas.io",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Growth Hack List",
+      "website_url": "https://growthhacklist.com/startup-director",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-372",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 372,
+        "domain": "growthhacklist.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "HUNT0",
+      "website_url": "https://hunt0.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-373",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 373,
+        "domain": "hunt0.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "ItsLaunched",
+      "website_url": "https://itslaunched.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-374",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 374,
+        "domain": "itslaunched.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Mr. Free Tools",
+      "website_url": "https://mrfreetools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-376",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 376,
+        "domain": "mrfreetools.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "NoteableAI",
+      "website_url": "https://noteableai.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-377",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 377,
+        "domain": "noteableai.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "OneMillionDirectory",
+      "website_url": "https://onemilliondirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-378",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 378,
+        "domain": "onemilliondirectory.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Open Startup",
+      "website_url": "https://openstartup.tm",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-379",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 379,
+        "domain": "openstartup.tm",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "SaaS Projects",
+      "website_url": "https://saasprojects.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-381",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 381,
+        "domain": "saasprojects.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Small Business Marketing Tools",
+      "website_url": "https://sbmarketingtools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-382",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 382,
+        "domain": "sbmarketingtools.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Beat",
+      "website_url": "https://startupbeat.com/get-featured",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-383",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 383,
+        "domain": "startupbeat.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Resources",
+      "website_url": "https://startupresources.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-384",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 384,
+        "domain": "startupresources.io",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup World",
+      "website_url": "https://www.startupworld.com/conti",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-386",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 386,
+        "domain": "startupworld.com",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Stellar Launch",
+      "website_url": "https://stellarlaunch.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-387",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 387,
+        "domain": "stellarlaunch.org",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Submissions Web Directory",
+      "website_url": "https://www.submissionwebdirectory.cor",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-388",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 388,
+        "domain": "submissionwebdirectory.cor",
+        "domain_rating": 28,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "NewAIForYou",
+      "website_url": "https://newaiforyou.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-391",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 391,
+        "domain": "newaiforyou.com",
+        "domain_rating": 20,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "AI directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "ailib.ru",
+      "website_url": "https://ailib.ru",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-392",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 392,
+        "domain": "ailib.ru",
+        "domain_rating": 27,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "AIxuanfeng",
+      "website_url": "https://www.aixuanfeng.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-393",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 393,
+        "domain": "aixuanfeng.com",
+        "domain_rating": 27,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Appolicious",
+      "website_url": "https://www.appolicious.com/contact-us",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-396",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 396,
+        "domain": "appolicious.com",
+        "domain_rating": 40,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Insur-Tech iPhone Life",
+      "website_url": "https://insur-tech.com/submit",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-397",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 397,
+        "domain": "insur-tech.com",
+        "domain_rating": 40,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "hot100",
+      "website_url": "https://www.hot100.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-400",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 400,
+        "domain": "hot100.ai",
+        "domain_rating": 26,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "One Million Screenshots",
+      "website_url": "https://onemillionscreenshots.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-401",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 401,
+        "domain": "onemillionscreenshots.com",
+        "domain_rating": 26,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Saassy Board",
+      "website_url": "https://saassy-board.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-402",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 402,
+        "domain": "saassy-board.com",
+        "domain_rating": 26,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "SideProjects",
+      "website_url": "https://sideprojects.net",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-403",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 403,
+        "domain": "sideprojects.net",
+        "domain_rating": 26,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Submit Juice",
+      "website_url": "https://submitjuice.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-404",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 404,
+        "domain": "submitjuice.com",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "rankinpublic.xyz",
+      "website_url": "https://rankinpublic.xyz",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-405",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 405,
+        "domain": "rankinpublic.xyz",
+        "domain_rating": 35,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "9 Sites",
+      "website_url": "https://www.9sites.net/addurl.php",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-406",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 406,
+        "domain": "9sites.net",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "AiTool.ai",
+      "website_url": "https://aitool.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-407",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 407,
+        "domain": "aitool.ai",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Being Guru",
+      "website_url": "https://www.beingguru.com/submit-startu",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-408",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 408,
+        "domain": "beingguru.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Find SEO Tools",
+      "website_url": "https://findseotools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-409",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 409,
+        "domain": "findseotools.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Growth Kit",
+      "website_url": "https://www.growthkit.so",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-411",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 411,
+        "domain": "growthkit.so",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Open Startup List",
+      "website_url": "https://openstartuplist.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-412",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 412,
+        "domain": "openstartuplist.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Romanian Startups",
+      "website_url": "https://www.romanianstartups.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-413",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 413,
+        "domain": "romanianstartups.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "SaaS Place",
+      "website_url": "https://saasplace.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-414",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 414,
+        "domain": "saasplace.io",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "See What New AI",
+      "website_url": "https://www.seewhatnewai.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-415",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 415,
+        "domain": "seewhatnewai.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "Free",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup88",
+      "website_url": "https://startup88.com/category/star",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-416",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 416,
+        "domain": "startup88.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Costs",
+      "website_url": "https://www.startupcosts.co/signup",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-417",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 417,
+        "domain": "startupcosts.co",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Galaxy",
+      "website_url": "https://world.startupsgalaxy.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-418",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 418,
+        "domain": "startupsgalaxy.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "StartupStage",
+      "website_url": "https://startupstage.app",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-419",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 419,
+        "domain": "startupstage.app",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "The Startup Inc",
+      "website_url": "https://www.thestartupinc.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-421",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 421,
+        "domain": "thestartupinc.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Tool Salad",
+      "website_url": "https://toolsalad.com/submit",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-422",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 422,
+        "domain": "toolsalad.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "ToolScout AI",
+      "website_url": "https://toolscout.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-423",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 423,
+        "domain": "toolscout.ai",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Unboxing Startups",
+      "website_url": "https://unboxingstartups.com/contact",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-424",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 424,
+        "domain": "unboxingstartups.com",
+        "domain_rating": 25,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Bootstrappers",
+      "website_url": "https://bootstrappers.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-426",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 426,
+        "domain": "bootstrappers.io",
+        "domain_rating": 38,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Indian Yellow Pages",
+      "website_url": "https://www.indianyellowpages.com/post-",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-427",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 427,
+        "domain": "indianyellowpages.com",
+        "domain_rating": 38,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "stashli.st",
+      "website_url": "https://stashli.st",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-429",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 429,
+        "domain": "stashli.st",
+        "domain_rating": 24,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Web App Rater",
+      "website_url": "https://webapprater.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-430",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 430,
+        "domain": "webapprater.com",
+        "domain_rating": 20,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Android Apps Review",
+      "website_url": "https://www.androidappsreview.com",
+      "submission_url": null,
+      "channel_type": "review_site",
+      "source_record_id": "mezmer90:priority-431",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 431,
+        "domain": "androidappsreview.com",
+        "domain_rating": 32,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "Review / comparison",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Tip Season",
+      "website_url": "https://tipseason.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-432",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 432,
+        "domain": "tipseason.com",
+        "domain_rating": 23,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "RankYourAI",
+      "website_url": "https://rankyourai.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-433",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 433,
+        "domain": "rankyourai.com",
+        "domain_rating": 36,
+        "link_type": "Nofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "600.tools",
+      "website_url": "https://600.tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-434",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 434,
+        "domain": "600.tools",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "Freemium",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Find Cool Tools",
+      "website_url": "https://findcool.tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-436",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 436,
+        "domain": "findcool.tools",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "First 100 Users",
+      "website_url": "https://first100users.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-437",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 437,
+        "domain": "first100users.com",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Geekopedia",
+      "website_url": "https://geekopedia.me/write-for-us",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-438",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 438,
+        "domain": "geekopedia.me",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Indie Hustles",
+      "website_url": "https://indiehustles.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-439",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 439,
+        "domain": "indiehustles.com",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Karo Startup",
+      "website_url": "https://karostartup.com/advertise-with-us",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-440",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 440,
+        "domain": "karostartup.com",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "KitDB",
+      "website_url": "https://kitdb.app",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-441",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 441,
+        "domain": "kitdb.app",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "MicroStartups",
+      "website_url": "https://www.microstartups.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-442",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 442,
+        "domain": "microstartups.co",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "SaaS Alliance",
+      "website_url": "https://saasalliance.io",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "mezmer90:priority-444",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 444,
+        "domain": "saasalliance.io",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "Community / launch",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "Sick Tools",
+      "website_url": "https://sick.tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-445",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 445,
+        "domain": "sick.tools",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    },
+    {
+      "name": "SpsFeed",
+      "website_url": "https://spsfeed.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "mezmer90:priority-446",
+      "source_url": "https://github.com/mezmer90/saas-directories/raw/refs/heads/main/saas-directories.csv",
+      "observed_at": "2026-08-31T12:00:00.000Z",
+      "raw_data": {
+        "priority": 446,
+        "domain": "spsfeed.com",
+        "domain_rating": 22,
+        "link_type": "Dofollow",
+        "pricing": "unknown",
+        "source_category": "SaaS / startup directory",
+        "source_phase": "Phase 3 — Long-tail volume",
+        "verification_status": "candidate-from-third-party-source",
+        "notes": "Source row preserved as supplied. ShipBits must treat this as unverified and use first-party verification before activation."
+      }
+    }
+  ]
+}

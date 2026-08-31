@@ -1,0 +1,1610 @@
+{
+  "source": {
+    "name": "ShipBits Curated Distribution Batch 004 — Apps, Mobile, Design & Communities",
+    "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+    "license": "Source facts compiled from public 2026 research articles; retain record-level source attribution.",
+    "attribution": "Curated from theStacc's 2026 app-directory and startup-directory research. Each record retains the specific source page used."
+  },
+  "records": [
+    {
+      "name": "Betabound",
+      "website_url": "https://www.betabound.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "batch004:001",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "beta-testing",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "KillerStartups",
+      "website_url": "https://www.killerstartups.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:002",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "SnapMunk",
+      "website_url": "https://www.snapmunk.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:003",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Vator",
+      "website_url": "https://vator.tv",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:004",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "The Startup Pitch",
+      "website_url": "https://thestartuppitch.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "batch004:005",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Tracker",
+      "website_url": "https://startuptracker.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:006",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Crazy About Startups",
+      "website_url": "https://www.crazyaboutstartups.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:007",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "All Startups",
+      "website_url": "https://allstartups.info",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:008",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Getworm",
+      "website_url": "https://getworm.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "batch004:009",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AIxploria",
+      "website_url": "https://www.aixploria.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:010",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AI Tools Directory",
+      "website_url": "https://aitoolsdirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:011",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Dang.ai",
+      "website_url": "https://dang.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:012",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Supertools",
+      "website_url": "https://supertools.therundown.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:013",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "HD Robots",
+      "website_url": "https://hdrobots.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:014",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "GetListed.ai",
+      "website_url": "https://getlisted.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:015",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Uptodown",
+      "website_url": "https://www.uptodown.com",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "batch004:016",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Huawei AppGallery",
+      "website_url": "https://appgallery.huawei.com",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "batch004:017",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "TouchArcade",
+      "website_url": "https://toucharcade.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:018",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-game",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "PocketGamer",
+      "website_url": "https://www.pocketgamer.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:019",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-game",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Aptoide",
+      "website_url": "https://en.aptoide.com",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "batch004:020",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "F-Droid",
+      "website_url": "https://f-droid.org",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "batch004:021",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AppAdvice",
+      "website_url": "https://appadvice.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:022",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Phandroid",
+      "website_url": "https://phandroid.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:023",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AppBrain",
+      "website_url": "https://www.appbrain.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:024",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "GameZebo",
+      "website_url": "https://www.gamezebo.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:025",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-game",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Android Guys",
+      "website_url": "https://www.androidguys.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:026",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "FeedMyApp",
+      "website_url": "https://feedmyapp.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:027",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "MobileAppDaily",
+      "website_url": "https://www.mobileappdaily.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:028",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Best Mobile App Awards",
+      "website_url": "https://www.bestmobileappawards.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:029",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "mobile-app",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Alternative.me",
+      "website_url": "https://alternative.me",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:030",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "software",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "SimilarSites",
+      "website_url": "https://www.similarsites.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:031",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "software",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Robin Good Tools",
+      "website_url": "https://tools.robingood.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:032",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "software",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Maqtoob",
+      "website_url": "https://maqtoob.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:033",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "software",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Discover Cloud",
+      "website_url": "https://www.discovercloud.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:034",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "software",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Postscapes",
+      "website_url": "https://www.postscapes.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:035",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "iot",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "CloudBook",
+      "website_url": "https://www.cloudbook.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:036",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "cloud-software",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "GitHub Trending",
+      "website_url": "https://github.com/trending",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:037",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "developer",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Stack Overflow",
+      "website_url": "https://stackoverflow.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:038",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "developer",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "The Changelog",
+      "website_url": "https://changelog.com",
+      "submission_url": null,
+      "channel_type": "newsletter",
+      "source_record_id": "batch004:039",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "developer",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Lobsters",
+      "website_url": "https://lobste.rs",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:040",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "developer",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Behance",
+      "website_url": "https://www.behance.net",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:041",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Dribbble",
+      "website_url": "https://dribbble.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:042",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Webflow Showcase",
+      "website_url": "https://webflow.com/made-in-webflow",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:043",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Awwwards",
+      "website_url": "https://www.awwwards.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:044",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "UpLabs",
+      "website_url": "https://www.uplabs.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:045",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Designer News",
+      "website_url": "https://www.designernews.co",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:046",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "TOOOLS.design",
+      "website_url": "https://www.toools.design",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:047",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "MakerPad",
+      "website_url": "https://www.makerpad.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:048",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Zeroqode",
+      "website_url": "https://zeroqode.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:049",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "No Code MBA",
+      "website_url": "https://www.nocodemba.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:050",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "The No Code List",
+      "website_url": "https://thenocodelist.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:051",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "NoCodeFinder",
+      "website_url": "https://nocodefinder.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:052",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "We Are No Code",
+      "website_url": "https://www.wearenocode.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:053",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Minimum Code",
+      "website_url": "https://minimumcode.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:054",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "DealFuel",
+      "website_url": "https://www.dealfuel.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:055",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "DealMirror",
+      "website_url": "https://dealmirror.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:056",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Grabltd",
+      "website_url": "https://grabltd.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:057",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "LTD Hunt",
+      "website_url": "https://ltdhunt.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:058",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Reddit r/SideProject",
+      "website_url": "https://www.reddit.com/r/SideProject/",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:059",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Reddit r/startups",
+      "website_url": "https://www.reddit.com/r/startups/",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:060",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Reddit r/SaaS",
+      "website_url": "https://www.reddit.com/r/SaaS/",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:061",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Reddit r/alphaandbetausers",
+      "website_url": "https://www.reddit.com/r/alphaandbetausers/",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:062",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Reddit r/Entrepreneur",
+      "website_url": "https://www.reddit.com/r/Entrepreneur/",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:063",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Quora",
+      "website_url": "https://www.quora.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:064",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Medium",
+      "website_url": "https://medium.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:065",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "LinkedIn",
+      "website_url": "https://www.linkedin.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:066",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "WIP",
+      "website_url": "https://wip.co",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:067",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Kickstarter",
+      "website_url": "https://www.kickstarter.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:068",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "funding",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Indiegogo",
+      "website_url": "https://www.indiegogo.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:069",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "funding",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "StartupXplore",
+      "website_url": "https://startupxplore.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:070",
+      "source_url": "https://thestacc.com/blog/app-directory-submission-sites/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "funding",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Hype Desk",
+      "website_url": "https://hypedesk.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "batch004:071",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Super Launch",
+      "website_url": "https://superlaunch.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "batch004:072",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "WhatLaunched",
+      "website_url": "https://whatlaunched.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "batch004:073",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Springwise",
+      "website_url": "https://www.springwise.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:074",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "TechPluto",
+      "website_url": "https://www.techpluto.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:075",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Top Startups",
+      "website_url": "https://topstartups.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:076",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Savant",
+      "website_url": "https://startupsavant.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:077",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startups.gallery",
+      "website_url": "https://startups.gallery",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:078",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Grind",
+      "website_url": "https://www.startupgrind.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:079",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Feedough",
+      "website_url": "https://www.feedough.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:080",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "The Hub",
+      "website_url": "https://thehub.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:081",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "regional-startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Exploding Topics",
+      "website_url": "https://explodingtopics.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:082",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "YourStory",
+      "website_url": "https://yourstory.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:083",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "regional-startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "NextBigWhat",
+      "website_url": "https://nextbigwhat.com",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "batch004:084",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "regional-startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "StartupTalky",
+      "website_url": "https://startuptalky.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:085",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "regional-startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AI Scout",
+      "website_url": "https://aiscout.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:086",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AI Valley",
+      "website_url": "https://aivalley.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:087",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AI Depot",
+      "website_url": "https://aidepot.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:088",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "SaaS AI Tools",
+      "website_url": "https://saasaitools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:089",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "GPT Store",
+      "website_url": "https://chatgpt.com/gpts",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "batch004:090",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "AI Finder",
+      "website_url": "https://ai-finder.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:091",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Best AI Tools",
+      "website_url": "https://bestaitools.app",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:092",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Top SaaS Directories",
+      "website_url": "https://topsaasdirectories.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:093",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Startup Sauce",
+      "website_url": "https://startupsauce.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:094",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "LinkDR",
+      "website_url": "https://linkdr.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:095",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "myStartupTool",
+      "website_url": "https://mystartuptool.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:096",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "Index Startup",
+      "website_url": "https://indexstartup.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:097",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "StartupProject",
+      "website_url": "https://startupproject.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:098",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "EggGradients Directory",
+      "website_url": "https://www.egggradients.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:099",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    },
+    {
+      "name": "LaunchDirectories",
+      "website_url": "https://launchdirectories.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "batch004:100",
+      "source_url": "https://thestacc.com/blog/startup-directories-submit-product/",
+      "observed_at": "2026-08-31T11:47:06.965051Z",
+      "raw_data": {
+        "source_category": "startup",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "Included in a 2026 theStacc directory research list described as active and relevant to submissions. ShipBits must still run first-party verification before activation."
+      }
+    }
+  ]
+}

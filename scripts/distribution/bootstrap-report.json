@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-08-31T10:02:19.289Z",
+  "sources": [
+    {
+      "source": "mezmer90/saas-directories",
+      "revision": "6e4ceb73db796261b2103f6abe169e1ba2099e6a",
+      "candidates": 921,
+      "accepted": 921
+    },
+    {
+      "source": "volodstaimi/Startup-Launch-List",
+      "revision": "63088c1789199fff0e41f17963e346fe9464e22c",
+      "candidates": 582,
+      "accepted": 582
+    },
+    {
+      "source": "whatsuppiyush/backlink-claude-skill",
+      "revision": "77183c0dba926624529619cf7688d905ef383c02",
+      "candidates": 341,
+      "accepted": 341
+    }
+  ],
+  "candidates": 1844,
+  "accepted": 1844,
+  "rejected": 0,
+  "unique": 961,
+  "duplicates": 883,
+  "submissionEndpointsConsolidated": 0,
+  "batches": 20,
+  "status": "unverified"
+}

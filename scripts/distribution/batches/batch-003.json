@@ -1,0 +1,1610 @@
+{
+  "source": {
+    "name": "ShipBits Curated Distribution Batch 003 — SaaS, Developer & Open Source",
+    "source_url": "https://thestacc.com/blog/saas-directories-list/",
+    "license": "Source facts compiled from a public 2026 research article; retain source attribution.",
+    "attribution": "Curated from theStacc's 217 SaaS Directories to Submit Your Product (2026). Records remain unverified in ShipBits until first-party verification/admin review."
+  },
+  "records": [
+    {
+      "name": "GetApp",
+      "website_url": "https://www.getapp.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:001",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Software Advice",
+      "website_url": "https://www.softwareadvice.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:002",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SourceForge",
+      "website_url": "https://sourceforge.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:003",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Clutch",
+      "website_url": "https://clutch.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:004",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "GoodFirms",
+      "website_url": "https://www.goodfirms.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:005",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaSGenius",
+      "website_url": "https://saasgenius.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:006",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaSworthy",
+      "website_url": "https://www.saasworthy.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:007",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Trustpilot",
+      "website_url": "https://www.trustpilot.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:008",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "TrustRadius",
+      "website_url": "https://www.trustradius.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:009",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaSPedia",
+      "website_url": "https://saaspedia.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:010",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SubmitSaaS",
+      "website_url": "https://submitsaas.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:011",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaS Cubes",
+      "website_url": "https://saascubes.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:012",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "LaunchPedia",
+      "website_url": "https://launchpedia.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:013",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Techjury",
+      "website_url": "https://techjury.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:014",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SoftwareSelect",
+      "website_url": "https://softwareselecthq.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:015",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Platforms Directory",
+      "website_url": "https://www.platformsdirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:016",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ToolFinder",
+      "website_url": "https://toolfinder.wiki",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:017",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "B2B Stack",
+      "website_url": "https://www.b2bstack.com.br",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:018",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaS Database",
+      "website_url": "https://saasdatabase.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:019",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ConfettiSaaS",
+      "website_url": "https://confettisaas.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:020",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "NachoNacho",
+      "website_url": "https://nachonacho.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:021",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Deeplaunch",
+      "website_url": "https://deeplaunch.io",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:022",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "general-saas",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "GitHub Awesome Lists",
+      "website_url": "https://github.com/topics/awesome",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:023",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Dev Resources",
+      "website_url": "https://devresources.info",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:024",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "API List",
+      "website_url": "https://apilist.fun",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:025",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ProgrammableWeb",
+      "website_url": "https://www.programmableweb.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:026",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "awesome-developer-first",
+      "website_url": "https://github.com/255kb/stack-on-a-budget",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:027",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "DevSuite",
+      "website_url": "https://devsuite.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:028",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Awesome AI Coding Tools",
+      "website_url": "https://github.com/sourcegraph/awesome-code-ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:029",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "WebCurate",
+      "website_url": "https://webcurate.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:030",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "DEV Community",
+      "website_url": "https://dev.to",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "thestacc-saas-2026:031",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "BuiltWith",
+      "website_url": "https://builtwith.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:032",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Awesome Open Source",
+      "website_url": "https://awesomeopensource.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:033",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "LibHunt",
+      "website_url": "https://www.libhunt.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:034",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Console.dev",
+      "website_url": "https://console.dev",
+      "submission_url": null,
+      "channel_type": "newsletter",
+      "source_record_id": "thestacc-saas-2026:035",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ToolsForCreators",
+      "website_url": "https://toolsforcreators.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:036",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Free for Dev",
+      "website_url": "https://free-for.dev",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:037",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "developer-api",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Webstore Extensions",
+      "website_url": "https://webstoreextensions.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:038",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ExtensionBoss",
+      "website_url": "https://extensionboss.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:039",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Extension.dev",
+      "website_url": "https://extension.dev",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:040",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "BrowserExtension.dev",
+      "website_url": "https://browserextension.dev",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:041",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ChromeStats",
+      "website_url": "https://chrome-stats.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:042",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ExtPose",
+      "website_url": "https://extpose.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:043",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Crx4Chrome",
+      "website_url": "https://www.crx4chrome.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:044",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "IndieExtensions",
+      "website_url": "https://indieextensions.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:045",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "browser-extension",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "GitHub Explore",
+      "website_url": "https://github.com/explore",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:046",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "GitLab Explore",
+      "website_url": "https://gitlab.com/explore",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:047",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Open Source Software Directory",
+      "website_url": "https://opensourcesoftwaredirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:048",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Awesome Self-Hosted",
+      "website_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:049",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "FOSS Post",
+      "website_url": "https://fosspost.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:050",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "It's FOSS",
+      "website_url": "https://itsfoss.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:051",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Slant",
+      "website_url": "https://www.slant.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:052",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Postmake Open Source Directory",
+      "website_url": "https://github.com/postmake/awesome-open-source",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:053",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Project Dream",
+      "website_url": "https://projectdream.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:054",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "OSS Software",
+      "website_url": "https://osssoftware.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:055",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Open Hub",
+      "website_url": "https://www.openhub.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:056",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "FossHub",
+      "website_url": "https://www.fosshub.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:057",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "OSS Insight",
+      "website_url": "https://ossinsight.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:058",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "LinuxLinks",
+      "website_url": "https://www.linuxlinks.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:059",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SourceHut",
+      "website_url": "https://sr.ht",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:060",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Codeberg",
+      "website_url": "https://codeberg.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:061",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "OpenSourceAlternative.to",
+      "website_url": "https://www.opensourcealternative.to",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:062",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "open-source",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "BetaPage",
+      "website_url": "https://betapage.co",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:063",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Startup Stash",
+      "website_url": "https://startupstash.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:064",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "StartupBase",
+      "website_url": "https://startupbase.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:065",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Startup Buffer",
+      "website_url": "https://startupbuffer.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:066",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Startup Tile",
+      "website_url": "https://startuptile.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:067",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Startups FYI",
+      "website_url": "https://www.startups.fyi",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:068",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SideProjectors",
+      "website_url": "https://www.sideprojectors.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:069",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Cool Startups",
+      "website_url": "https://coolstartups.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:070",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Startup Lift",
+      "website_url": "https://startuplift.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:071",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "All Top Startups",
+      "website_url": "https://alltopstartups.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:072",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "FastLaunch",
+      "website_url": "https://fastlaunch.io",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:073",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "IndieProducts.io",
+      "website_url": "https://www.indieproducts.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:074",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Smol Launch",
+      "website_url": "https://smollaunch.com",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:075",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "LaunchVault",
+      "website_url": "https://www.launchvault.dev",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "thestacc-saas-2026:076",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Startuplist.in",
+      "website_url": "https://startuplist.in",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:077",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "startup-launch",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "PeerSpot",
+      "website_url": "https://www.peerspot.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:078",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SelectHub",
+      "website_url": "https://www.selecthub.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:079",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "FinancesOnline",
+      "website_url": "https://financesonline.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:080",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "CompareCamp",
+      "website_url": "https://comparecamp.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:081",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Featured Customers",
+      "website_url": "https://www.featuredcustomers.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:082",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Slashdot",
+      "website_url": "https://slashdot.org",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "thestacc-saas-2026:083",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Software World",
+      "website_url": "https://softwareworld.co",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:084",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "ITQlick",
+      "website_url": "https://www.itqlick.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:085",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Serchen",
+      "website_url": "https://www.serchen.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:086",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "reviews",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "AppSumo",
+      "website_url": "https://appsumo.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:087",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "PitchGround",
+      "website_url": "https://pitchground.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:088",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Dealify",
+      "website_url": "https://dealify.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:089",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "StackSocial",
+      "website_url": "https://stacksocial.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:090",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaSPromo",
+      "website_url": "https://saaspromo.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:091",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaSMantra",
+      "website_url": "https://saasmantra.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:092",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "RocketHub",
+      "website_url": "https://www.rockethub.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:093",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "TapRefer",
+      "website_url": "https://www.taprefer.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:094",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "SaaS Deals Hub",
+      "website_url": "https://saasdeals.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:095",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "JVZoo",
+      "website_url": "https://www.jvzoo.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:096",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Gumroad",
+      "website_url": "https://gumroad.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:097",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Lemon Squeezy",
+      "website_url": "https://www.lemonsqueezy.com",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:098",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "deals",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "Make App Directory",
+      "website_url": "https://www.make.com/en/integrations",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "thestacc-saas-2026:099",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "NoCode.Tech",
+      "website_url": "https://www.nocode.tech",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "thestacc-saas-2026:100",
+      "source_url": "https://thestacc.com/blog/saas-directories-list/",
+      "observed_at": "2026-08-31T11:46:17.494629Z",
+      "raw_data": {
+        "source_category": "no-code",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-04",
+        "notes": "theStacc states every directory in its 217-entry 2026 list was real, active, and accepting submissions as of April 2026. ShipBits should still verify before activation."
+      }
+    }
+  ]
+}

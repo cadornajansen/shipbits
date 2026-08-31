@@ -19,7 +19,7 @@ export default async function AdminLayout({
           <Link href="/admin/products" className="font-heading font-semibold">
             ShipBits admin
           </Link>
-          <div className="flex flex-wrap items-center gap-4 text-sm"><Link href="/admin/products">Products</Link><Link href="/admin/directory-submissions">Directory Submissions</Link><span className="text-muted-foreground">{user.email}</span></div>
+          <div className="flex flex-wrap items-center gap-4 text-sm"><Link href="/admin/products">Products</Link><Link href="/admin/directory-submissions">Directory Submissions</Link><Link href="/admin/distribution">Distribution</Link><span className="text-muted-foreground">{user.email}</span></div>
         </div>
       </header>
       <div className="mx-auto max-w-6xl px-6 py-8">{children}</div>

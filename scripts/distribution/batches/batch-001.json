@@ -1,0 +1,1610 @@
+{
+  "source": {
+    "name": "ShipBits Curated Distribution Batch 001",
+    "source_url": "https://www.shipbits.dev/",
+    "license": "N/A — curated factual compilation; see each record's source_url for evidence/source terms.",
+    "attribution": "Curated by ShipBits from current official websites and independent 2026 verification sources. Unknown facts are intentionally left null or 'unknown'; no endorsement implied."
+  },
+  "records": [
+    {
+      "name": "Launching Next",
+      "website_url": "https://www.launchingnext.com/",
+      "submission_url": "https://www.launchingnext.com/submit/",
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:launching-next",
+      "source_url": "https://favors.dev/startup-launch-directories/launching-next",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Product Hunt",
+      "website_url": "https://www.producthunt.com/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:product-hunt",
+      "source_url": "https://favors.dev/startup-launch-directories/product-hunt",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "PitchWall",
+      "website_url": "https://pitchwall.co/",
+      "submission_url": "https://pitchwall.co/submit",
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:pitchwall",
+      "source_url": "https://favors.dev/startup-launch-directories/pitchwall",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "freemium",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "BetaList",
+      "website_url": "https://betalist.com/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:betalist",
+      "source_url": "https://favors.dev/startup-launch-directories/betalist",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Crunchbase",
+      "website_url": "https://www.crunchbase.com/",
+      "submission_url": "https://www.crunchbase.com/add-new",
+      "channel_type": "directory",
+      "source_record_id": "favors:crunchbase",
+      "source_url": "https://favors.dev/startup-launch-directories/crunchbase",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Fazier",
+      "website_url": "https://fazier.com/",
+      "submission_url": "https://fazier.com/submit",
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:fazier",
+      "source_url": "https://favors.dev/startup-launch-directories/fazier",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "freemium",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Uneed",
+      "website_url": "https://www.uneed.best/",
+      "submission_url": "https://www.uneed.best/submit-a-tool",
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:uneed",
+      "source_url": "https://favors.dev/startup-launch-directories/uneed",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "PeerPush",
+      "website_url": "https://peerpush.net/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:peerpush",
+      "source_url": "https://favors.dev/startup-launch-directories/peerpush",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Open Launch",
+      "website_url": "https://open-launch.com/",
+      "submission_url": "https://open-launch.com/projects/submit",
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:open-launch",
+      "source_url": "https://favors.dev/startup-launch-directories/open-launch",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Startup Inspire",
+      "website_url": "https://www.startupinspire.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:startup-inspire",
+      "source_url": "https://favors.dev/startup-launch-directories/startup-inspire",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Peerlist",
+      "website_url": "https://peerlist.io/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:peerlist",
+      "source_url": "https://favors.dev/startup-launch-directories/peerlist",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "F6S",
+      "website_url": "https://www.f6s.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:f6s",
+      "source_url": "https://favors.dev/startup-launch-directories/f6s",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "EU-Startups",
+      "website_url": "https://www.eu-startups.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:eu-startups",
+      "source_url": "https://favors.dev/startup-launch-directories/eu-startups",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Startup Ranking",
+      "website_url": "https://www.startupranking.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:startup-ranking",
+      "source_url": "https://favors.dev/startup-launch-directories/startup-ranking",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "general-startup",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Indie Hackers",
+      "website_url": "https://www.indiehackers.com/",
+      "submission_url": "https://www.indiehackers.com/products/new",
+      "channel_type": "community",
+      "source_record_id": "favors:indie-hackers",
+      "source_url": "https://favors.dev/startup-launch-directories/indie-hackers",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Aura++",
+      "website_url": "https://auraplusplus.com/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:aura",
+      "source_url": "https://favors.dev/startup-launch-directories/aura",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "OpenHunts",
+      "website_url": "https://openhunts.com/",
+      "submission_url": "https://openhunts.com/projects/submit",
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:openhunts",
+      "source_url": "https://favors.dev/startup-launch-directories/openhunts",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "What Launched Today",
+      "website_url": "https://whatlaunched.today/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:what-launched-today",
+      "source_url": "https://favors.dev/startup-launch-directories/what-launched-today",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "TinyLaunch",
+      "website_url": "https://www.tinylaunch.com/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:tinylaunch",
+      "source_url": "https://favors.dev/startup-launch-directories/tinylaunch",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Tiny Startups",
+      "website_url": "https://www.tinystartups.com/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:tiny-startups",
+      "source_url": "https://favors.dev/startup-launch-directories/tiny-startups",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Launch Llama",
+      "website_url": "https://tools.launchllama.co/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:launch-llama",
+      "source_url": "https://favors.dev/startup-launch-directories/launch-llama",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "NickLaunches",
+      "website_url": "https://nicklaunches.com/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:nicklaunches",
+      "source_url": "https://favors.dev/startup-launch-directories/nicklaunches",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "10words",
+      "website_url": "https://10words.io/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:10words",
+      "source_url": "https://favors.dev/startup-launch-directories/10words",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "indie-maker",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Toolify",
+      "website_url": "https://www.toolify.ai/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:toolify",
+      "source_url": "https://favors.dev/startup-launch-directories/toolify",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "paid",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Findly.tools",
+      "website_url": "https://findly.tools/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:findly-tools",
+      "source_url": "https://favors.dev/startup-launch-directories/findly-tools",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Futurepedia",
+      "website_url": "https://www.futurepedia.io/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:futurepedia",
+      "source_url": "https://favors.dev/startup-launch-directories/futurepedia",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "paid",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Good AI Tools",
+      "website_url": "https://goodaitools.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:good-ai-tools",
+      "source_url": "https://favors.dev/startup-launch-directories/good-ai-tools",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Acid Tools",
+      "website_url": "https://acidtools.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:acid-tools",
+      "source_url": "https://favors.dev/startup-launch-directories/acid-tools",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "There's An AI For That",
+      "website_url": "https://theresanaiforthat.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:theresanaiforthat",
+      "source_url": "https://favors.dev/startup-launch-directories/theresanaiforthat",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "SoftwareSuggest",
+      "website_url": "https://www.softwaresuggest.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:softwaresuggest",
+      "source_url": "https://favors.dev/startup-launch-directories/softwaresuggest",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "reviews-comparison",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "AlternativeTo",
+      "website_url": "https://alternativeto.net/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:alternativeto",
+      "source_url": "https://favors.dev/startup-launch-directories/alternativeto",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "reviews-comparison",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "G2",
+      "website_url": "https://www.g2.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:g2",
+      "source_url": "https://favors.dev/startup-launch-directories/g2",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "reviews-comparison",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Crozdesk",
+      "website_url": "https://crozdesk.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:crozdesk",
+      "source_url": "https://favors.dev/startup-launch-directories/crozdesk",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "reviews-comparison",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Capterra",
+      "website_url": "https://www.capterra.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:capterra",
+      "source_url": "https://favors.dev/startup-launch-directories/capterra",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "reviews-comparison",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "DevHunt",
+      "website_url": "https://devhunt.org/",
+      "submission_url": null,
+      "channel_type": "launch_platform",
+      "source_record_id": "favors:devhunt",
+      "source_url": "https://favors.dev/startup-launch-directories/devhunt",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "developer-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "OpenAlternative",
+      "website_url": "https://openalternative.co/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:openalternative",
+      "source_url": "https://favors.dev/startup-launch-directories/openalternative",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "developer-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Indie Dev Tools",
+      "website_url": "https://indiedev.tools/",
+      "submission_url": "https://indiedev.tools/add-tool",
+      "channel_type": "directory",
+      "source_record_id": "favors:indie-dev-tools",
+      "source_url": "https://favors.dev/startup-launch-directories/indie-dev-tools",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "developer-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "StackShare",
+      "website_url": "https://stackshare.io/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:stackshare",
+      "source_url": "https://favors.dev/startup-launch-directories/stackshare",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "developer-tools",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Land-book",
+      "website_url": "https://land-book.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:land-book",
+      "source_url": "https://favors.dev/startup-launch-directories/land-book",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "paid",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Lapa Ninja",
+      "website_url": "https://www.lapa.ninja/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:lapa-ninja",
+      "source_url": "https://favors.dev/startup-launch-directories/lapa-ninja",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "design",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "SaaS Browser",
+      "website_url": "https://saasbrowser.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:saas-browser",
+      "source_url": "https://favors.dev/startup-launch-directories/saas-browser",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "saas",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "ShowMySites",
+      "website_url": "https://showmysites.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "favors:showmysites",
+      "source_url": "https://favors.dev/startup-launch-directories/showmysites",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "saas",
+        "pricing": "paid",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "Hacker News (Show HN)",
+      "website_url": "https://news.ycombinator.com/",
+      "submission_url": null,
+      "channel_type": "community",
+      "source_record_id": "favors:hacker-news-show-hn",
+      "source_url": "https://favors.dev/startup-launch-directories/hacker-news-show-hn",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "community",
+        "pricing": "free",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-06",
+        "notes": "Included in Favors.dev's verified 2026 launch atlas; ShipBits still imports it as unverified until its own verifier/admin review passes."
+      }
+    },
+    {
+      "name": "AppBuildersPH",
+      "website_url": "https://appbuildersph.com/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "official:appbuildersph",
+      "source_url": "https://www.appbuildersph.com/apps/",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "philippines-builder-community",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Current Filipino-maker app directory with a visible 'Submit an app' workflow. ShipBits should still verify before activation."
+      }
+    },
+    {
+      "name": "AI-Tools Directory",
+      "website_url": "https://ai-tools.directory",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:001",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AIChief",
+      "website_url": "https://aichief.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:002",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Corner",
+      "website_url": "https://aicorner.net",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:003",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AIDir",
+      "website_url": "https://aidir.wiki",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:004",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Directory",
+      "website_url": "https://aidirectory.wiki",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:005",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AiDirs",
+      "website_url": "https://aidirs.best",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:006",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Explore",
+      "website_url": "https://aiex.me",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:007",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI For Developers",
+      "website_url": "https://aifordevelopers.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:008",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Hubs",
+      "website_url": "https://aihubs.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:009",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Hustle",
+      "website_url": "https://aihustle.tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:010",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Parabellum",
+      "website_url": "https://aiparabellum.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:011",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI PEDIA HUB",
+      "website_url": "https://aipediahub.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:012",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Pulse",
+      "website_url": "https://www.aipulse.fyi",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:013",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Resource Pro",
+      "website_url": "https://airesource.pro",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:014",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Guru",
+      "website_url": "https://aitoolguru.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:015",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tool List",
+      "website_url": "https://www.aitoollist.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:016",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "aitools.inc",
+      "website_url": "https://aitools.inc",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:017",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Arena",
+      "website_url": "https://aitoolsarena.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:018",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Saver",
+      "website_url": "https://www.aitoolsaver.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:019",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Corner",
+      "website_url": "https://aitoolscorner.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:020",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Magazine",
+      "website_url": "https://aitoolsmagazine.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:021",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Tools Pin",
+      "website_url": "https://aitoolspin.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:022",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Top Tools",
+      "website_url": "https://aitoptools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:023",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "All The AI Tools",
+      "website_url": "https://alltheaitools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:024",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Altern AI",
+      "website_url": "https://altern.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:025",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Appscribed",
+      "website_url": "https://appscribed.com/product-list/",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:026",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Based Tools",
+      "website_url": "https://www.basedtools.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:027",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Best AI Tools org",
+      "website_url": "https://www.best-ai-tools.org",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:028",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Best of AI",
+      "website_url": "https://bestofai.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:029",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Best of Web",
+      "website_url": "https://www.bestofweb.site",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:030",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Direct2App",
+      "website_url": "https://www.direct2app.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:031",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "EveryDev.ai",
+      "website_url": "https://www.everydev.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:032",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Find An AI Tools",
+      "website_url": "https://findanaitools.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:033",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Find my AI Tool",
+      "website_url": "https://findmyaitool.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:034",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "FutureTools",
+      "website_url": "https://www.futuretools.io",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:035",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Insidr AI Directory",
+      "website_url": "https://www.insidr.ai/ai-tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:036",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "OpenFuture AI",
+      "website_url": "https://openfuture.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:037",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "OpenTools",
+      "website_url": "https://opentools.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:038",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "TopAI.tools",
+      "website_url": "https://topai.tools",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:039",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Agents Directory",
+      "website_url": "https://aiagentsdirectory.com",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:040",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "AI Agent Store",
+      "website_url": "https://aiagentstore.ai",
+      "submission_url": null,
+      "channel_type": "directory",
+      "source_record_id": "truvery:ai:041",
+      "source_url": "https://github.com/truvery/ai-tool-directories",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "ai-tools",
+        "pricing": "unknown",
+        "verification_status": "verified-by-source",
+        "verification_date": "2026-07",
+        "notes": "Listed in truvery/ai-tool-directories, whose maintainer states every included link was checked in July 2026. Pricing/submission mechanics intentionally left unknown unless separately verified."
+      }
+    },
+    {
+      "name": "Google Play",
+      "website_url": "https://play.google.com/store/apps",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "official:086",
+      "source_url": "https://support.google.com/googleplay/android-developer/answer/9859348?hl=en",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "mobile-app-store",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Apple App Store",
+      "website_url": "https://www.apple.com/app-store/",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "official:087",
+      "source_url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "mobile-app-store",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Chrome Web Store",
+      "website_url": "https://chromewebstore.google.com/",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "official:088",
+      "source_url": "https://developer.chrome.com/docs/webstore",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "browser-extension-store",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Microsoft Edge Add-ons",
+      "website_url": "https://microsoftedge.microsoft.com/addons",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "official:089",
+      "source_url": "https://learn.microsoft.com/en-us/microsoft-edge/extensions/publish/publish-extension",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "browser-extension-store",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Firefox Add-ons",
+      "website_url": "https://addons.mozilla.org/",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "official:090",
+      "source_url": "https://extensionworkshop.com/",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "browser-extension-store",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Shopify App Store",
+      "website_url": "https://apps.shopify.com/",
+      "submission_url": null,
+      "channel_type": "app_store",
+      "source_record_id": "official:091",
+      "source_url": "https://shopify.dev/docs/apps/launch/app-store-review/submit-app-for-review",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-app-store",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Salesforce AppExchange",
+      "website_url": "https://appexchange.salesforce.com/",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:092",
+      "source_url": "https://appexchange.salesforce.com/",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Slack Marketplace",
+      "website_url": "https://slack.com/marketplace",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:093",
+      "source_url": "https://api.slack.com/slack-marketplace/using",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Atlassian Marketplace",
+      "website_url": "https://marketplace.atlassian.com/",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:094",
+      "source_url": "https://developer.atlassian.com/platform/marketplace/selling-on-marketplace/",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Google Workspace Marketplace",
+      "website_url": "https://workspace.google.com/marketplace",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:095",
+      "source_url": "https://developers.google.com/workspace/marketplace/how-to-publish",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "GitHub Marketplace",
+      "website_url": "https://github.com/marketplace",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:096",
+      "source_url": "https://docs.github.com/en/apps/github-marketplace/listing-an-app-on-github-marketplace",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "developer-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Zapier App Directory",
+      "website_url": "https://zapier.com/apps",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:097",
+      "source_url": "https://docs.zapier.com/integrations/publish/public-integration",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "HubSpot App Marketplace",
+      "website_url": "https://ecosystem.hubspot.com/marketplace/apps",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:098",
+      "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/list-apps/listing-your-app/listing-your-app",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "Pipedrive Marketplace",
+      "website_url": "https://www.pipedrive.com/en/marketplace",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:099",
+      "source_url": "https://www.pipedrive.com/en/marketplace",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "integration-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    },
+    {
+      "name": "RapidAPI Hub",
+      "website_url": "https://rapidapi.com/hub",
+      "submission_url": null,
+      "channel_type": "marketplace",
+      "source_record_id": "official:100",
+      "source_url": "https://docs.rapidapi.com/docs/what-is-rapidapi",
+      "observed_at": "2026-08-31T11:26:10.158473Z",
+      "raw_data": {
+        "source_category": "api-marketplace",
+        "pricing": "unknown",
+        "verification_status": "official-current",
+        "verification_date": "2026-08-31",
+        "notes": "Official store/marketplace or official publishing documentation. Pricing is intentionally left unknown because developer/listing fees and product pricing vary by program."
+      }
+    }
+  ]
+}
