@@ -14,6 +14,7 @@
     "distribution:verify": "tsx scripts/distribution/verify.ts",
     "distribution:classify": "tsx scripts/distribution/classify.ts",
     "distribution:test": "tsx --test tests/distribution.test.ts tests/distribution-finder.test.ts tests/safe-fetch.test.ts",
+    "upvotes:test": "tsx --test tests/upvotes.test.ts",
     "distribution:status": "tsx scripts/distribution/status.ts"
   },
   "dependencies": {

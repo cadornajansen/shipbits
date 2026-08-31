@@ -1,12 +1,22 @@
 "use server"
 
 import { randomUUID } from "node:crypto"
+import { cookies } from "next/headers"
 import { invalidatePublicProducts } from "@/features/products/public-cache"
 
-import { attachQrPhPayment, createQrPhPayment, retrievePaymentIntent } from "@/lib/paymongo/qrph"
+import {
+  createGuestUpvoteToken,
+  GUEST_UPVOTE_COOKIE,
+  hashGuestUpvoteToken,
+  isGuestUpvoteToken,
+} from "@/features/upvotes/guest"
+import {
+  attachQrPhPayment,
+  createQrPhPayment,
+  retrievePaymentIntent,
+} from "@/lib/paymongo/qrph"
 import { getCurrentUser } from "@/lib/supabase/auth"
 import { createAdminClient } from "@/lib/supabase/admin"
-import { createClient } from "@/lib/supabase/server"
 import { consumeRateLimit } from "@/lib/security/rate-limit"
 
 type UpvoteCheckoutResult =
@@ -19,13 +29,64 @@ type UpvoteCheckoutResult =
     }
   | { error: string; ok: false }
 
+type UpvoteOwner =
+  | { kind: "user"; rateLimitIdentifier: string; userId: string }
+  | { kind: "visitor"; rateLimitIdentifier: string; visitorIdHash: string }
+
+function getGuestUpvoteSecret() {
+  const secret =
+    process.env.UPVOTE_VISITOR_TOKEN_SECRET ||
+    process.env.PUBLIC_RATE_LIMIT_SALT ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY
+
+  if (!secret) throw new Error("Guest upvotes are not configured.")
+  return secret
+}
+
+async function getUpvoteOwner(
+  userId: string | undefined
+): Promise<UpvoteOwner> {
+  if (userId) {
+    return {
+      kind: "user",
+      rateLimitIdentifier: userId,
+      userId,
+    }
+  }
+
+  const cookieStore = await cookies()
+  const existingToken = cookieStore.get(GUEST_UPVOTE_COOKIE)?.value
+  const token = isGuestUpvoteToken(existingToken)
+    ? existingToken
+    : createGuestUpvoteToken()
+
+  if (token !== existingToken) {
+    cookieStore.set(GUEST_UPVOTE_COOKIE, token, {
+      httpOnly: true,
+      maxAge: 60 * 60 * 24 * 30,
+      path: "/",
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+    })
+  }
+
+  const visitorIdHash = hashGuestUpvoteToken(token, getGuestUpvoteSecret())
+  return {
+    kind: "visitor",
+    rateLimitIdentifier: visitorIdHash,
+    visitorIdHash,
+  }
+}
+
 function wholePesosToCentavos(value: string) {
   const amount = value.trim()
   if (!/^\d+$/.test(amount)) return null
 
   const amountCentavos = Number(amount) * 100
 
-  return Number.isSafeInteger(amountCentavos) && amountCentavos >= 100 && amountCentavos <= 1_000_000
+  return Number.isSafeInteger(amountCentavos) &&
+    amountCentavos >= 100 &&
+    amountCentavos <= 1_000_000
     ? amountCentavos
     : null
 }
@@ -68,10 +129,18 @@ export async function startProductUpvotePaymentAction(
   amountPesos: string
 ): Promise<UpvoteCheckoutResult> {
   const user = await getCurrentUser()
-  if (!user) return { error: "Sign in to upvote a product.", ok: false }
-  const rateLimit = await consumeRateLimit({ action: "upvote-payment", userId: user.id })
+  const owner = await getUpvoteOwner(user?.id)
+  const rateLimit = await consumeRateLimit({
+    action: "upvote-payment",
+    userId: owner.rateLimitIdentifier,
+  })
   if (!rateLimit.allowed) {
-    return { error: "Too many payment attempts. Please try again later.", ok: false }
+    return {
+      error: rateLimit.unavailable
+        ? "Upvotes are temporarily unavailable. Please try again shortly."
+        : "Too many payment attempts. Please try again later.",
+      ok: false,
+    }
   }
 
   const amountCentavos = wholePesosToCentavos(amountPesos)
@@ -90,15 +159,21 @@ export async function startProductUpvotePaymentAction(
     .eq("moderation_status", "published")
     .is("archived_at", null)
     .maybeSingle()
-  if (!product) return { error: "This product is no longer available.", ok: false }
+  if (!product)
+    return { error: "This product is no longer available.", ok: false }
 
-  const { data: activePayment } = await admin
+  let activePaymentQuery = admin
     .from("product_upvotes")
     .select("id, amount_centavos, provider_payment_intent_id")
     .eq("product_id", productId)
-    .eq("user_id", user.id)
     .eq("status", "pending")
-    .maybeSingle()
+
+  activePaymentQuery =
+    owner.kind === "user"
+      ? activePaymentQuery.eq("user_id", owner.userId)
+      : activePaymentQuery.eq("visitor_id_hash", owner.visitorIdHash)
+
+  const { data: activePayment } = await activePaymentQuery.maybeSingle()
 
   if (activePayment) {
     try {
@@ -123,10 +198,15 @@ export async function startProductUpvotePaymentAction(
     product_id: productId,
     provider_payment_intent_id: `pending:${paymentId}`,
     status: "pending",
-    user_id: user.id,
+    ...(owner.kind === "user"
+      ? { user_id: owner.userId }
+      : { visitor_id_hash: owner.visitorIdHash }),
   })
   if (pendingError) {
-    return { error: "A payment is already being prepared. Please try again.", ok: false }
+    return {
+      error: "A payment is already being prepared. Please try again.",
+      ok: false,
+    }
   }
 
   try {
@@ -162,17 +242,19 @@ export async function startProductUpvotePaymentAction(
 
 export async function getProductUpvotePaymentStatusAction(paymentId: string) {
   const user = await getCurrentUser()
-  if (!user) {
-    return { error: "Sign in to view payment status.", ok: false as const }
-  }
-
-  const supabase = await createClient()
-  const { data, error } = await supabase
+  const owner = await getUpvoteOwner(user?.id)
+  const admin = createAdminClient()
+  let statusQuery = admin
     .from("product_upvotes")
     .select("status")
     .eq("id", paymentId)
-    .eq("user_id", user.id)
-    .maybeSingle()
+
+  statusQuery =
+    owner.kind === "user"
+      ? statusQuery.eq("user_id", owner.userId)
+      : statusQuery.eq("visitor_id_hash", owner.visitorIdHash)
+
+  const { data, error } = await statusQuery.maybeSingle()
   if (error || !data) {
     return { error: "Payment status is unavailable.", ok: false as const }
   }
