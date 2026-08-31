@@ -16,13 +16,18 @@ type FetchErrorCode =
 
 const errorMessages: Record<FetchErrorCode, string> = {
   invalid_url: "Enter a public http or https website URL using port 80 or 443.",
-  blocked_target: "Only public websites can be checked. Local or private-network addresses are not allowed.",
-  dns_failure: "This website's public address could not be resolved. Check the URL and try again.",
-  fetch_failed: "The website could not be reached. It may be offline or blocking automated requests.",
+  blocked_target:
+    "Only public websites can be checked. Local or private-network addresses are not allowed.",
+  dns_failure:
+    "This website's public address could not be resolved. Check the URL and try again.",
+  fetch_failed:
+    "The website could not be reached. It may be offline or blocking automated requests.",
   timeout: "The website took too long to respond. Please try again later.",
   too_large: "The page is too large for this lightweight checker.",
-  invalid_response: "The website did not return a readable page for this checker.",
-  too_many_redirects: "The website redirects too many times. Try its final public URL.",
+  invalid_response:
+    "The website did not return a readable page for this checker.",
+  too_many_redirects:
+    "The website redirects too many times. Try its final public URL.",
 }
 
 export class SafeFetchError extends Error {
@@ -39,10 +44,17 @@ export type SafeTextResponse = {
   status: number
   headers: IncomingHttpHeaders
   body: string
+  truncated?: boolean
 }
 
-type TransportResponse = Omit<SafeTextResponse, "url" | "body"> & { body: Buffer }
-type TransportOptions = { maxBytes: number; timeoutMs: number }
+type TransportResponse = Omit<SafeTextResponse, "url" | "body"> & {
+  body: Buffer
+}
+type TransportOptions = {
+  allowTruncated: boolean
+  maxBytes: number
+  timeoutMs: number
+}
 
 export type SafeFetchDependencies = {
   resolve: (hostname: string) => Promise<ResolvedAddress[]>
@@ -54,16 +66,20 @@ export type SafeFetchDependencies = {
 }
 
 export type SafeFetchOptions = {
+  allowTruncated?: boolean
   maxBytes?: number
   timeoutMs?: number
   maxRedirects?: number
   sameOrigin?: string
 }
 
-export type SafeBufferResponse = Omit<SafeTextResponse, "body"> & { body: Buffer }
+export type SafeBufferResponse = Omit<SafeTextResponse, "body"> & {
+  body: Buffer
+}
 
 const redirectStatuses = new Set([301, 302, 303, 307, 308])
-const privateNames = /(?:^|\.)(?:localhost|local|internal|intranet|lan|home|test|invalid|onion)$/i
+const privateNames =
+  /(?:^|\.)(?:localhost|local|internal|intranet|lan|home|test|invalid|onion)$/i
 
 export function isPublicIpAddress(value: string): boolean {
   if (!isIP(value)) return false
@@ -139,7 +155,7 @@ async function resolvePublicAddress(
 function requestPinnedUrl(
   url: URL,
   address: ResolvedAddress,
-  { maxBytes, timeoutMs }: TransportOptions
+  { allowTruncated, maxBytes, timeoutMs }: TransportOptions
 ): Promise<TransportResponse> {
   return new Promise((resolve, reject) => {
     const request = (url.protocol === "https:" ? httpsRequest : httpRequest)(
@@ -151,7 +167,8 @@ function requestPinnedUrl(
         maxHeaderSize: 16 * 1024,
         method: "GET",
         headers: {
-          Accept: "text/html,application/xhtml+xml,application/xml,text/xml,text/plain;q=0.9",
+          Accept:
+            "text/html,application/xhtml+xml,application/xml,text/xml,text/plain;q=0.9",
           "Accept-Encoding": "identity",
           "User-Agent": "ShipBitsLaunchChecker/1.0",
         },
@@ -167,8 +184,15 @@ function requestPinnedUrl(
 
         const length = Number(response.headers["content-length"] ?? 0)
         const encoding = response.headers["content-encoding"]?.toLowerCase()
-        if (length > maxBytes || (encoding && encoding !== "identity")) {
-          request.destroy(new SafeFetchError(length > maxBytes ? "too_large" : "invalid_response"))
+        if (
+          (length > maxBytes && !allowTruncated) ||
+          (encoding && encoding !== "identity")
+        ) {
+          request.destroy(
+            new SafeFetchError(
+              length > maxBytes ? "too_large" : "invalid_response"
+            )
+          )
           return
         }
 
@@ -177,6 +201,19 @@ function requestPinnedUrl(
         response.on("data", (chunk: Buffer) => {
           bytes += chunk.length
           if (bytes > maxBytes) {
+            if (allowTruncated) {
+              const remaining = maxBytes - (bytes - chunk.length)
+              if (remaining > 0) chunks.push(chunk.subarray(0, remaining))
+              clearTimeout(timer)
+              resolve({
+                status,
+                headers: response.headers,
+                body: Buffer.concat(chunks),
+                truncated: true,
+              })
+              response.destroy()
+              return
+            }
             request.destroy(new SafeFetchError("too_large"))
             return
           }
@@ -184,20 +221,35 @@ function requestPinnedUrl(
         })
         response.once("end", () => {
           clearTimeout(timer)
-          resolve({ status, headers: response.headers, body: Buffer.concat(chunks) })
+          resolve({
+            status,
+            headers: response.headers,
+            body: Buffer.concat(chunks),
+          })
         })
         response.once("error", (error: Error) => {
           clearTimeout(timer)
-          reject(error instanceof SafeFetchError ? error : new SafeFetchError("fetch_failed"))
+          reject(
+            error instanceof SafeFetchError
+              ? error
+              : new SafeFetchError("fetch_failed")
+          )
         })
       }
     )
 
     // A wall-clock timer also covers TCP/TLS setup; socket idle timeouts do not.
-    const timer = setTimeout(() => request.destroy(new SafeFetchError("timeout")), timeoutMs)
+    const timer = setTimeout(
+      () => request.destroy(new SafeFetchError("timeout")),
+      timeoutMs
+    )
     request.once("error", (error: Error) => {
       clearTimeout(timer)
-      reject(error instanceof SafeFetchError ? error : new SafeFetchError("fetch_failed"))
+      reject(
+        error instanceof SafeFetchError
+          ? error
+          : new SafeFetchError("fetch_failed")
+      )
     })
     request.end()
   })
@@ -206,19 +258,28 @@ function requestPinnedUrl(
 const defaultDependencies: SafeFetchDependencies = {
   resolve: async (hostname) => {
     const addresses = await lookup(hostname, { all: true, verbatim: true })
-    return addresses.map(({ address, family }) => ({ address, family: family as 4 | 6 }))
+    return addresses.map(({ address, family }) => ({
+      address,
+      family: family as 4 | 6,
+    }))
   },
   transport: requestPinnedUrl,
 }
 
-async function withinDeadline<T>(promise: Promise<T>, milliseconds: number): Promise<T> {
+async function withinDeadline<T>(
+  promise: Promise<T>,
+  milliseconds: number
+): Promise<T> {
   if (milliseconds <= 0) throw new SafeFetchError("timeout")
   let timer: ReturnType<typeof setTimeout> | undefined
   try {
     return await Promise.race([
       promise,
       new Promise<never>((_resolve, reject) => {
-        timer = setTimeout(() => reject(new SafeFetchError("timeout")), milliseconds)
+        timer = setTimeout(
+          () => reject(new SafeFetchError("timeout")),
+          milliseconds
+        )
       }),
     ])
   } finally {
@@ -241,6 +302,7 @@ export async function safeFetchBuffer(
   dependencies: SafeFetchDependencies = defaultDependencies
 ): Promise<SafeBufferResponse> {
   const maxBytes = options.maxBytes ?? 1_000_000
+  const allowTruncated = options.allowTruncated ?? false
   const maxRedirects = options.maxRedirects ?? 3
   const deadline = Date.now() + (options.timeoutMs ?? 10_000)
   let url = parsePublicUrl(value)
@@ -259,22 +321,36 @@ export async function safeFetchBuffer(
 
     // Keep the URL hostname for Host/TLS, but the connection uses only this pinned IP.
     const response = await withinDeadline(
-      dependencies.transport(url, address, { maxBytes, timeoutMs: remaining }),
+      dependencies.transport(url, address, {
+        allowTruncated,
+        maxBytes,
+        timeoutMs: remaining,
+      }),
       remaining
     )
     if (!redirectStatuses.has(response.status)) {
-      if (response.body.byteLength > maxBytes) {
+      if (response.body.byteLength > maxBytes && !allowTruncated) {
         throw new SafeFetchError("too_large")
       }
-      return { ...response, body: response.body, url: url.toString() }
+      const truncated =
+        response.truncated || response.body.byteLength > maxBytes
+      return {
+        ...response,
+        body: truncated ? response.body.subarray(0, maxBytes) : response.body,
+        truncated,
+        url: url.toString(),
+      }
     }
 
     if (!response.headers.location) throw new SafeFetchError("invalid_response")
-    if (redirects === maxRedirects) throw new SafeFetchError("too_many_redirects")
+    if (redirects === maxRedirects)
+      throw new SafeFetchError("too_many_redirects")
     try {
       url = parsePublicUrl(new URL(response.headers.location, url).toString())
     } catch (error) {
-      throw error instanceof SafeFetchError ? error : new SafeFetchError("invalid_url")
+      throw error instanceof SafeFetchError
+        ? error
+        : new SafeFetchError("invalid_url")
     }
   }
 

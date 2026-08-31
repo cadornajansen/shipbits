@@ -17,6 +17,26 @@ export const generatedProductSchema = z.object({
 
 export type GeneratedProduct = z.infer<typeof generatedProductSchema>
 
+const distributionProfileSchema = z.object({
+  audiences: z.array(z.string()).max(5),
+  categories: z.array(z.string()).max(5),
+  platforms: z.array(z.string()).max(5),
+  productTypes: z.array(z.string()).max(5),
+  regions: z.array(z.string()).max(5),
+})
+
+export type AssemblyAiDistributionProfile = z.infer<
+  typeof distributionProfileSchema
+>
+
+export type DistributionTaxonomySlugs = {
+  audiences: string[]
+  categories: string[]
+  platforms: string[]
+  productTypes: string[]
+  regions: string[]
+}
+
 type GatewayErrorPayload = {
   code?: number
   error?: string
@@ -64,6 +84,37 @@ function getValidationErrors(payload: GatewayErrorPayload) {
   }
 
   return errors.filter((error): error is string => typeof error === "string")
+}
+
+function taxonomyArraySchema(values: string[]) {
+  return {
+    items: {
+      enum: values.length ? values : ["__unavailable__"],
+      type: "string",
+    },
+    type: "array",
+  }
+}
+
+function distributionResponseSchema(taxonomy: DistributionTaxonomySlugs) {
+  return {
+    additionalProperties: false,
+    properties: {
+      audiences: taxonomyArraySchema(taxonomy.audiences),
+      categories: taxonomyArraySchema(taxonomy.categories),
+      platforms: taxonomyArraySchema(taxonomy.platforms),
+      productTypes: taxonomyArraySchema(taxonomy.productTypes),
+      regions: taxonomyArraySchema(taxonomy.regions),
+    },
+    required: [
+      "productTypes",
+      "categories",
+      "audiences",
+      "platforms",
+      "regions",
+    ],
+    type: "object",
+  }
 }
 
 function formatGatewayError({
@@ -168,5 +219,83 @@ export async function generateProductFromEvidence({
     throw new Error("AssemblyAI returned invalid product metadata.")
   }
 
+  return parsed.data
+}
+
+export async function classifyDistributionEvidence({
+  domain,
+  evidence,
+  taxonomy,
+}: {
+  domain: string
+  evidence: string
+  taxonomy: DistributionTaxonomySlugs
+}): Promise<AssemblyAiDistributionProfile> {
+  const model = process.env.ASSEMBLYAI_LLM_MODEL || "gpt-5.6-luna"
+  const response = await fetch(
+    "https://llm-gateway.assemblyai.com/v1/chat/completions",
+    {
+      body: JSON.stringify({
+        max_tokens: 500,
+        messages: [
+          {
+            content:
+              "Classify a product using only the supplied public website evidence. Select only the exact controlled taxonomy slugs allowed by the response schema. Omit uncertain matches. Do not infer customer claims, pricing, geography, or integrations. This output classifies the product only; it must never rank distribution channels.",
+            role: "system",
+          },
+          {
+            content: `Domain: ${domain}\n\nWebsite evidence:\n${evidence.slice(0, 12_000)}`,
+            role: "user",
+          },
+        ],
+        model,
+        response_format: {
+          json_schema: {
+            name: "shipbits_distribution_profile",
+            schema: distributionResponseSchema(taxonomy),
+            strict: true,
+          },
+          type: "json_schema",
+        },
+      }),
+      headers: {
+        Authorization: getApiKey(),
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      signal: AbortSignal.timeout(20_000),
+    }
+  )
+
+  const responseText = await response.text()
+  const payload = (() => {
+    try {
+      return JSON.parse(responseText)
+    } catch {
+      return null
+    }
+  })() as
+    | (GatewayErrorPayload & {
+        choices?: Array<{ message?: { content?: string } }>
+      })
+    | null
+
+  if (!response.ok) {
+    throw new Error(
+      formatGatewayError({
+        payload,
+        requestId: response.headers.get("x-request-id"),
+        status: response.status,
+      })
+    )
+  }
+
+  const content = payload?.choices?.[0]?.message?.content
+  if (!content) throw new Error("AssemblyAI returned no distribution profile.")
+  const parsed = distributionProfileSchema.safeParse(
+    JSON.parse(content) as unknown
+  )
+  if (!parsed.success)
+    throw new Error("AssemblyAI returned an invalid distribution profile.")
   return parsed.data
 }

@@ -4,7 +4,10 @@ const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   { key: "X-Frame-Options", value: "DENY" },
-  { key: "Permissions-Policy", value: "camera=(), geolocation=(), microphone=()" },
+  {
+    key: "Permissions-Policy",
+    value: "camera=(), geolocation=(), microphone=()",
+  },
 ]
 
 if (process.env.NODE_ENV === "production") {
@@ -15,6 +18,15 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: "t3.gstatic.com",
+        pathname: "/faviconV2",
+        protocol: "https",
+      },
+    ],
+  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }]
   },
