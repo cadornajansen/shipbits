@@ -1,5 +1,9 @@
 packages: []
 
+overrides:
+  next>postcss: 8.5.26
+  next>sharp: 0.35.0
+
 allowBuilds:
   sharp: true
   unrs-resolver: true

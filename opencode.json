@@ -4,16 +4,38 @@
   "model": "assemblyai/gpt-5.6-luna",
   "small_model": "assemblyai/gpt-5-mini",
 
+  "plugin": ["@upstash/context7-opencode"],
+
   "compaction": {
     "auto": true,
     "prune": true,
     "reserved": 10000
   },
+
   "agent": {
+    "build": {
+      "mode": "primary",
+      "permission": {
+        "task": {
+          "*": "deny",
+          "explore": "allow"
+        }
+      }
+    },
+
+    "plan": {
+      "mode": "primary",
+      "model": "assemblyai/gpt-5.6-sol",
+      "steps": 8,
+      "permission": {
+        "task": "deny"
+      }
+    },
+
     "explore": {
       "description": "Fast read-only repository exploration",
       "mode": "subagent",
-      "model": "assemblyai/gpt-5-mini",
+      "model": "opencode/mimo-v2.5-free",
       "steps": 8,
       "permission": {
         "read": "allow",
@@ -21,21 +43,14 @@
         "grep": "allow",
         "lsp": "allow",
         "list": "allow",
+
         "edit": "deny",
         "bash": "deny",
         "task": "deny",
         "webfetch": "deny",
-        "websearch": "deny"
+        "websearch": "deny",
+        "skill": "deny"
       }
-    },
-
-    "plan": {
-      "model": "assemblyai/gpt-5-mini",
-      "steps": 8
-    },
-
-    "build": {
-      "model": "assemblyai/gpt-5.6-luna"
     }
   },
 
