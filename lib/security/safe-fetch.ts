@@ -41,7 +41,7 @@ export type SafeTextResponse = {
   body: string
 }
 
-type TransportResponse = Omit<SafeTextResponse, "url">
+type TransportResponse = Omit<SafeTextResponse, "url" | "body"> & { body: Buffer }
 type TransportOptions = { maxBytes: number; timeoutMs: number }
 
 export type SafeFetchDependencies = {
@@ -59,6 +59,8 @@ export type SafeFetchOptions = {
   maxRedirects?: number
   sameOrigin?: string
 }
+
+export type SafeBufferResponse = Omit<SafeTextResponse, "body"> & { body: Buffer }
 
 const redirectStatuses = new Set([301, 302, 303, 307, 308])
 const privateNames = /(?:^|\.)(?:localhost|local|internal|intranet|lan|home|test|invalid|onion)$/i
@@ -158,7 +160,7 @@ function requestPinnedUrl(
         const status = response.statusCode ?? 0
         if (status < 200 || status >= 300) {
           clearTimeout(timer)
-          resolve({ status, headers: response.headers, body: "" })
+          resolve({ status, headers: response.headers, body: Buffer.alloc(0) })
           response.destroy()
           return
         }
@@ -182,7 +184,7 @@ function requestPinnedUrl(
         })
         response.once("end", () => {
           clearTimeout(timer)
-          resolve({ status, headers: response.headers, body: Buffer.concat(chunks).toString("utf8") })
+          resolve({ status, headers: response.headers, body: Buffer.concat(chunks) })
         })
         response.once("error", (error: Error) => {
           clearTimeout(timer)
@@ -229,6 +231,15 @@ export async function safeFetchText(
   options: SafeFetchOptions = {},
   dependencies: SafeFetchDependencies = defaultDependencies
 ): Promise<SafeTextResponse> {
+  const response = await safeFetchBuffer(value, options, dependencies)
+  return { ...response, body: response.body.toString("utf8") }
+}
+
+export async function safeFetchBuffer(
+  value: string,
+  options: SafeFetchOptions = {},
+  dependencies: SafeFetchDependencies = defaultDependencies
+): Promise<SafeBufferResponse> {
   const maxBytes = options.maxBytes ?? 1_000_000
   const maxRedirects = options.maxRedirects ?? 3
   const deadline = Date.now() + (options.timeoutMs ?? 10_000)
@@ -252,10 +263,10 @@ export async function safeFetchText(
       remaining
     )
     if (!redirectStatuses.has(response.status)) {
-      if (Buffer.byteLength(response.body, "utf8") > maxBytes) {
+      if (response.body.byteLength > maxBytes) {
         throw new SafeFetchError("too_large")
       }
-      return { ...response, url: url.toString() }
+      return { ...response, body: response.body, url: url.toString() }
     }
 
     if (!response.headers.location) throw new SafeFetchError("invalid_response")

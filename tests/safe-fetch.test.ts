@@ -6,6 +6,7 @@ import {
   isPublicIpAddress,
   parsePublicUrl,
   SafeFetchError,
+  safeFetchBuffer,
   safeFetchText,
   type SafeFetchDependencies,
 } from "../lib/security/safe-fetch"
@@ -15,7 +16,7 @@ const publicAddress = { address: "1.1.1.1", family: 4 as const }
 function fakeNetwork(overrides: Partial<SafeFetchDependencies> = {}): SafeFetchDependencies {
   return {
     resolve: async () => [publicAddress],
-    transport: async () => ({ status: 200, headers: { "content-type": "text/html" }, body: "<h1>Hello</h1>" }),
+    transport: async () => ({ status: 200, headers: { "content-type": "text/html" }, body: Buffer.from("<h1>Hello</h1>") }),
     ...overrides,
   }
 }
@@ -80,11 +81,19 @@ test("pins the verified IP while preserving the URL hostname and TLS target", as
         assert.equal(error, null)
         assert.deepEqual(result, [publicAddress])
       })
-      return { status: 200, headers: {}, body: "ok" }
+      return { status: 200, headers: {}, body: Buffer.from("ok") }
     },
   }))
   assert.equal(lookups, 1)
   assert.equal(response.body, "ok")
+})
+
+test("preserves binary response bytes", async () => {
+  const body = Buffer.from([0, 255, 137, 80, 78, 71])
+  const response = await safeFetchBuffer("https://example.com/image.png", {}, fakeNetwork({
+    transport: async () => ({ status: 200, headers: { "content-type": "image/png" }, body }),
+  }))
+  assert.deepEqual(response.body, body)
 })
 
 test("blocks a private-network redirect before the second connection", async () => {
@@ -92,7 +101,7 @@ test("blocks a private-network redirect before the second connection", async () 
   await assert.rejects(safeFetchText("https://example.com/", {}, fakeNetwork({
     transport: async () => {
       connections += 1
-      return { status: 302, headers: { location: "http://169.254.169.254/latest/meta-data/" }, body: "" }
+      return { status: 302, headers: { location: "http://169.254.169.254/latest/meta-data/" }, body: Buffer.alloc(0) }
     },
   })), { code: "blocked_target" })
   assert.equal(connections, 1)
@@ -105,7 +114,7 @@ test("re-resolves and rejects DNS rebinding even on same-host redirects", async 
     resolve: async () => ++lookups === 1 ? [publicAddress] : [{ address: "127.0.0.1", family: 4 }],
     transport: async () => {
       connections += 1
-      return { status: 302, headers: { location: "/next" }, body: "" }
+      return { status: 302, headers: { location: "/next" }, body: Buffer.alloc(0) }
     },
   })), { code: "blocked_target" })
   assert.equal(lookups, 2)
@@ -114,16 +123,27 @@ test("re-resolves and rejects DNS rebinding even on same-host redirects", async 
 
 test("same-origin probes refuse even public cross-origin redirects", async () => {
   await assert.rejects(safeFetchText("https://example.com/robots.txt", { sameOrigin: "https://example.com" }, fakeNetwork({
-    transport: async () => ({ status: 302, headers: { location: "https://elsewhere.example/robots.txt" }, body: "" }),
+    transport: async () => ({ status: 302, headers: { location: "https://elsewhere.example/robots.txt" }, body: Buffer.alloc(0) }),
   })), { code: "blocked_target" })
+})
+
+test("binary fetches use the same redirect protections", async () => {
+  let connections = 0
+  await assert.rejects(safeFetchBuffer("https://example.com/image.png", {}, fakeNetwork({
+    transport: async () => {
+      connections += 1
+      return { status: 302, headers: { location: "http://127.0.0.1/image.png" }, body: Buffer.alloc(0) }
+    },
+  })), { code: "blocked_target" })
+  assert.equal(connections, 1)
 })
 
 test("bounds redirects, response bytes and DNS time", async () => {
   await assert.rejects(safeFetchText("https://example.com/", { maxRedirects: 1 }, fakeNetwork({
-    transport: async () => ({ status: 302, headers: { location: "/again" }, body: "" }),
+    transport: async () => ({ status: 302, headers: { location: "/again" }, body: Buffer.alloc(0) }),
   })), { code: "too_many_redirects" })
   await assert.rejects(safeFetchText("https://example.com/", { maxBytes: 2 }, fakeNetwork({
-    transport: async () => ({ status: 200, headers: {}, body: "₱" }),
+    transport: async () => ({ status: 200, headers: {}, body: Buffer.from("₱") }),
   })), { code: "too_large" })
   await assert.rejects(safeFetchText("https://example.com/", { timeoutMs: 5 }, fakeNetwork({
     resolve: () => new Promise(() => {}),

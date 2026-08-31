@@ -22,6 +22,7 @@ import {
 import { createAdminClient } from "@/lib/supabase/admin"
 import { requireUser } from "@/lib/supabase/auth"
 import { createClient } from "@/lib/supabase/server"
+import { consumeRateLimit } from "@/lib/security/rate-limit"
 import {
   deleteProductObject,
   uploadRemoteSubmissionImage,
@@ -232,6 +233,10 @@ export async function startSubmissionPaymentAction(
   amountPesos: string
 ): Promise<CheckoutResult> {
   const user = await requireUser()
+  const rateLimit = await consumeRateLimit({ action: "listing-payment", userId: user.id })
+  if (!rateLimit.allowed) {
+    return { error: "Too many payment attempts. Please try again later.", ok: false }
+  }
   const amountCentavos = pesosToCentavos(amountPesos)
   if (!amountCentavos) {
     return {
@@ -469,7 +474,11 @@ export async function autocompleteSubmissionAction(websiteUrl: string): Promise<
     }
   | { error: string; ok: false }
 > {
-  await requireUser()
+  const user = await requireUser()
+  const rateLimit = await consumeRateLimit({ action: "autocomplete", userId: user.id })
+  if (!rateLimit.allowed) {
+    return { error: "Autocomplete is temporarily limited. Please try again later.", ok: false }
+  }
 
   try {
     const data = await extractProductMetadata(websiteUrl)

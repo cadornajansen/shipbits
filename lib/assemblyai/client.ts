@@ -125,6 +125,7 @@ export async function generateProductFromEvidence({
         "Content-Type": "application/json",
       },
       method: "POST",
+      signal: AbortSignal.timeout(45_000),
     }
   )
 

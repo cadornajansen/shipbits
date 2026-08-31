@@ -3,6 +3,7 @@ import { newsletterSchema } from "@/features/newsletter/validation"
 import { enforcePublicRateLimit } from "@/lib/security/rate-limit"
 import { readJsonBody, RequestBodyError } from "@/lib/security/request"
 import { createAdminClient } from "@/lib/supabase/admin"
+import { logServerError } from "@/lib/observability/logger"
 
 export const runtime = "nodejs"
 
@@ -36,7 +37,7 @@ export async function POST(request: Request): Promise<Response> {
     }
 
     // Do not include an email address or provider error payload in public logs.
-    console.error("[newsletter] Signup persistence unavailable.")
+    logServerError("newsletter_signup_failed")
     return Response.json(
       {
         ok: false,

@@ -42,6 +42,7 @@ export async function paymongoRequest<T>({
       ...(idempotencyKey ? { "Idempotency-Key": idempotencyKey } : {}),
     },
     method,
+    signal: AbortSignal.timeout(15_000),
   })
 
   const payload = (await response.json().catch(() => null)) as

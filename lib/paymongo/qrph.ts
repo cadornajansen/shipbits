@@ -7,10 +7,12 @@ export async function createQrPhPayment({
   amountCentavos,
   description,
   idempotencyKey,
+  metadata,
 }: {
   amountCentavos: number
   description: string
   idempotencyKey: string
+  metadata?: Record<string, string>
 }) {
   const paymentIntent = await paymongoRequest<
     PayMongoResource<PayMongoPaymentIntent>
@@ -21,6 +23,7 @@ export async function createQrPhPayment({
           amount: amountCentavos,
           currency: "PHP",
           description,
+          ...(metadata ? { metadata } : {}),
           payment_method_allowed: ["qrph"],
         },
       },

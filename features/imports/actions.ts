@@ -6,6 +6,8 @@ import { after } from "next/server"
 
 import { requireAdmin } from "@/lib/supabase/auth"
 import { createAdminClient } from "@/lib/supabase/admin"
+import { logServerError } from "@/lib/observability/logger"
+import { consumeRateLimit } from "@/lib/security/rate-limit"
 import {
   getNormalizedDomain,
   normalizeWebsiteUrl,
@@ -19,16 +21,32 @@ import {
 import type { ImportActionResult, ProductMutationResult } from "./types"
 import { importUrlSchema } from "./validation"
 
-function runAfterResponse(task: () => Promise<void>) {
+function runAfterResponse(event: string, context: { importId: string; userId: string }, task: () => Promise<void>) {
   after(async () => {
-    await task().catch(() => undefined)
+    await task().catch((error) => {
+      logServerError(event, {
+        ...context,
+        error: error instanceof Error ? error.message : "Unknown error",
+      })
+    })
   })
+}
+
+async function enforceImportLimit(
+  userId: string
+): Promise<{ error: string; ok: false } | null> {
+  const result = await consumeRateLimit({ action: "import-generation", userId })
+  return result.allowed
+    ? null
+    : { error: "Import generation is temporarily limited. Please try again later.", ok: false }
 }
 
 export async function createImportAction(
   formData: FormData
 ): Promise<ImportActionResult> {
   const admin = await requireAdmin()
+  const limited = await enforceImportLimit(admin.id)
+  if (limited) return limited
   const parsed = importUrlSchema.safeParse(formData.get("website_url"))
 
   if (!parsed.success) {
@@ -86,7 +104,7 @@ export async function createImportAction(
       return { error: error.message, ok: false }
     }
 
-    runAfterResponse(() =>
+    runAfterResponse("product_import_pipeline_failed", { importId: previousImport.id as string, userId: admin.id }, () =>
       runProductImportPipeline(previousImport.id as string)
     )
     revalidatePath("/admin/products")
@@ -108,7 +126,7 @@ export async function createImportAction(
     return { error: error?.message || "Unable to queue the import.", ok: false }
   }
 
-  runAfterResponse(() => runProductImportPipeline(importJob.id as string))
+  runAfterResponse("product_import_pipeline_failed", { importId: importJob.id as string, userId: admin.id }, () => runProductImportPipeline(importJob.id as string))
   revalidatePath("/admin/products")
   return { importId: importJob.id as string, ok: true }
 }
@@ -116,7 +134,9 @@ export async function createImportAction(
 export async function retryImportAction(
   importId: string
 ): Promise<ProductMutationResult> {
-  await requireAdmin()
+  const admin = await requireAdmin()
+  const limited = await enforceImportLimit(admin.id)
+  if (limited) return limited
   const supabase = createAdminClient()
   const { data, error } = await supabase
     .from("product_imports")
@@ -137,7 +157,7 @@ export async function retryImportAction(
     }
   }
 
-  runAfterResponse(() => runProductImportPipeline(importId))
+  runAfterResponse("product_import_pipeline_failed", { importId, userId: admin.id }, () => runProductImportPipeline(importId))
   revalidatePath("/admin/products")
   invalidatePublicProducts()
   return { ok: true }
@@ -146,7 +166,9 @@ export async function retryImportAction(
 export async function dismissImportAction(
   importId: string
 ): Promise<ProductMutationResult> {
-  await requireAdmin()
+  const admin = await requireAdmin()
+  const limited = await enforceImportLimit(admin.id)
+  if (limited) return limited
   const { data, error } = await createAdminClient()
     .from("product_imports")
     .delete()
@@ -169,7 +191,7 @@ export async function dismissImportAction(
 export async function refreshEvidenceAction(
   importId: string
 ): Promise<ProductMutationResult> {
-  await requireAdmin()
+  const admin = await requireAdmin()
   const { error } = await createAdminClient()
     .from("product_imports")
     .update({ completed_at: null, error_message: null, status: "extracting" })
@@ -179,7 +201,7 @@ export async function refreshEvidenceAction(
     return { error: error.message, ok: false }
   }
 
-  runAfterResponse(() => refreshEvidenceForImport(importId))
+  runAfterResponse("product_import_refresh_failed", { importId, userId: admin.id }, () => refreshEvidenceForImport(importId))
   revalidatePath("/admin/products")
   return { ok: true }
 }
@@ -193,7 +215,9 @@ export async function regenerateDescriptionAction({
   importId: string
   productId: string
 }): Promise<ProductMutationResult> {
-  await requireAdmin()
+  const admin = await requireAdmin()
+  const limited = await enforceImportLimit(admin.id)
+  if (limited) return limited
   const result = await regenerateProductDescription({
     field,
     importId,

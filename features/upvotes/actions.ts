@@ -1,11 +1,13 @@
 "use server"
 
 import { randomUUID } from "node:crypto"
+import { invalidatePublicProducts } from "@/features/products/public-cache"
 
 import { attachQrPhPayment, createQrPhPayment, retrievePaymentIntent } from "@/lib/paymongo/qrph"
 import { getCurrentUser } from "@/lib/supabase/auth"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { createClient } from "@/lib/supabase/server"
+import { consumeRateLimit } from "@/lib/security/rate-limit"
 
 type UpvoteCheckoutResult =
   | {
@@ -67,6 +69,10 @@ export async function startProductUpvotePaymentAction(
 ): Promise<UpvoteCheckoutResult> {
   const user = await getCurrentUser()
   if (!user) return { error: "Sign in to upvote a product.", ok: false }
+  const rateLimit = await consumeRateLimit({ action: "upvote-payment", userId: user.id })
+  if (!rateLimit.allowed) {
+    return { error: "Too many payment attempts. Please try again later.", ok: false }
+  }
 
   const amountCentavos = wholePesosToCentavos(amountPesos)
   if (!amountCentavos) {
@@ -170,6 +176,9 @@ export async function getProductUpvotePaymentStatusAction(paymentId: string) {
   if (error || !data) {
     return { error: "Payment status is unavailable.", ok: false as const }
   }
+
+  // Refreshing the browser must read totals that include this confirmed payment.
+  if (data.status === "paid") invalidatePublicProducts()
 
   return {
     ok: true as const,

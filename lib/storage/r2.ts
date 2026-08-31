@@ -5,6 +5,7 @@ import {
   PutObjectCommand,
   S3Client,
 } from "@aws-sdk/client-s3"
+import { safeFetchBuffer } from "@/lib/security/safe-fetch"
 
 const imageExtensions = {
   "image/gif": "gif",
@@ -12,11 +13,16 @@ const imageExtensions = {
   "image/png": "png",
   "image/webp": "webp",
 } as const
+const managedObjectKey = /^(products|profiles|submissions)\/[0-9a-f-]+\/(?:avatar|cover|logo)\.(?:gif|jpe?g|png|webp)$/i
 
 export const acceptedImageTypes = Object.keys(imageExtensions) as Array<
   keyof typeof imageExtensions
 >
 export const maxProductImageSizeBytes = 5 * 1024 * 1024
+
+export function isManagedProductObjectKey(objectKey: string) {
+  return managedObjectKey.test(objectKey)
+}
 
 function getR2Config() {
   const accountId = process.env.CLOUDFLARE_R2_ACCOUNT_ID
@@ -200,14 +206,17 @@ export async function uploadRemoteProductImage({
   productId: string
   type: "logo" | "cover"
 }) {
-  const response = await fetch(imageUrl, { redirect: "follow" })
-  if (!response.ok) {
+  const response = await safeFetchBuffer(imageUrl, {
+    maxBytes: maxProductImageSizeBytes,
+    maxRedirects: 3,
+    timeoutMs: 10_000,
+  })
+  if (response.status < 200 || response.status >= 300) {
     throw new Error(`Image download failed with status ${response.status}.`)
   }
 
-  const mimeType = response.headers.get("content-type")?.split(";")[0] ?? ""
-  const body = await response.arrayBuffer()
-  const file = new File([body], `imported-${type}`, { type: mimeType })
+  const mimeType = String(response.headers["content-type"] ?? "").split(";")[0]
+  const file = new File([new Uint8Array(response.body)], `imported-${type}`, { type: mimeType })
   const validationError = await validateProductImage(file, "Imported image")
 
   if (validationError) {
@@ -226,14 +235,17 @@ export async function uploadRemoteSubmissionImage({
   submissionId: string
   type: "logo" | "cover"
 }) {
-  const response = await fetch(imageUrl, { redirect: "follow" })
-  if (!response.ok) {
+  const response = await safeFetchBuffer(imageUrl, {
+    maxBytes: maxProductImageSizeBytes,
+    maxRedirects: 3,
+    timeoutMs: 10_000,
+  })
+  if (response.status < 200 || response.status >= 300) {
     throw new Error(`Image download failed with status ${response.status}.`)
   }
 
-  const mimeType = response.headers.get("content-type")?.split(";")[0] ?? ""
-  const body = await response.arrayBuffer()
-  const file = new File([body], `imported-${type}`, { type: mimeType })
+  const mimeType = String(response.headers["content-type"] ?? "").split(";")[0]
+  const file = new File([new Uint8Array(response.body)], `imported-${type}`, { type: mimeType })
   const validationError = await validateProductImage(file, "Imported image")
 
   if (validationError) {
@@ -244,6 +256,9 @@ export async function uploadRemoteSubmissionImage({
 }
 
 export async function deleteProductObject(objectKey: string) {
+  if (!isManagedProductObjectKey(objectKey)) {
+    throw new Error("Refusing to delete an unmanaged storage object.")
+  }
   const config = getR2Config()
   const client = createR2Client(config)
 

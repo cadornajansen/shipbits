@@ -1,5 +1,7 @@
 import "server-only"
 
+import { parsePublicUrl } from "@/lib/security/safe-fetch"
+
 export type ScrapedWebsite = {
   markdown: string
   metadata: Record<string, unknown>
@@ -77,18 +79,20 @@ function getApiKey() {
 export async function scrapeWebsite(
   sourceUrl: string
 ): Promise<ScrapedWebsite> {
+  const validatedSourceUrl = parsePublicUrl(sourceUrl).toString()
   const response = await fetch("https://api.firecrawl.dev/v2/scrape", {
     body: JSON.stringify({
       formats: ["markdown", "branding", "images"],
       onlyMainContent: true,
       timeout: 30_000,
-      url: sourceUrl,
+      url: validatedSourceUrl,
     }),
     headers: {
       Authorization: `Bearer ${getApiKey()}`,
       "Content-Type": "application/json",
     },
     method: "POST",
+    signal: AbortSignal.timeout(35_000),
   })
 
   const payload = (await response.json().catch(() => null)) as {
@@ -113,7 +117,7 @@ export async function scrapeWebsite(
   const resolvedSourceUrl =
     typeof payload.data.metadata?.sourceURL === "string"
       ? payload.data.metadata.sourceURL
-      : sourceUrl
+      : validatedSourceUrl
   const metadata: Record<string, unknown> = {
     ...(payload.data.metadata ?? {}),
     shipbits_media: getScrapedMedia({
