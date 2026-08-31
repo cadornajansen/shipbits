@@ -2,6 +2,7 @@
 
 import { ExternalLinkIcon, PencilIcon } from "lucide-react"
 import { useState } from "react"
+import Link from "next/link"
 
 import { ProductBadge } from "@/components/dashboard/product-badge"
 import { PublicSubmissionDialog } from "@/components/submissions/public-submission-dialog"
@@ -100,7 +101,8 @@ export function DashboardProducts({
                     · Updated {formatUpdatedAt(product.updatedAt)}
                   </p>
                 </div>
-                <div className="flex shrink-0 gap-2">
+                <div className="flex shrink-0 flex-wrap gap-2">
+                  <Button asChild size="sm" variant="outline"><Link href={`/dashboard/directory-submissions/new?product=${product.id}`}>Submit to directories</Link></Button>
                   {submission ? (
                     <Button
                       type="button"

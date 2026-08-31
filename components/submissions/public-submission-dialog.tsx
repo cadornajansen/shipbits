@@ -14,12 +14,14 @@ import type { Submission } from "@/features/submissions/queries"
 export function PublicSubmissionDialog({
   categories,
   onOpenChange,
+  onSaved,
   open,
   submission,
   websiteUrl = "",
 }: {
   categories: Category[]
   onOpenChange: (open: boolean) => void
+  onSaved?: (submissionId: string) => void
   open: boolean
   submission?: Submission
   websiteUrl?: string
@@ -43,7 +45,10 @@ export function PublicSubmissionDialog({
             categories={categories}
             initialWebsiteUrl={websiteUrl}
             submission={submission}
-            onSuccess={() => onOpenChange(false)}
+            onSuccess={(submissionId) => {
+              onOpenChange(false)
+              if (submissionId) onSaved?.(submissionId)
+            }}
           />
         </div>
       </DialogContent>

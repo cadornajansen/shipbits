@@ -2,13 +2,19 @@ import { NextResponse, type NextRequest } from "next/server"
 
 import { createServerClient } from "@supabase/ssr"
 
+import { absoluteUrl } from "@/lib/site"
+
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code")
-  const origin = request.nextUrl.origin
   const requestedDestination = request.nextUrl.searchParams.get("next")
   const destination = new URL(
-    requestedDestination === "/dashboard" ? "/dashboard" : "/",
-    origin
+    requestedDestination &&
+      ["/dashboard", "/dashboard/directory-submissions/new"].includes(
+        requestedDestination
+      )
+      ? requestedDestination
+      : "/",
+    absoluteUrl("/")
   )
   const response = NextResponse.redirect(destination)
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL

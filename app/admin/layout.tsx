@@ -1,6 +1,11 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 
 import { requireAdmin } from "@/lib/supabase/auth"
+
+export const metadata: Metadata = {
+  robots: { follow: false, index: false },
+}
 
 export default async function AdminLayout({
   children,
@@ -14,7 +19,7 @@ export default async function AdminLayout({
           <Link href="/admin/products" className="font-heading font-semibold">
             ShipBits admin
           </Link>
-          <span className="text-sm text-muted-foreground">{user.email}</span>
+          <div className="flex flex-wrap items-center gap-4 text-sm"><Link href="/admin/products">Products</Link><Link href="/admin/directory-submissions">Directory Submissions</Link><span className="text-muted-foreground">{user.email}</span></div>
         </div>
       </header>
       <div className="mx-auto max-w-6xl px-6 py-8">{children}</div>

@@ -5,7 +5,7 @@ import { NewsletterSignup } from "@/components/newsletter/newsletter-signup"
 
 const linkGroups = [
   { title: "Explore", links: [["Products", "/products"], ["Categories", "/products#categories"], ["Blog", "/blog"], ["Resources", "/resources"]] },
-  { title: "For builders", links: [["List product", "/#submit-product"], ["SEO Checker", "/resources/seo-checker"]] },
+  { title: "For builders", links: [["List product", "/#submit-product"], ["Directory Submission", "/directory-submission"], ["SEO Checker", "/resources/seo-checker"]] },
   { title: "Company", links: [["Privacy", "/privacy"], ["Terms", "/terms"], ["Refund Policy", "/refund-policy"]] },
 ] as const
 

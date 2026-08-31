@@ -5,6 +5,8 @@ import { LandingSubmissionCta } from "@/components/submissions/landing-submissio
 import { getCategories } from "@/features/products/queries"
 import { getPublicCategories, getPublicDirectoryProducts } from "@/features/products/public-queries"
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/structured-data"
 
 export default async function Page() {
   const [categories, publicCategories, products] = await Promise.all([
@@ -15,6 +17,8 @@ export default async function Page() {
 
   return (
     <main>
+      <JsonLd data={organizationJsonLd()} />
+      <JsonLd data={websiteJsonLd()} />
       <SiteContainer className="flex flex-col items-center justify-center gap-4 py-8">
         <div className="flex w-full flex-col items-center gap-5">
           <div className="flex w-fit items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-4 py-2 font-outfit font-medium shadow-xs">
@@ -25,7 +29,8 @@ export default async function Page() {
             Discover what Filipinos are shipping.
           </h1>
           <p className="text-center text-lg text-muted-foreground">
-            A curated directory of apps, tools, and products worth checking out.
+            A curated product directory for discovering apps, SaaS, developer
+            tools, and startup products built by Filipino founders.
           </p>
           <LandingSubmissionCta categories={categories} />
           <FeaturedSection products={products.slice(0, 3)} />
@@ -40,6 +45,23 @@ export default async function Page() {
               </ul>
             </section>
           ) : null}
+          <section className="grid w-full gap-4 border-t py-10 sm:grid-cols-3">
+            <div>
+              <h2 className="font-outfit text-lg font-semibold">Explore the directory</h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Compare published products by category and open detailed listings.</p>
+              <Link href="/products" className="mt-3 inline-flex text-sm font-medium text-teal-700 hover:underline">Browse all products</Link>
+            </div>
+            <div>
+              <h2 className="font-outfit text-lg font-semibold">Launch resources</h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use practical checks and guides for product launches and distribution.</p>
+              <Link href="/resources" className="mt-3 inline-flex text-sm font-medium text-teal-700 hover:underline">View founder resources</Link>
+            </div>
+            <div>
+              <h2 className="font-outfit text-lg font-semibold">Submit to directories</h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Prepare one product profile and track relevant directory submissions.</p>
+              <Link href="/directory-submission" className="mt-3 inline-flex text-sm font-medium text-teal-700 hover:underline">See directory submission service</Link>
+            </div>
+          </section>
         </div>
       </SiteContainer>
     </main>

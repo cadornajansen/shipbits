@@ -59,7 +59,7 @@ export function AuthDialog({
 }: {
   onOpenChange: (open: boolean) => void
   open: boolean
-  redirectPath?: "/" | "/dashboard"
+  redirectPath?: "/" | "/dashboard" | "/dashboard/directory-submissions/new"
 }) {
   const [provider, setProvider] = useState<Provider | null>(null)
 

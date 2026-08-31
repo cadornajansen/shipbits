@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 
 const tabs = [
   { href: "/dashboard", label: "Dashboard", value: "dashboard" },
+  { href: "/dashboard/directory-submissions", label: "Directory Submissions", value: "directory-submissions" },
   { href: "/dashboard/profile", label: "Profile", value: "profile" },
   { href: "/dashboard/settings", label: "Settings", value: "settings" },
 ] as const
@@ -15,7 +16,7 @@ export function DashboardTabs({
 }) {
   return (
     <nav aria-label="Dashboard navigation" className="border-b">
-      <div className="flex gap-5">
+      <div className="flex flex-wrap gap-x-5 gap-y-3">
         {tabs.map((tab) => (
           <Link
             key={tab.value}

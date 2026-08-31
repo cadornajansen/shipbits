@@ -65,7 +65,7 @@ export function PublicProductForm({
 }: {
   categories: Category[]
   initialWebsiteUrl: string
-  onSuccess: () => void
+  onSuccess: (submissionId?: string) => void
   submission?: Submission
 }) {
   const router = useRouter()
@@ -188,7 +188,7 @@ export function PublicProductForm({
       toast.success(submission?.status === "submitted" ? "Live listing updated" : "Draft saved")
       if (result.mediaWarning) toast.warning(result.mediaWarning)
       router.refresh()
-      onSuccess()
+      onSuccess(result.id)
     })
   }
 

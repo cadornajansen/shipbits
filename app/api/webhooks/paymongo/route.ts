@@ -4,12 +4,15 @@ import { invalidatePublicProducts } from "@/features/products/public-cache"
 
 import { slugify } from "@/features/products/validation"
 import { retrievePaymentIntent } from "@/lib/paymongo/qrph"
+import { logServerError, logServerWarning } from "@/lib/observability/logger"
 import {
   getWebhookPaymentIntentId,
   parsePayMongoWebhook,
   verifyPayMongoWebhook,
 } from "@/lib/paymongo/webhooks"
 import { createAdminClient } from "@/lib/supabase/admin"
+import { confirmDirectoryPayment } from "@/features/directory-submissions/payments"
+import { readTextBody, RequestBodyError } from "@/lib/security/request"
 
 function paymentIdFromEvent(event: ReturnType<typeof parsePayMongoWebhook>) {
   const resource = event.data.attributes.data
@@ -42,7 +45,21 @@ async function getAvailableSlug({
 }
 
 export async function POST(request: Request) {
-  const rawBody = await request.text()
+  let rawBody: string
+  try {
+    rawBody = await readTextBody(request)
+  } catch (error) {
+    if (error instanceof RequestBodyError) {
+      return NextResponse.json(
+        { error: error.message },
+        { status: error.status }
+      )
+    }
+    return NextResponse.json(
+      { error: "Invalid webhook payload." },
+      { status: 400 }
+    )
+  }
   const signatureHeader =
     request.headers.get("paymongo-signature") ??
     request.headers.get("x-paymongo-signature")
@@ -72,11 +89,57 @@ export async function POST(request: Request) {
   }
 
   const supabase = createAdminClient()
-  const { data: payment } = await supabase
+  const { data: payment, error: paymentLookupError } = await supabase
     .from("listing_payments")
-    .select("id, amount_centavos, currency, status, submission_id")
+    .select("id, amount_centavos, currency, status, submission_id, campaign_id")
     .eq("provider_payment_intent_id", paymentIntentId)
     .maybeSingle()
+
+  if (paymentLookupError)
+    return NextResponse.json(
+      { error: "Payment lookup failed." },
+      { status: 500 }
+    )
+  if (payment?.campaign_id) {
+    try {
+      if (eventType === "payment.paid") {
+        if (!(await confirmDirectoryPayment(payment.id, eventId))) {
+          return NextResponse.json(
+            { error: "Payment confirmation is pending." },
+            { status: 503 }
+          )
+        }
+      } else if (
+        eventType === "payment.failed" ||
+        eventType === "qrph.expired"
+      ) {
+        // A late failure notification must never undo an already succeeded intent.
+        if (!(await confirmDirectoryPayment(payment.id, eventId))) {
+          const { error } = await supabase
+            .from("listing_payments")
+            .update({
+              status: eventType === "qrph.expired" ? "expired" : "failed",
+              provider_event_id: eventId,
+            })
+            .eq("id", payment.id)
+            .eq("status", "pending")
+          if (error) throw error
+        }
+      }
+      return NextResponse.json({ received: true })
+    } catch (error) {
+      logServerError("paymongo_directory_webhook_failed", {
+        error: error instanceof Error ? error.message : "Unknown error",
+        eventId,
+        paymentId: payment.id,
+        paymentIntentId,
+      })
+      return NextResponse.json(
+        { error: "Campaign fulfillment failed; retry required." },
+        { status: 500 }
+      )
+    }
+  }
 
   if (!payment) {
     const { data: upvote } = await supabase
@@ -111,7 +174,8 @@ export async function POST(request: Request) {
         attributes.amount !== upvote.amount_centavos ||
         attributes.currency !== upvote.currency
       ) {
-        console.error("PayMongo product upvote verification failed", {
+        logServerWarning("paymongo_upvote_verification_failed", {
+          eventId,
           paymentIntentId,
           upvoteId: upvote.id,
         })
@@ -129,16 +193,20 @@ export async function POST(request: Request) {
         .eq("id", upvote.id)
         .eq("status", "pending")
       if (error) {
-        console.error("PayMongo product upvote fulfillment failed", {
+        logServerError("paymongo_upvote_fulfillment_failed", {
           error: error.message,
+          eventId,
+          paymentIntentId,
           upvoteId: upvote.id,
         })
       } else {
         invalidatePublicProducts()
       }
     } catch (error) {
-      console.error("PayMongo product upvote webhook handling failed", {
+      logServerError("paymongo_upvote_webhook_failed", {
         error: error instanceof Error ? error.message : "Unknown error",
+        eventId,
+        paymentIntentId,
         upvoteId: upvote.id,
       })
     }
@@ -177,7 +245,8 @@ export async function POST(request: Request) {
       attributes.amount !== payment.amount_centavos ||
       attributes.currency !== payment.currency
     ) {
-      console.error("PayMongo payment intent verification failed", {
+      logServerWarning("paymongo_listing_verification_failed", {
+        eventId,
         paymentId: payment.id,
         paymentIntentId,
       })
@@ -191,8 +260,10 @@ export async function POST(request: Request) {
       .maybeSingle()
 
     if (!submission) {
-      console.error("Submission missing during PayMongo fulfillment", {
+      logServerWarning("paymongo_listing_submission_missing", {
+        eventId,
         paymentId: payment.id,
+        paymentIntentId,
       })
       return NextResponse.json({ received: true })
     }
@@ -212,9 +283,11 @@ export async function POST(request: Request) {
     )
 
     if (fulfillmentError) {
-      console.error("PayMongo fulfillment failed", {
+      logServerError("paymongo_listing_fulfillment_failed", {
         error: fulfillmentError.message,
+        eventId,
         paymentId: payment.id,
+        paymentIntentId,
       })
     } else {
       invalidatePublicProducts()
@@ -222,9 +295,11 @@ export async function POST(request: Request) {
       revalidatePath("/dashboard")
     }
   } catch (error) {
-    console.error("PayMongo webhook handling failed", {
+    logServerError("paymongo_listing_webhook_failed", {
       error: error instanceof Error ? error.message : "Unknown error",
+      eventId,
       paymentId: payment.id,
+      paymentIntentId,
     })
   }
 

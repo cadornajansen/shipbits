@@ -11,6 +11,7 @@ import {
 } from "lucide-react"
 
 import { PageView } from "@/components/analytics/page-view"
+import { ProductDirectoryOwnerLink } from "@/components/directory-submissions/product-owner-link"
 import { ProductUpvoteButton } from "@/components/landing/product-upvote-button"
 import { SiteContainer } from "@/components/layout/site-container"
 import { ProductOutboundLink } from "@/components/products/product-outbound-link"
@@ -24,6 +25,7 @@ import {
   getRelatedProducts,
 } from "@/features/products/public-queries"
 import { createPageMetadata } from "@/lib/seo/metadata"
+import { breadcrumbJsonLd } from "@/lib/seo/structured-data"
 import { absoluteUrl } from "@/lib/site"
 
 type Props = { params: Promise<{ slug: string }> }
@@ -53,8 +55,10 @@ export async function generateMetadata({ params }: Props) {
   const product = await getPublicProductBySlug((await params).slug)
   if (!product) notFound()
   return createPageMetadata({
-    title: product.name,
-    description: product.shortDescription,
+    title: `${product.name} - ${product.categoryName}`,
+    description:
+      product.shortDescription ||
+      `${product.name} is listed in ${product.categoryName} on ShipBits.`,
     path: `/products/${product.slug}`,
     image: product.coverUrl || `/products/${product.slug}/og`,
   })
@@ -86,11 +90,26 @@ export default async function ProductPage({ params }: Props) {
           // Listing/support payments are not the software's retail price or ratings.
         }}
       />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Products", path: "/products" },
+          {
+            name: product.categoryName,
+            path: `/categories/${product.categorySlug}`,
+          },
+          { name: product.name, path: `/products/${product.slug}` },
+        ])}
+      />
       <SiteContainer className="flex flex-col gap-9 py-8 sm:py-12">
         <nav
           aria-label="Breadcrumb"
           className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground"
         >
+          <Link href="/" className="hover:underline">
+            Home
+          </Link>
+          <span aria-hidden="true">/</span>
           <Link href="/products" className="hover:underline">
             Products
           </Link>
@@ -152,7 +171,7 @@ export default async function ProductPage({ params }: Props) {
                   fill
                   unoptimized
                   sizes="(max-width: 1024px) 100vw, 720px"
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             ) : null}
@@ -174,6 +193,23 @@ export default async function ProductPage({ params }: Props) {
                   ))}
               </div>
             </section>
+            {product.tags.length ? (
+              <section aria-labelledby="product-tags">
+                <h2
+                  id="product-tags"
+                  className="font-outfit text-xl font-semibold"
+                >
+                  Tags
+                </h2>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {product.tags.map((tag) => (
+                    <li key={tag}>
+                      <Badge variant="outline">{tag}</Badge>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
           </div>
           <aside className="flex flex-col rounded-xl border bg-card p-4 text-sm shadow-sm sm:p-5">
             <h2 className="font-semibold tracking-tight">Listing details</h2>
@@ -260,6 +296,7 @@ export default async function ProductPage({ params }: Props) {
                 payment is confirmed.
               </p>
             </div>
+            <ProductDirectoryOwnerLink productId={product.id} />
           </aside>
         </div>
         {related.length ? (

@@ -9,7 +9,7 @@ export function DashboardShell({
   description,
   title,
 }: {
-  active: "dashboard" | "profile" | "settings"
+  active: "dashboard" | "profile" | "settings" | "directory-submissions"
   action?: React.ReactNode
   children: React.ReactNode
   description: string
