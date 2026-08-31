@@ -3,7 +3,12 @@
 import { useEffect, useRef, useState, useTransition } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import { ArrowUpIcon, ChevronDownIcon, ChevronUpIcon, QrCodeIcon } from "lucide-react"
+import {
+  ArrowUpIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+  QrCodeIcon,
+} from "lucide-react"
 import { toast } from "sonner"
 
 import { Button } from "@/components/ui/button"
@@ -147,19 +152,30 @@ export function ProductUpvoteButton({
         className={
           buttonLabel
             ? "w-full"
-            : "cursor-pointer shrink-0 border-teal-700/25 text-teal-700 hover:border-teal-700/50 hover:bg-teal-700/10 hover:text-teal-800"
+            : "shrink-0 cursor-pointer border-teal-700/25 text-teal-700 hover:border-teal-700/50 hover:bg-teal-700/10 hover:text-teal-800"
         }
         onClick={() => setOpen(true)}
         disabled={isProcessing}
         aria-busy={isProcessing}
-        aria-label={isProcessing ? `Upvoting ${productName}` : `Upvote ${productName} · ₱1`}
+        aria-label={
+          isProcessing
+            ? `Upvoting ${productName}`
+            : `Upvote ${productName} · ₱1`
+        }
       >
         <ArrowUpIcon data-icon="inline-start" />
-        <span>{isProcessing ? "Upvoting..." : (buttonLabel ?? "Upvote · ₱1")}</span>
+        <span>
+          {isProcessing ? "Upvoting..." : (buttonLabel ?? "Upvote · ₱1")}
+        </span>
         <span className="sr-only">{upvoteCount} upvotes</span>
       </Button>
       {!open && awaitingPayment ? (
-        <Button type="button" size="sm" variant="ghost" onClick={() => setOpen(true)}>
+        <Button
+          type="button"
+          size="sm"
+          variant="ghost"
+          onClick={() => setOpen(true)}
+        >
           View payment
         </Button>
       ) : null}
@@ -282,7 +298,8 @@ export function ProductUpvoteButton({
                 </DialogTitle>
 
                 <DialogDescription>
-                  Scan with your banking or e-wallet app.
+                  Scan with GCash, Maya, or your banking app to complete the
+                  payment.
                 </DialogDescription>
               </DialogHeader>
 
