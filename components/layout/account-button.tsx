@@ -8,7 +8,13 @@ import { AuthDialog } from "@/components/auth/auth-dialog"
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 
-export function AccountButton() {
+export function AccountButton({
+  onNavigate,
+  showLoginLabel = false,
+}: {
+  onNavigate?: () => void
+  showLoginLabel?: boolean
+}) {
   const [authDialogOpen, setAuthDialogOpen] = useState(false)
   const [isAuthenticated, setIsAuthenticated] = useState(false)
 
@@ -21,34 +27,37 @@ export function AccountButton() {
 
   if (isAuthenticated) {
     return (
-      <>
+      <div className="flex items-center">
         <Link
           href="/dashboard"
-          className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          onClick={onNavigate}
+          className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground mr-3"
         >
           Dashboard
         </Link>
         <Link
           href="/dashboard"
+          onClick={onNavigate}
           aria-label="Open dashboard"
           className="text-muted-foreground transition-colors hover:text-foreground"
         >
           <User className="size-5" />
         </Link>
-      </>
+      </div>
     )
   }
 
   return (
     <>
       <Button
+        className="flex items-center"
         type="button"
         variant="ghost"
-        size="icon-sm"
+        size={showLoginLabel ? "sm" : "icon-sm"}
         onClick={() => setAuthDialogOpen(true)}
-        aria-label="Sign in"
+        aria-label={showLoginLabel ? undefined : "Sign in"}
       >
-        <User className="size-5" />
+        {showLoginLabel ? "Log in" : <User className="size-5" />}
       </Button>
       <AuthDialog
         open={authDialogOpen}
