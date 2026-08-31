@@ -15,4 +15,4 @@ export type NewsletterResult =
   { ok: true; message: string } | { ok: false; error: string }
 
 export const NEWSLETTER_SUCCESS_MESSAGE =
-  "Thanks — your signup request has been received. No newsletters are being sent yet."
+  "You're on the list — check your inbox for a confirmation email."

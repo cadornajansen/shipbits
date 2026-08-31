@@ -36,7 +36,7 @@ export default async function Page() {
           <FeaturedSection products={products.slice(0, 3)} />
           <ProductDirectory products={products.slice(3, 10)} startRank={4} />
           {publicCategories.some((category) => category.productCount > 0) ? (
-            <section id="categories" className="w-full border-t py-10">
+            <section id="categories" className="w-full py-10">
               <h2 className="font-outfit text-2xl font-semibold">Browse by category</h2>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {publicCategories.filter((category) => category.productCount > 0).map((category) => (

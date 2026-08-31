@@ -1,4 +1,5 @@
 import { saveNewsletterSubscription } from "@/features/newsletter/persistence"
+import { sendNewsletterConfirmationEmail } from "@/features/newsletter/confirmation-email"
 import { newsletterSchema } from "@/features/newsletter/validation"
 import { enforcePublicRateLimit } from "@/lib/security/rate-limit"
 import { readJsonBody, RequestBodyError } from "@/lib/security/request"
@@ -24,8 +25,32 @@ export async function POST(request: Request): Promise<Response> {
       createAdminClient(),
       parsed.data
     )
+
+    if (result.ok && result.created) {
+      const confirmationSent = await sendNewsletterConfirmationEmail({
+        recipientEmail: parsed.data.email,
+      })
+      if (!confirmationSent) {
+        return Response.json(
+          {
+            ok: true,
+            message:
+              "You're on the list. We couldn't send the confirmation email yet.",
+          },
+          { headers: { "Cache-Control": "no-store" } }
+        )
+      }
+    }
+
+    if (result.ok) {
+      return Response.json(
+        { ok: true, message: result.message },
+        { headers: { "Cache-Control": "no-store" } }
+      )
+    }
+
     return Response.json(result, {
-      status: result.ok ? 200 : 503,
+      status: 503,
       headers: { "Cache-Control": "no-store" },
     })
   } catch (error) {

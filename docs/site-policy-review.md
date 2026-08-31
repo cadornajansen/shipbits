@@ -11,7 +11,7 @@ Before public launch:
 - Keep a reconciliation record when handling manual refunds and correct any public listing/support totals manually. The app has no refunded payment state or automatic reversal mechanism yet.
 - Define and implement a data-retention/deletion procedure for accounts, drafts, images, payment records, logs, backups, and newsletter signups. Do not promise a purge timeline that is not implemented.
 - Handle privacy and newsletter opt-out requests through the monitored support channel. An operator can mark an address `unsubscribed`; duplicate signups intentionally do not reactivate it. Public direct access to the subscriber table must remain blocked.
-- Newsletter forms only persist opt-in addresses; they do not send emails or confirmations. Connect a delivery provider, implement recipient verification/confirmation as appropriate, and include a working unsubscribe mechanism before sending a first issue. Account notification preferences are not newsletter consent.
+- Newsletter forms save opt-in addresses in Supabase and send a Resend confirmation email. Confirm the sender domain, monitor the reply-to inbox for unsubscribe requests, and add a one-click unsubscribe mechanism before sending the first newsletter issue. Account notification preferences are not newsletter consent.
 - Verify the deployed hosting/logging, regional processing, and provider data-handling configuration match the privacy text. Publicly served image URLs are not a private file vault.
 
 Reviewed implementation facts:

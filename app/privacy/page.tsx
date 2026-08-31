@@ -91,16 +91,16 @@ export default function PrivacyPage() {
 
       <PolicySection id="newsletter" title="Newsletter and preferences">
         <p>
-          ShipBits Weekly is an optional signup. We currently save the email
-          address, subscription status, and signup time in Supabase; we are not
-          sending newsletters yet. Newsletter signup is separate from signing
-          in, paying, or saving account notification preferences.
+          ShipBits Weekly is an optional signup. We store the email address,
+          subscription status, and signup time in Supabase, and use Resend to
+          send a confirmation email and newsletter delivery. Newsletter signup
+          is separate from signing in, paying, or saving account notification
+          preferences.
         </p>
         <p>
-          Ask through the contact below to withdraw a signup or remove your
-          email. A delivery provider and a working unsubscribe mechanism must be
-          in place before newsletter sending begins. Signing up again does not
-          automatically reactivate an address marked unsubscribed.
+          Reply to a newsletter email or use the contact below to withdraw a
+          signup or remove your email. Signing up again does not automatically
+          reactivate an address marked unsubscribed.
         </p>
       </PolicySection>
 

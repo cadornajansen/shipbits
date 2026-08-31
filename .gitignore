@@ -10,6 +10,7 @@
 
 # testing
 /coverage
+/.seo-cache/
 
 # next.js
 /.next/

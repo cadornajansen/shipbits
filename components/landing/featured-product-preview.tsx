@@ -3,11 +3,15 @@
 import { useState } from "react"
 import Image from "next/image"
 
+import { optimizedProductCoverUrl } from "@/lib/images/cloudflare"
+
 export function FeaturedProductPreview({
   alt,
+  preload = false,
   src,
 }: {
   alt: string
+  preload?: boolean
   src: string
 }) {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -21,10 +25,11 @@ export function FeaturedProductPreview({
         }`}
       />
       <Image
-        src={src}
+        src={optimizedProductCoverUrl(src)}
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, 33vw"
+        preload={preload}
         unoptimized
         onLoad={() => setIsLoaded(true)}
         onError={() => setIsLoaded(true)}

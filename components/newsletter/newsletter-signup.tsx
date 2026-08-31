@@ -65,6 +65,7 @@ export function NewsletterSignup({
       const result = (await response.json()) as {
         ok?: boolean
         error?: string
+        message?: string
       }
       if (!response.ok || result.ok !== true) {
         setError(
@@ -76,7 +77,11 @@ export function NewsletterSignup({
       }
 
       setEmail("")
-      setMessage(NEWSLETTER_SUCCESS_MESSAGE)
+      setMessage(
+        typeof result.message === "string"
+          ? result.message
+          : NEWSLETTER_SUCCESS_MESSAGE
+      )
       trackEvent("newsletter_signup", {})
     } catch {
       setError("We couldn't reach the signup service. Please try again.")
@@ -134,8 +139,8 @@ export function NewsletterSignup({
             </div>
             {error ? <FieldError id={`${id}-error`}>{error}</FieldError> : null}
             <FieldDescription id={`${id}-privacy`}>
-              By subscribing, you opt in to ShipBits Weekly. We save your email
-              for now; email delivery is not active. Read our{" "}
+              By subscribing, you opt in to ShipBits Weekly and receive a
+              confirmation email. Read our{" "}
               <Link href="/privacy#newsletter">privacy policy</Link>.
             </FieldDescription>
           </Field>

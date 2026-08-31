@@ -1,4 +1,6 @@
 import { Geist, Geist_Mono, Outfit } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "./globals.css"
 import type { Metadata, Viewport } from "next"
@@ -108,6 +110,8 @@ export default function RootLayout({
         {children}
         <SiteFooter />
         <Toaster />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

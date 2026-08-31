@@ -4,6 +4,10 @@ import { createClient } from "@supabase/supabase-js"
 
 import { saveNewsletterSubscription } from "../features/newsletter/persistence"
 import {
+  buildNewsletterConfirmationEmailHtml,
+  buildNewsletterConfirmationEmailText,
+} from "../features/newsletter/confirmation-email-template"
+import {
   NEWSLETTER_SUCCESS_MESSAGE,
   newsletterSchema,
 } from "../features/newsletter/validation"
@@ -13,6 +17,22 @@ test("newsletter emails are trimmed and normalized without stripping plus tags",
     email: "  BUILDER+weekly@Example.com  ",
   })
   assert.equal(result.email, "builder+weekly@example.com")
+})
+
+test("newsletter confirmation email uses ShipBits branding and includes a plain-text fallback", () => {
+  const html = buildNewsletterConfirmationEmailHtml()
+  const text = buildNewsletterConfirmationEmailText()
+
+  assert.match(html, /shipbits-email-logo\.png/)
+  assert.match(html, /shipbits-email-preview\.jpg/)
+  assert.match(
+    html,
+    /https:\/\/shipbits\.dev\/branding\/shipbits-email-logo\.png/
+  )
+  assert.match(html, /You&rsquo;re officially on the list\./)
+  assert.match(html, /Explore ShipBits/)
+  assert.match(text, /You\'re officially on the list\./)
+  assert.match(text, /https:\/\/shipbits\.dev\/products/)
 })
 
 test("newsletter validation rejects invalid, oversized, or unexpected input", () => {
@@ -47,7 +67,7 @@ test("signup uses one conflict-safe insert and never re-subscribes opted-out add
           assert.equal(request.method, "POST")
           assert.equal(url.pathname, "/rest/v1/newsletter_subscribers")
           assert.equal(url.searchParams.get("on_conflict"), "email")
-          assert.equal(url.searchParams.has("select"), false)
+          assert.equal(url.searchParams.get("select"), "id")
           assert.match(
             request.headers.get("Prefer") || "",
             /resolution=ignore-duplicates/
@@ -59,8 +79,11 @@ test("signup uses one conflict-safe insert and never re-subscribes opted-out add
           }
           assert.deepEqual(Object.keys(body).sort(), ["email", "status"])
           assert.equal(body.status, "subscribed")
-          if (!records.has(body.email)) records.set(body.email, body.status)
-          return new Response(null, { status: 201 })
+          const existing = records.has(body.email)
+          if (!existing) records.set(body.email, body.status)
+          return Response.json(existing ? [] : [{ id: "subscriber-id" }], {
+            status: 201,
+          })
         },
       },
     }
@@ -76,9 +99,21 @@ test("signup uses one conflict-safe insert and never re-subscribes opted-out add
     email: "former@example.com",
   })
 
-  assert.deepEqual(first, { ok: true, message: NEWSLETTER_SUCCESS_MESSAGE })
-  assert.deepEqual(first, duplicate)
-  assert.deepEqual(first, optedOut)
+  assert.deepEqual(first, {
+    ok: true,
+    message: NEWSLETTER_SUCCESS_MESSAGE,
+    created: true,
+  })
+  assert.deepEqual(duplicate, {
+    ok: true,
+    message: NEWSLETTER_SUCCESS_MESSAGE,
+    created: false,
+  })
+  assert.deepEqual(optedOut, {
+    ok: true,
+    message: NEWSLETTER_SUCCESS_MESSAGE,
+    created: false,
+  })
   assert.equal(requests, 3)
   assert.equal(records.size, 2)
   assert.equal(records.get("new@example.com"), "subscribed")

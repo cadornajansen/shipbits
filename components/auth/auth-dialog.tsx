@@ -67,7 +67,7 @@ export function AuthDialog({
     setProvider(providerName)
     const supabase = createClient()
     const callbackUrl = new URL("/auth/callback", window.location.origin)
-    if (redirectPath === "/dashboard") {
+    if (redirectPath !== "/") {
       callbackUrl.searchParams.set("next", redirectPath)
     }
     const { error } = await supabase.auth.signInWithOAuth({
@@ -120,7 +120,7 @@ export function AuthDialog({
             Continue with GitHub
           </Button>
           <p className="pt-1 text-center text-xs text-muted-foreground">
-            {redirectPath === "/dashboard"
+            {redirectPath !== "/"
               ? "You’ll be taken to your dashboard after sign-in."
               : "Your product URL will be waiting for you after sign-in."}
           </p>
