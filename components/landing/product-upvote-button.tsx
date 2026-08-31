@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import {
   ArrowUpIcon,
+  CheckCircle2Icon,
   ChevronDownIcon,
   ChevronUpIcon,
   QrCodeIcon,
@@ -290,6 +291,28 @@ export function ProductUpvoteButton({
                 {isPending ? "Preparing payment..." : "Continue to payment"}
               </Button>
             </>
+          ) : paymentStatus === "paid" ? (
+            <div className="flex flex-col items-center gap-5 py-6 text-center">
+              <div className="flex size-16 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400">
+                <CheckCircle2Icon className="size-10" aria-hidden="true" />
+              </div>
+
+              <DialogHeader className="items-center">
+                <DialogTitle>Payment confirmed</DialogTitle>
+                <DialogDescription>
+                  Your {productName} upvote was successfully added. Thanks for
+                  supporting this product!
+                </DialogDescription>
+              </DialogHeader>
+
+              <Button
+                type="button"
+                className="min-w-24"
+                onClick={() => setOpen(false)}
+              >
+                Done
+              </Button>
+            </div>
           ) : (
             <div className="flex flex-col items-center gap-4 text-center">
               <DialogHeader className="items-center">
@@ -316,10 +339,6 @@ export function ProductUpvoteButton({
                 <p className="text-sm text-muted-foreground">
                   Waiting for payment…
                 </p>
-              )}
-
-              {paymentStatus === "paid" && (
-                <p className="text-sm font-medium">Upvoted</p>
               )}
 
               {(paymentStatus === "failed" || paymentStatus === "expired") && (
