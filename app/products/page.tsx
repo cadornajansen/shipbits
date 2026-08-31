@@ -53,7 +53,9 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   }
   return createPageMetadata({
     title: page === 1 ? "Products" : `Products, page ${page}`,
-    description: "Browse published apps, tools, and software products from Filipino builders.",
+    description: page === 1
+      ? "Browse published apps, SaaS, developer tools, and software products from Filipino builders."
+      : `Browse published apps, tools, and software products from Filipino builders on page ${page} of the ShipBits directory.`,
     path: directoryPageHref("/products", page),
   })
 }

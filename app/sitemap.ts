@@ -15,6 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     ["/", 1, "daily"],
     ["/products", 0.9, "daily"],
+    ["/directory-submission", 0.9, "monthly"],
     ["/blog", 0.8, "weekly"],
     ["/resources", 0.7, "monthly"],
     ["/resources/seo-checker", 0.7, "monthly"],

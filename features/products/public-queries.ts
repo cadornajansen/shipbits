@@ -233,23 +233,43 @@ export const getPublicDirectoryProducts = unstable_cache(
       DIRECTORY_MAX_PAGE_SIZE,
       Math.max(1, Math.floor(options.pageSize ?? DIRECTORY_PAGE_SIZE))
     )
-    let query = supabase
-      .from("products")
-      .select(publicProductSelection)
-      .eq("moderation_status", "published")
-      .is("archived_at", null)
-      .order("published_at", { ascending: false })
-      .order("id")
-      .range((page - 1) * pageSize, page * pageSize - 1)
-    if (options.categoryId) query = query.eq("category_id", options.categoryId)
-    if (options.search) query = query.or(directorySearchFilter(options.search))
-    const { data, error } = await query
-    if (error) {
-      throw new Error(`Unable to load the public directory: ${error.message}`)
+    // Fetch the complete filtered set before paginating. Upvote totals are
+    // returned as a nested relation, so pagination must happen after the
+    // server calculates and sorts by confirmed paid upvotes.
+    const rows: PublicProductRow[] = []
+    for (let offset = 0; ; offset += 500) {
+      let query = supabase
+        .from("products")
+        .select(publicProductSelection)
+        .eq("moderation_status", "published")
+        .is("archived_at", null)
+        .order("published_at", { ascending: false })
+        .order("id")
+        .range(offset, offset + 499)
+      if (options.categoryId) query = query.eq("category_id", options.categoryId)
+      if (options.search) query = query.or(directorySearchFilter(options.search))
+      const { data, error } = await query
+      if (error) {
+        throw new Error(`Unable to load the public directory: ${error.message}`)
+      }
+      rows.push(...((data ?? []) as unknown as PublicProductRow[]))
+      if (!data || data.length < 500) break
     }
-    return mapPublicProducts((data ?? []) as unknown as PublicProductRow[])
+    const products = await mapPublicProducts(rows)
+    products.sort((a, b) => {
+      // Rank by the same accumulated peso value shown in the UI: the verified
+      // listing amount plus confirmed paid community upvotes.
+      const valueDifference = b.upvoteValuePesos - a.upvoteValuePesos
+      if (valueDifference) return valueDifference
+      const publishedDifference =
+        (b.publishedAt ? Date.parse(b.publishedAt) : 0) -
+        (a.publishedAt ? Date.parse(a.publishedAt) : 0)
+      return publishedDifference || a.id.localeCompare(b.id)
+    })
+    const start = (page - 1) * pageSize
+    return products.slice(start, start + pageSize)
   },
-  ["public-directory-v3"],
+  ["public-directory-v5-peso-ranking"],
   { revalidate: 60, tags: [PUBLIC_PRODUCTS_TAG] }
 )
 

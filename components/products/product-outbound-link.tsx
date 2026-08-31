@@ -12,7 +12,7 @@ export function ProductOutboundLink({
     <a
       {...props}
       target="_blank"
-      rel="noopener noreferrer sponsored ugc"
+      rel="noopener noreferrer ugc"
       onClick={() => trackEvent("product_outbound_click", { productId })}
     >
       {children}

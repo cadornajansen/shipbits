@@ -1,8 +1,9 @@
 "use client"
 
-import { useEffect, useState, useTransition } from "react"
+import { useEffect, useRef, useState, useTransition } from "react"
 import Image from "next/image"
-import { ChevronDownIcon, ChevronUpIcon, QrCodeIcon } from "lucide-react"
+import { useRouter } from "next/navigation"
+import { ArrowUpIcon, ChevronDownIcon, ChevronUpIcon, QrCodeIcon } from "lucide-react"
 import { toast } from "sonner"
 
 import { Button } from "@/components/ui/button"
@@ -29,15 +30,19 @@ function formatPesos(amountCentavos: number) {
 
 export function ProductUpvoteButton({
   buttonLabel,
+  size = "sm",
   productId,
   productName,
   upvoteCount,
 }: {
   buttonLabel?: string
+  size?: "xs" | "sm"
   productId: string
   productName: string
   upvoteCount: number
 }) {
+  const router = useRouter()
+  const preparingPayment = useRef(false)
   const [open, setOpen] = useState(false)
   const [isPending, startTransition] = useTransition()
   const [amountPesos, setAmountPesos] = useState("1")
@@ -52,23 +57,38 @@ export function ProductUpvoteButton({
     "pending" | "paid" | "failed" | "expired"
   >("pending")
 
+  const awaitingPayment = payment !== null && paymentStatus === "pending"
+  const isProcessing = isPending || awaitingPayment
+
   useEffect(() => {
     if (!payment || paymentStatus !== "pending") return
 
-    const interval = window.setInterval(() => {
-      void getProductUpvotePaymentStatusAction(payment.id).then((result) => {
-        if (!result.ok) return
-
+    let disposed = false
+    let checking = false
+    const interval = window.setInterval(async () => {
+      if (checking) return
+      checking = true
+      try {
+        const result = await getProductUpvotePaymentStatusAction(payment.id)
+        if (disposed || !result.ok) return
         setPaymentStatus(result.status)
-
+        if (result.status !== "pending") window.clearInterval(interval)
         if (result.status === "paid") {
-          toast.success("Upvote received. Thank you!")
+          toast.success(`Upvote added for ${productName}. Thank you!`)
+          router.refresh()
         }
-      })
+      } catch {
+        // A temporary connection failure should not discard an active payment.
+      } finally {
+        checking = false
+      }
     }, 5_000)
 
-    return () => window.clearInterval(interval)
-  }, [payment, paymentStatus])
+    return () => {
+      disposed = true
+      window.clearInterval(interval)
+    }
+  }, [payment, paymentStatus, productName, router])
 
   function getAmount() {
     const parsed = Number.parseInt(amountPesos, 10)
@@ -84,29 +104,37 @@ export function ProductUpvoteButton({
     updateAmount(getAmount() + delta)
   }
 
-  function generateQr() {
+  function generateQr(): void {
+    if (preparingPayment.current || awaitingPayment) return
+    preparingPayment.current = true
     startTransition(async () => {
-      const normalized = String(getAmount())
+      try {
+        const normalized = String(getAmount())
 
-      setAmountPesos(normalized)
+        setAmountPesos(normalized)
 
-      const result = await startProductUpvotePaymentAction(
-        productId,
-        normalized
-      )
+        const result = await startProductUpvotePaymentAction(
+          productId,
+          normalized
+        )
 
-      if (!result.ok) {
-        toast.error(result.error)
-        return
+        if (!result.ok) {
+          toast.error(result.error)
+          return
+        }
+
+        setPayment({
+          amountCentavos: result.amountCentavos,
+          id: result.paymentId,
+          qrImageUrl: result.qrImageUrl,
+        })
+
+        setPaymentStatus("pending")
+      } catch {
+        toast.error("Unable to prepare payment. Please try again.")
+      } finally {
+        preparingPayment.current = false
       }
-
-      setPayment({
-        amountCentavos: result.amountCentavos,
-        id: result.paymentId,
-        qrImageUrl: result.qrImageUrl,
-      })
-
-      setPaymentStatus("pending")
     })
   }
 
@@ -114,27 +142,35 @@ export function ProductUpvoteButton({
     <>
       <Button
         type="button"
-        size={buttonLabel ? "default" : "icon-sm"}
+        size={buttonLabel ? "default" : size}
         variant={buttonLabel ? "default" : "outline"}
         className={
           buttonLabel
             ? "w-full"
-            : "shrink-0 rounded-lg bg-teal-700 hover:bg-teal-900"
+            : "cursor-pointer shrink-0 border-teal-700/25 text-teal-700 hover:border-teal-700/50 hover:bg-teal-700/10 hover:text-teal-800"
         }
         onClick={() => setOpen(true)}
-        aria-label={`Upvote ${productName}`}
+        disabled={isProcessing}
+        aria-busy={isProcessing}
+        aria-label={isProcessing ? `Upvoting ${productName}` : `Upvote ${productName} · ₱1`}
       >
-        <ChevronUpIcon className={buttonLabel ? undefined : "text-white"} />
-        {buttonLabel ? <span>{buttonLabel}</span> : null}
+        <ArrowUpIcon data-icon="inline-start" />
+        <span>{isProcessing ? "Upvoting..." : (buttonLabel ?? "Upvote · ₱1")}</span>
         <span className="sr-only">{upvoteCount} upvotes</span>
       </Button>
+      {!open && awaitingPayment ? (
+        <Button type="button" size="sm" variant="ghost" onClick={() => setOpen(true)}>
+          View payment
+        </Button>
+      ) : null}
 
       <Dialog
         open={open}
         onOpenChange={(nextOpen) => {
+          if (isPending) return
           setOpen(nextOpen)
 
-          if (!nextOpen) {
+          if (!nextOpen && !awaitingPayment) {
             setPayment(null)
             setAmountPesos("1")
           }

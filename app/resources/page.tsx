@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, ClipboardCheck, SearchCheck } from "lucide-react"
+import { ArrowRight, SearchCheck } from "lucide-react"
 
 import { SiteContainer } from "@/components/layout/site-container"
 import { Badge } from "@/components/ui/badge"
@@ -13,7 +13,6 @@ export const metadata = createPageMetadata({
 
 const resources = [
   { href: "/resources/seo-checker", title: "SEO / Launch Checker", description: "Check 12 observable launch signals with deterministic scoring.", icon: SearchCheck, available: true },
-  { href: null, title: "Directory Submission", description: "A practical workflow for organizing directory submissions is planned.", icon: ClipboardCheck, available: false },
 ] as const
 
 export default function ResourcesPage() {

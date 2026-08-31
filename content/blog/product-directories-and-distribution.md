@@ -41,7 +41,7 @@ A compact listing has to answer three things quickly: what the product does, who
 
 Imagine an app that helps a landlord track rent. A tagline such as “Track rent and tenant records in one place” describes the task. A supporting description can then explain the workflow, available platforms, and limitations. Avoid unexplained superlatives, a paragraph of category keywords, or an image that consists entirely of tiny text.
 
-On ShipBits, the [category directory](/categories) lets visitors compare products by purpose. Choose the category that best describes the main use case rather than the one you think receives the most attention. A relevant context is more useful than a flattering label.
+On ShipBits, the [product directory](/products#categories) lets visitors compare products by purpose. Choose the category that best describes the main use case rather than the one you think receives the most attention. A relevant context is more useful than a flattering label.
 
 Keep the listing consistent with the destination. If a product's website says it is in private beta, the directory should not describe it as generally available. If an important feature is planned rather than shipped, say so or leave it out.
 

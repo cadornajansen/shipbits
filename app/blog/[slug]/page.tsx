@@ -15,6 +15,7 @@ import { Separator } from "@/components/ui/separator"
 import { formatArticleDate } from "@/features/blog/content"
 import { getArticleBySlug, getPublishedArticles, getRelatedArticles } from "@/features/blog/queries"
 import { createPageMetadata } from "@/lib/seo/metadata"
+import { breadcrumbJsonLd } from "@/lib/seo/structured-data"
 import { absoluteUrl, SITE_NAME } from "@/lib/site"
 
 type BlogPageProps = { params: Promise<{ slug: string }> }
@@ -65,11 +66,16 @@ export default async function BlogArticlePage({ params }: BlogPageProps) {
         wordCount: article.wordCount,
         ...(article.cover ? { image: absoluteUrl(article.cover) } : {}),
       }} />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+        { name: article.title, path: `/blog/${article.slug}` },
+      ])} />
       <SiteContainer>
         <div className="mx-auto max-w-3xl">
-          <Link href="/blog" className="mb-7 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
-            <ArrowLeftIcon className="size-4" aria-hidden="true" /> All articles
-          </Link>
+          <nav aria-label="Breadcrumb" className="mb-7 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+            <Link href="/" className="hover:underline">Home</Link><span aria-hidden="true">/</span><Link href="/blog" className="inline-flex items-center gap-1 hover:text-foreground"><ArrowLeftIcon className="size-4" aria-hidden="true" /> Blog</Link><span aria-hidden="true">/</span><span aria-current="page" className="line-clamp-1 text-foreground">{article.title}</span>
+          </nav>
           <article>
             <header className="flex flex-col items-start gap-4">
               <Badge variant="secondary">{article.category}</Badge>
@@ -86,7 +92,7 @@ export default async function BlogArticlePage({ params }: BlogPageProps) {
             </header>
             {article.cover ? (
               <div className="relative mt-8 aspect-video overflow-hidden rounded-xl border">
-                <Image src={article.cover} alt="" fill sizes="(max-width: 768px) 100vw, 768px" className="object-cover" unoptimized={article.cover.startsWith("https://")} />
+                <Image src={article.cover} alt={`${article.title} article cover`} fill sizes="(max-width: 768px) 100vw, 768px" className="object-cover" unoptimized={article.cover.startsWith("https://")} />
               </div>
             ) : null}
             <Separator className="my-8" />

@@ -17,8 +17,8 @@ export default function SeoCheckerPage() {
         <div className="mx-auto flex max-w-3xl flex-col gap-8">
           <header className="flex flex-col gap-3">
             <Link href="/resources" className="w-fit text-sm text-muted-foreground underline-offset-4 hover:underline">Resources</Link>
-            <h1 className="font-outfit text-3xl font-semibold tracking-tight sm:text-4xl">A quick check before you launch.</h1>
-            <p className="text-base leading-relaxed text-muted-foreground">Find missing SEO and link-preview basics on your product page. Clear checks, practical next steps, no ranking promises.</p>
+            <h1 className="font-outfit text-3xl font-semibold tracking-tight sm:text-4xl">Free SEO and launch checker</h1>
+            <p className="text-base leading-relaxed text-muted-foreground">Check one public page for observable title, description, canonical, headings, social preview, structured data, robots.txt, and sitemap signals. It is not a full-site crawler, backlink audit, or ranking prediction.</p>
           </header>
           <SeoChecker />
           <p className="text-sm text-muted-foreground">
