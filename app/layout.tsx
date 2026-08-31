@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils"
 import SiteHeader from "@/components/layout/navbar"
 import { SiteFooter } from "@/components/layout/footer"
 import { Toaster } from "@/components/ui/sonner"
+import { MotionProvider } from "@/components/motion/motion-provider"
+import { PageEnter } from "@/components/motion/page-enter"
 import {
   DEFAULT_OG_IMAGE_PATH,
   getSearchVerification,
@@ -97,7 +99,9 @@ export default function RootLayout({
   return (
     <html
       lang={SITE_LANGUAGE}
+      suppressHydrationWarning
       className={cn(
+        "no-js",
         "antialiased",
         fontMono.variable,
         "font-sans",
@@ -105,13 +109,30 @@ export default function RootLayout({
         outfit.variable
       )}
     >
+      <head>
+        <style>{`
+            .no-js [data-motion-reveal],
+            .no-js [data-motion-page-enter] {
+              opacity: 1 !important;
+              transform: none !important;
+            }
+        `}</style>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'document.documentElement.classList.replace("no-js", "js")',
+          }}
+        />
+      </head>
       <body className="flex min-h-screen flex-col bg-background font-sans antialiased">
-        <SiteHeader />
-        {children}
-        <SiteFooter />
-        <Toaster />
-        <Analytics />
-        <SpeedInsights />
+        <MotionProvider>
+          <SiteHeader />
+          <PageEnter>{children}</PageEnter>
+          <SiteFooter />
+          <Toaster />
+          <Analytics />
+          <SpeedInsights />
+        </MotionProvider>
       </body>
     </html>
   )

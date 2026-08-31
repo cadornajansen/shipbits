@@ -12,6 +12,7 @@ import {
   ShapesIcon,
 } from "lucide-react"
 import { useState } from "react"
+import * as m from "motion/react-m"
 
 import { AccountButton } from "@/components/layout/account-button"
 import { SiteContainer } from "@/components/layout/site-container"
@@ -58,7 +59,12 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header>
+    <m.header
+      data-motion-page-enter
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.25 }}
+    >
       <SiteContainer className="flex items-center justify-between py-4 md:py-5">
         {/* Left */}
         <div className="flex min-w-0 items-center gap-5 md:gap-7">
@@ -222,6 +228,6 @@ export default function SiteHeader() {
           </SheetContent>
         </Sheet>
       </SiteContainer>
-    </header>
+    </m.header>
   )
 }

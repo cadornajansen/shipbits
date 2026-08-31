@@ -5,6 +5,7 @@ import { SiteContainer } from "@/components/layout/site-container"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Separator } from "@/components/ui/separator"
 import { getSupportEmail } from "@/lib/site"
+import { Reveal } from "@/components/motion/reveal"
 
 type PolicyPageProps = {
   title: string
@@ -23,20 +24,22 @@ export function PolicyPage({
     <main>
       <SiteContainer className="py-10 sm:py-16">
         <div className="mx-auto flex max-w-3xl flex-col gap-8">
-          <header className="flex flex-col gap-3">
-            <p className="text-sm text-muted-foreground">
-              ShipBits site policies
-            </p>
-            <h1 className="font-outfit text-3xl font-semibold tracking-tight sm:text-4xl">
-              {title}
-            </h1>
-            <p className="leading-relaxed text-muted-foreground">
-              {description}
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Prepared <time dateTime="2026-08-30">August 30, 2026</time>
-            </p>
-          </header>
+          <Reveal>
+            <header className="flex flex-col gap-3">
+              <p className="text-sm text-muted-foreground">
+                ShipBits site policies
+              </p>
+              <h1 className="font-outfit text-3xl font-semibold tracking-tight sm:text-4xl">
+                {title}
+              </h1>
+              <p className="leading-relaxed text-muted-foreground">
+                {description}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Prepared <time dateTime="2026-08-30">August 30, 2026</time>
+              </p>
+            </header>
+          </Reveal>
 
           <nav
             aria-label="Site policies"
@@ -58,18 +61,22 @@ export function PolicyPage({
             ))}
           </nav>
 
-          <Alert>
-            <AlertTitle>Site policy · operator review required</AlertTitle>
-            <AlertDescription>
-              These policies describe ShipBits and have not received legal
-              review. The operator must confirm the policy commitments and
-              contact details before promoting the service publicly.
-            </AlertDescription>
-          </Alert>
+          <Reveal variant="fade">
+            <Alert>
+              <AlertTitle>Site policy · operator review required</AlertTitle>
+              <AlertDescription>
+                These policies describe ShipBits and have not received legal
+                review. The operator must confirm the policy commitments and
+                contact details before promoting the service publicly.
+              </AlertDescription>
+            </Alert>
+          </Reveal>
 
-          <div className="flex flex-col gap-8 leading-relaxed [&_a]:underline [&_a]:underline-offset-4 [&_li]:pl-1 [&_p]:text-muted-foreground [&_ul]:flex [&_ul]:list-disc [&_ul]:flex-col [&_ul]:gap-2 [&_ul]:pl-5 [&_ul]:text-muted-foreground">
-            {children}
-          </div>
+          <Reveal>
+            <div className="flex flex-col gap-8 leading-relaxed [&_a]:underline [&_a]:underline-offset-4 [&_li]:pl-1 [&_p]:text-muted-foreground [&_ul]:flex [&_ul]:list-disc [&_ul]:flex-col [&_ul]:gap-2 [&_ul]:pl-5 [&_ul]:text-muted-foreground">
+              {children}
+            </div>
+          </Reveal>
 
           <Separator />
           <PolicySection id="contact" title="Questions or a request?">

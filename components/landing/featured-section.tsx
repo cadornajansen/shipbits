@@ -6,6 +6,7 @@ import { FeaturedProductPreview } from "@/components/landing/featured-product-pr
 import { ProductUpvoteButton } from "@/components/landing/product-upvote-button"
 import { ProductOutboundLink } from "@/components/products/product-outbound-link"
 import type { PublicDirectoryProduct } from "@/features/products/public-queries"
+import { RevealGroup, RevealItem } from "@/components/motion/reveal-group"
 
 function domainFromUrl(url: string) {
   try {
@@ -38,12 +39,12 @@ export default function FeaturedSection({
           Top #3 Featured
         </span>
       </div>
-      <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
+      <RevealGroup className="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
         {products.map((product) => {
           const previewUrl = product.coverUrl ?? product.logoUrl
 
           return (
-            <div
+            <RevealItem
               key={product.id}
               className="relative flex min-w-0 flex-col items-center"
             >
@@ -117,10 +118,10 @@ export default function FeaturedSection({
                   <ArrowUpRight className="size-4 shrink-0" />
                 </ProductOutboundLink>
               </div>
-            </div>
+            </RevealItem>
           )
         })}
-      </div>
+      </RevealGroup>
     </div>
   )
 }
