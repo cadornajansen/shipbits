@@ -13,7 +13,81 @@ import {
 
 import type { ImportStatus } from "./types"
 import { generateProductMetadataFromEvidence } from "./extraction"
-import { getImportedMediaUrls } from "./media"
+import {
+  canReplaceAssetFromImport,
+  getDirectCoverImageUrls,
+  getGoogleFaviconUrl,
+  getImportedMediaUrls,
+  importedAssetSource,
+} from "./media"
+
+const maxGoogleFaviconSizeBytes = 256 * 1024
+
+export async function replaceImportedProductLogoWithGoogleFavicon({
+  importId,
+  productId,
+}: {
+  importId: string
+  productId: string
+}) {
+  const supabase = createAdminClient()
+  const { data: importJob, error: importError } = await supabase
+    .from("product_imports")
+    .select("id, product_id, source_url")
+    .eq("id", importId)
+    .eq("product_id", productId)
+    .maybeSingle()
+
+  if (importError || !importJob) {
+    return { error: importError?.message || "Imported product not found.", ok: false } as const
+  }
+
+  try {
+    const uploaded = await uploadRemoteProductImage({
+      imageUrl: getGoogleFaviconUrl(importJob.source_url as string),
+      maxBytes: maxGoogleFaviconSizeBytes,
+      productId,
+      type: "logo",
+    })
+    const { data: existingAsset, error: existingAssetError } = await supabase
+      .from("product_assets")
+      .select("id, object_key")
+      .eq("product_id", productId)
+      .eq("type", "logo")
+      .maybeSingle()
+
+    if (existingAssetError) throw new Error(existingAssetError.message)
+
+    const values = {
+      mime_type: uploaded.mimeType,
+      object_key: uploaded.objectKey,
+      product_id: productId,
+      public_url: uploaded.publicUrl,
+      size_bytes: uploaded.sizeBytes,
+      source: "admin_upload",
+      type: "logo" as const,
+    }
+    const { error } = existingAsset
+      ? await supabase.from("product_assets").update(values).eq("id", existingAsset.id)
+      : await supabase.from("product_assets").insert(values)
+
+    if (error) {
+      if (existingAsset?.object_key !== uploaded.objectKey) {
+        await deleteProductObject(uploaded.objectKey).catch(() => undefined)
+      }
+      throw new Error(error.message)
+    }
+
+    if (existingAsset?.object_key && existingAsset.object_key !== uploaded.objectKey) {
+      await deleteProductObject(existingAsset.object_key).catch(() => undefined)
+    }
+
+    return { ok: true } as const
+  } catch {
+    console.error("Google favicon replacement failed", { importId, productId })
+    return { error: "Unable to use the Google favicon.", ok: false } as const
+  }
+}
 
 type ImportRow = {
   created_by_user_id: string | null
@@ -169,16 +243,21 @@ async function getAvailableSlug(base: string) {
 }
 
 async function attachImportedMedia({
+  importId,
   metadata,
   productId,
   sourceUrl,
 }: {
+  importId: string
   metadata: Record<string, unknown>
   productId: string
   sourceUrl: string
 }) {
   const warnings: string[] = []
   const mediaUrls = getImportedMediaUrls(metadata, sourceUrl)
+  if (!mediaUrls.cover.length) {
+    mediaUrls.cover = await getDirectCoverImageUrls(sourceUrl).catch(() => [])
+  }
   const supabase = createAdminClient()
 
   for (const [type, imageUrls] of Object.entries(mediaUrls) as Array<
@@ -189,15 +268,10 @@ async function attachImportedMedia({
     let importError: unknown = null
     for (const imageUrl of imageUrls) {
       try {
-        const uploaded = await uploadRemoteProductImage({
-          imageUrl,
-          productId,
-          type,
-        })
         const { data: existingAsset, error: existingAssetError } =
           await supabase
             .from("product_assets")
-            .select("id, object_key")
+            .select("id, object_key, source")
             .eq("product_id", productId)
             .eq("type", type)
             .maybeSingle()
@@ -206,6 +280,20 @@ async function attachImportedMedia({
           throw new Error(existingAssetError.message)
         }
 
+        if (existingAsset && !canReplaceAssetFromImport(existingAsset.source)) {
+          importError = null
+          break
+        }
+
+        const uploaded = await uploadRemoteProductImage({
+          imageUrl,
+          maxBytes: imageUrl.startsWith("https://t0.gstatic.com/faviconV2?")
+            ? maxGoogleFaviconSizeBytes
+            : undefined,
+          productId,
+          type,
+        })
+
         const existingObjectKey = existingAsset?.object_key
         const assetValues = {
           mime_type: uploaded.mimeType,
@@ -213,6 +301,7 @@ async function attachImportedMedia({
           product_id: productId,
           public_url: uploaded.publicUrl,
           size_bytes: uploaded.sizeBytes,
+          source: importedAssetSource,
           type,
         }
         const { error } = existingAsset
@@ -241,8 +330,13 @@ async function attachImportedMedia({
     }
 
     if (importError) {
+      console.error("Imported product media fetch failed", {
+        importId,
+        productId,
+        type,
+      })
       warnings.push(
-        `${type === "logo" ? "Logo" : "Cover"} import failed: ${cleanError(importError)}`
+        `${type === "logo" ? "Logo" : "Cover"} import failed.`
       )
     }
   }
@@ -333,6 +427,7 @@ export async function runProductImportPipeline(importId: string) {
 
     createdProductId = product.id as string
     const warning = await attachImportedMedia({
+      importId,
       metadata: evidence.metadata,
       productId: createdProductId,
       sourceUrl: importJob.source_url,
@@ -367,6 +462,7 @@ export async function refreshEvidenceForImport(importId: string) {
     const evidence = await saveEvidence(importJob)
     const warning = importJob.product_id
       ? await attachImportedMedia({
+          importId,
           metadata: evidence.metadata,
           productId: importJob.product_id,
           sourceUrl: importJob.source_url,

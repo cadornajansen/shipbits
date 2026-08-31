@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useTransition } from "react"
-import { MoreHorizontalIcon, RefreshCwIcon, RocketIcon } from "lucide-react"
+import { GlobeIcon, MoreHorizontalIcon, RefreshCwIcon, RocketIcon } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 
@@ -30,6 +30,7 @@ import {
   refreshEvidenceAction,
   regenerateDescriptionAction,
   retryImportAction,
+  applyGoogleFaviconAction,
 } from "@/features/imports/actions"
 import type {
   DraftBoardProduct,
@@ -257,6 +258,21 @@ export function DraftProductCard({
                     }
                   >
                     Refresh evidence
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    onSelect={() =>
+                      run(
+                        () =>
+                          applyGoogleFaviconAction({
+                            importId: product.importId!,
+                            productId: product.id,
+                          }),
+                        "Google favicon applied."
+                      )
+                    }
+                  >
+                    <GlobeIcon data-icon="inline-start" />
+                    Use Google favicon
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
               </DropdownMenuContent>

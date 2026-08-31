@@ -199,15 +199,18 @@ export async function uploadProfileImage({
 
 export async function uploadRemoteProductImage({
   imageUrl,
+  maxBytes = maxProductImageSizeBytes,
   productId,
   type,
 }: {
   imageUrl: string
+  maxBytes?: number
   productId: string
   type: "logo" | "cover"
 }) {
   const response = await safeFetchBuffer(imageUrl, {
-    maxBytes: maxProductImageSizeBytes,
+    accept: "image/*",
+    maxBytes,
     maxRedirects: 3,
     timeoutMs: 10_000,
   })

@@ -51,6 +51,7 @@ type TransportResponse = Omit<SafeTextResponse, "url" | "body"> & {
   body: Buffer
 }
 type TransportOptions = {
+  accept: string
   allowTruncated: boolean
   maxBytes: number
   timeoutMs: number
@@ -66,6 +67,7 @@ export type SafeFetchDependencies = {
 }
 
 export type SafeFetchOptions = {
+  accept?: string
   allowTruncated?: boolean
   maxBytes?: number
   timeoutMs?: number
@@ -155,7 +157,7 @@ async function resolvePublicAddress(
 function requestPinnedUrl(
   url: URL,
   address: ResolvedAddress,
-  { allowTruncated, maxBytes, timeoutMs }: TransportOptions
+  { accept, allowTruncated, maxBytes, timeoutMs }: TransportOptions
 ): Promise<TransportResponse> {
   return new Promise((resolve, reject) => {
     const request = (url.protocol === "https:" ? httpsRequest : httpRequest)(
@@ -167,8 +169,7 @@ function requestPinnedUrl(
         maxHeaderSize: 16 * 1024,
         method: "GET",
         headers: {
-          Accept:
-            "text/html,application/xhtml+xml,application/xml,text/xml,text/plain;q=0.9",
+          Accept: accept,
           "Accept-Encoding": "identity",
           "User-Agent": "ShipBitsLaunchChecker/1.0",
         },
@@ -302,6 +303,9 @@ export async function safeFetchBuffer(
   dependencies: SafeFetchDependencies = defaultDependencies
 ): Promise<SafeBufferResponse> {
   const maxBytes = options.maxBytes ?? 1_000_000
+  const accept =
+    options.accept ??
+    "text/html,application/xhtml+xml,application/xml,text/xml,text/plain;q=0.9"
   const allowTruncated = options.allowTruncated ?? false
   const maxRedirects = options.maxRedirects ?? 3
   const deadline = Date.now() + (options.timeoutMs ?? 10_000)
@@ -322,6 +326,7 @@ export async function safeFetchBuffer(
     // Keep the URL hostname for Host/TLS, but the connection uses only this pinned IP.
     const response = await withinDeadline(
       dependencies.transport(url, address, {
+        accept,
         allowTruncated,
         maxBytes,
         timeoutMs: remaining,

@@ -16,6 +16,7 @@ import {
 import {
   refreshEvidenceForImport,
   regenerateProductDescription,
+  replaceImportedProductLogoWithGoogleFavicon,
   runProductImportPipeline,
 } from "./pipeline"
 import type { ImportActionResult, ProductMutationResult } from "./types"
@@ -203,6 +204,26 @@ export async function refreshEvidenceAction(
 
   runAfterResponse("product_import_refresh_failed", { importId, userId: admin.id }, () => refreshEvidenceForImport(importId))
   revalidatePath("/admin/products")
+  return { ok: true }
+}
+
+export async function applyGoogleFaviconAction({
+  importId,
+  productId,
+}: {
+  importId: string
+  productId: string
+}): Promise<ProductMutationResult> {
+  await requireAdmin()
+  const result = await replaceImportedProductLogoWithGoogleFavicon({
+    importId,
+    productId,
+  })
+
+  if (!result.ok) return result
+
+  revalidatePath("/admin/products")
+  invalidatePublicProducts()
   return { ok: true }
 }
 

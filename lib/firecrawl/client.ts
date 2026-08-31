@@ -54,7 +54,10 @@ function getScrapedMedia({
       asHttpUrl(brandingImages?.ogImage, sourceUrl) ??
       asHttpUrl(metadata.ogImage, sourceUrl) ??
       asHttpUrl(metadata["og:image"], sourceUrl) ??
+      asHttpUrl(metadata["og:image:url"], sourceUrl) ??
+      asHttpUrl(metadata.og_image, sourceUrl) ??
       asHttpUrl(metadata["twitter:image"], sourceUrl) ??
+      asHttpUrl(metadata["twitter:image:src"], sourceUrl) ??
       asHttpUrl(metadata.image, sourceUrl) ??
       pageImage,
     logo:

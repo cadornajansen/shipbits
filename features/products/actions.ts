@@ -233,6 +233,7 @@ async function replaceProductAsset({
     product_id: productId,
     public_url: uploadedAsset.publicUrl,
     size_bytes: uploadedAsset.sizeBytes,
+    source: "admin_upload",
     type,
   }
   const { error } = existingAsset
@@ -371,6 +372,7 @@ export async function createProductAction(
           product_id: product.id,
           public_url: uploadedAsset.publicUrl,
           size_bytes: uploadedAsset.sizeBytes,
+          source: "admin_upload",
           type,
         })
 
