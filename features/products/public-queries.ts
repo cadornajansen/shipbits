@@ -41,6 +41,11 @@ export type PublicProduct = PublicProductData & {
   publisher: PublicProductPublisher | null
 }
 
+export type PublicProductUpvoteActivity = {
+  amountPesos: number
+  paidAt: string
+}
+
 type PublicProductRow = {
   categories:
     | { name: string; slug: string }
@@ -246,8 +251,10 @@ export const getPublicDirectoryProducts = unstable_cache(
         .order("published_at", { ascending: false })
         .order("id")
         .range(offset, offset + 499)
-      if (options.categoryId) query = query.eq("category_id", options.categoryId)
-      if (options.search) query = query.or(directorySearchFilter(options.search))
+      if (options.categoryId)
+        query = query.eq("category_id", options.categoryId)
+      if (options.search)
+        query = query.or(directorySearchFilter(options.search))
       const { data, error } = await query
       if (error) {
         throw new Error(`Unable to load the public directory: ${error.message}`)
@@ -299,6 +306,35 @@ export const getPublicProductBySlug = cache(
       }
     },
     ["public-product-v1"],
+    { revalidate: 60, tags: [PUBLIC_PRODUCTS_TAG] }
+  )
+)
+
+export const getRecentPublicProductUpvotes = cache(
+  unstable_cache(
+    async (productId: string): Promise<PublicProductUpvoteActivity[]> => {
+      const { data, error } = await createAdminClient()
+        .from("product_upvotes")
+        .select("amount_centavos, paid_at, created_at")
+        .eq("product_id", productId)
+        .eq("status", "paid")
+        .order("paid_at", { ascending: false, nullsFirst: false })
+        .order("created_at", { ascending: false })
+        .limit(5)
+
+      if (error) {
+        throw new Error(
+          `Unable to load recent product upvotes: ${error.message}`
+        )
+      }
+
+      return (data ?? []).map((upvote) => ({
+        amountPesos: Math.floor((upvote.amount_centavos as number) / 100),
+        paidAt:
+          (upvote.paid_at as string | null) ?? (upvote.created_at as string),
+      }))
+    },
+    ["public-product-upvote-activity-v1"],
     { revalidate: 60, tags: [PUBLIC_PRODUCTS_TAG] }
   )
 )

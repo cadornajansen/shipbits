@@ -16,12 +16,14 @@ import { ProductUpvoteButton } from "@/components/landing/product-upvote-button"
 import { SiteContainer } from "@/components/layout/site-container"
 import { ProductOutboundLink } from "@/components/products/product-outbound-link"
 import { PublicProductList } from "@/components/products/public-product-list"
+import { ProductUpvoteActivity } from "@/components/products/product-upvote-activity"
 import { JsonLd } from "@/components/seo/json-ld"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
   getPublicProductBySlug,
+  getRecentPublicProductUpvotes,
   getRelatedProducts,
 } from "@/features/products/public-queries"
 import { createPageMetadata } from "@/lib/seo/metadata"
@@ -68,7 +70,10 @@ export async function generateMetadata({ params }: Props) {
 export default async function ProductPage({ params }: Props) {
   const product = await getPublicProductBySlug((await params).slug)
   if (!product) notFound()
-  const related = await getRelatedProducts(product)
+  const [related, recentUpvotes] = await Promise.all([
+    getRelatedProducts(product),
+    getRecentPublicProductUpvotes(product.id),
+  ])
   const image =
     product.coverUrl ||
     product.logoUrl ||
@@ -220,96 +225,105 @@ export default async function ProductPage({ params }: Props) {
                 </section>
               ) : null}
             </div>
-            <aside className="flex flex-col rounded-xl border bg-card p-4 text-sm shadow-sm sm:p-5">
-              <h2 className="font-semibold tracking-tight">Listing details</h2>
-              <dl className="mt-4 flex flex-col gap-4">
-                <div>
-                  <dt className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                    <Globe2 className="size-3.5" /> Website
-                  </dt>
-                  <dd className="mt-1.5 min-w-0">
-                    <ProductOutboundLink
-                      productId={product.id}
-                      href={product.websiteUrl}
-                      className="group inline-flex max-w-full items-center gap-1 font-medium underline-offset-4 hover:underline"
-                    >
-                      <span className="truncate">{product.domain}</span>
-                      <ExternalLink className="size-3 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
-                    </ProductOutboundLink>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                    <UserRound className="size-3.5" /> Published by
-                  </dt>
-                  <dd className="mt-1.5 min-w-0">
-                    {product.listingSource === "admin" ? (
-                      <span className="inline-flex items-center gap-2 font-medium">
-                        <Sparkles className="size-3.5 text-muted-foreground" />{" "}
-                        Curated by ShipBits
-                      </span>
-                    ) : product.publisher ? (
-                      <span className="flex min-w-0 items-center gap-2 font-medium">
-                        <Avatar size="sm">
-                          {product.publisher.avatarUrl ? (
-                            <AvatarImage
-                              src={product.publisher.avatarUrl}
-                              alt=""
-                            />
-                          ) : null}
-                          <AvatarFallback>
-                            {initials(product.publisher.name)}
-                          </AvatarFallback>
-                        </Avatar>
-                        <span
-                          className="truncate"
-                          title={product.publisher.name}
-                        >
-                          {product.publisher.name}
-                        </span>
-                      </span>
-                    ) : (
-                      <span className="font-medium">Founder</span>
-                    )}
-                  </dd>
-                </div>
-                {product.publishedAt ? (
+            <div className="flex flex-col gap-6">
+              <aside className="flex flex-col rounded-xl border bg-card p-4 text-sm shadow-sm sm:p-5">
+                <h2 className="font-semibold tracking-tight">
+                  Listing details
+                </h2>
+                <dl className="mt-4 flex flex-col gap-4">
                   <div>
                     <dt className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                      <CalendarDays className="size-3.5" /> Published
+                      <Globe2 className="size-3.5" /> Website
                     </dt>
-                    <dd className="mt-1.5 font-medium">
-                      <time dateTime={product.publishedAt}>
-                        {formatPublishedDate(product.publishedAt)}
-                      </time>
+                    <dd className="mt-1.5 min-w-0">
+                      <ProductOutboundLink
+                        productId={product.id}
+                        href={product.websiteUrl}
+                        className="group inline-flex max-w-full items-center gap-1 font-medium underline-offset-4 hover:underline"
+                      >
+                        <span className="truncate">{product.domain}</span>
+                        <ExternalLink className="size-3 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+                      </ProductOutboundLink>
                     </dd>
                   </div>
-                ) : null}
-              </dl>
-              <div className="mt-5 border-t pt-4">
-                <div className="flex items-baseline justify-between gap-3">
-                  <p className="text-xs font-medium text-muted-foreground">
-                    Community support
-                  </p>
-                  <p className="font-semibold tabular-nums">
-                    ₱{product.upvoteValuePesos.toLocaleString("en-PH")}
+                  <div>
+                    <dt className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
+                      <UserRound className="size-3.5" /> Published by
+                    </dt>
+                    <dd className="mt-1.5 min-w-0">
+                      {product.listingSource === "admin" ? (
+                        <span className="inline-flex items-center gap-2 font-medium">
+                          <Sparkles className="size-3.5 text-muted-foreground" />{" "}
+                          Curated by ShipBits
+                        </span>
+                      ) : product.publisher ? (
+                        <span className="flex min-w-0 items-center gap-2 font-medium">
+                          <Avatar size="sm">
+                            {product.publisher.avatarUrl ? (
+                              <AvatarImage
+                                src={product.publisher.avatarUrl}
+                                alt=""
+                              />
+                            ) : null}
+                            <AvatarFallback>
+                              {initials(product.publisher.name)}
+                            </AvatarFallback>
+                          </Avatar>
+                          <span
+                            className="truncate"
+                            title={product.publisher.name}
+                          >
+                            {product.publisher.name}
+                          </span>
+                        </span>
+                      ) : (
+                        <span className="font-medium">Founder</span>
+                      )}
+                    </dd>
+                  </div>
+                  {product.publishedAt ? (
+                    <div>
+                      <dt className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
+                        <CalendarDays className="size-3.5" /> Published
+                      </dt>
+                      <dd className="mt-1.5 font-medium">
+                        <time dateTime={product.publishedAt}>
+                          {formatPublishedDate(product.publishedAt)}
+                        </time>
+                      </dd>
+                    </div>
+                  ) : null}
+                </dl>
+                <div className="mt-5 border-t pt-4">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <p className="text-xs font-medium text-muted-foreground">
+                      Community support
+                    </p>
+                    <p className="font-semibold tabular-nums">
+                      ₱{product.upvoteValuePesos.toLocaleString("en-PH")}
+                    </p>
+                  </div>
+                  <div className="mt-3">
+                    <ProductUpvoteButton
+                      productId={product.id}
+                      productName={product.name}
+                      upvoteCount={product.upvoteCount}
+                      buttonLabel="Upvote this for ₱1"
+                    />
+                  </div>
+                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                    Each ₱1 supports this listing and adds one ShipBits upvote
+                    after payment is confirmed.
                   </p>
                 </div>
-                <div className="mt-3">
-                  <ProductUpvoteButton
-                    productId={product.id}
-                    productName={product.name}
-                    upvoteCount={product.upvoteCount}
-                    buttonLabel="Upvote this for ₱1"
-                  />
-                </div>
-                <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                  Each ₱1 supports this listing and adds one ShipBits upvote
-                  after payment is confirmed.
-                </p>
-              </div>
-              <ProductDirectoryOwnerLink productId={product.id} />
-            </aside>
+                <ProductDirectoryOwnerLink productId={product.id} />
+              </aside>
+              <ProductUpvoteActivity
+                productName={product.name}
+                totalUpvotes={product.upvoteCount}
+                upvotes={recentUpvotes}
+              />
+            </div>
           </div>
         </Reveal>
         {related.length ? (
