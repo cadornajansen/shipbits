@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Search">
+<g data-part="search">
+<rect data-part="handle" x="13.7678" y="12" width="10.0545" height="2.5" rx="1.25" transform="rotate(45 13.7678 12)" fill="#505050"/>
+<circle data-part="rim" cx="9.5" cy="9.5" r="6.5" fill="#505050"/>
+<circle data-part="lens" cx="9.5" cy="9.5" r="4.5" fill="#A6A6A6"/>
+</g>
+</svg>

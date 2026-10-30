@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Book">
+<g data-part="book">
+<path data-part="cover" d="M4 6C4 4.34315 5.34315 3 7 3H18C19.1046 3 20 3.89543 20 5V20C20 21.1046 19.1046 22 18 22H7C5.34315 22 4 20.6569 4 19V6Z" fill="#505050"/>
+<g data-part="pages-group">
+<mask id="book-mask-0" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="3" width="16" height="19">
+<path data-part="pages-mask" d="M4 6C4 4.34315 5.34315 3 7 3H18C19.1046 3 20 3.89543 20 5V20C20 21.1046 19.1046 22 18 22H7C5.34315 22 4 20.6569 4 19V6Z" fill="#A6A6A6"/>
+</mask>
+<g mask="url(#book-mask-0)">
+<path data-part="pages" d="M6 19.625C6 18.838 6.63799 18.2 7.425 18.2H20V21.05H7.425C6.63799 21.05 6 20.412 6 19.625Z" fill="#A6A6A6"/>
+<path data-part="page-line" d="M7 19.625C7 19.3627 7.21266 19.15 7.475 19.15H21V20.1H7.475C7.21266 20.1 7 19.8873 7 19.625Z" fill="#505050"/>
+</g>
+</g>
+<path data-part="bookmark" d="M7 3H11V8H7V3Z" fill="#A6A6A6"/>
+<path data-part="bookmark-left" d="M7 10L7 8L9 8L7 10Z" fill="#A6A6A6"/>
+<path data-part="bookmark-right" d="M11 10L11 8L9 8L11 10Z" fill="#A6A6A6"/>
+</g>
+</svg>

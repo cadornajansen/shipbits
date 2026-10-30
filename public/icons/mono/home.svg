@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Home">
+<g data-part="home">
+<path data-part="body" d="M4 10.1495C4 9.43777 4.37827 8.77964 4.99328 8.42137L10.915 4.97175C11.5312 4.61278 12.292 4.60909 12.9116 4.96209L18.9899 8.42462C19.6144 8.78035 20 9.44376 20 10.1624V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V10.1495Z" fill="#505050"/>
+<path data-part="door" d="M9.25 12.9662C9.25 11.4474 10.4812 10.2162 12 10.2162V10.2162C13.5188 10.2162 14.75 11.4474 14.75 12.9662V19H9.25V12.9662Z" fill="#A6A6A6"/>
+<rect data-part="roof-right" width="12" height="1.5" rx="0.75" transform="matrix(-0.838671 -0.544639 -0.544639 0.838671 21.8411 9.50193)" fill="#A6A6A6"/>
+<rect data-part="chimney" width="4.5" height="1.5" rx="0.75" transform="matrix(0 -1 -1 0 18.6119 8.5)" fill="#A6A6A6"/>
+<rect data-part="roof-left" x="2.14663" y="9.50193" width="12" height="1.5" rx="0.75" transform="rotate(-33 2.14663 9.50193)" fill="#A6A6A6"/>
+</g>
+</svg>

@@ -1,0 +1,136 @@
+{
+  "desktop": [
+    {
+      "page": "Agent companions",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Activity capsule",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Voice capsule",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Precision dial",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Context toolbar",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "File intake",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Precision counter",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Hold to confirm",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Image comparison",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    },
+    {
+      "page": "Image generation reveal",
+      "pause": false,
+      "scrollWidth": 1276,
+      "stage": true,
+      "width": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "page": "Agent companions",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Activity capsule",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Voice capsule",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Precision dial",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Context toolbar",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "File intake",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Precision counter",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Hold to confirm",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Image comparison",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    },
+    {
+      "page": "Image generation reveal",
+      "scrollWidth": 386,
+      "stage": true,
+      "width": 390
+    }
+  ]
+}

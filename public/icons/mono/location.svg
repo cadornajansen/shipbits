@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Location">
+<g data-part="location">
+<ellipse data-part="shadow" cx="12" cy="19" rx="7" ry="3" fill="#505050"/>
+<path data-part="pin" d="M18 8C18 10.7424 15 15.6552 12 20C9 15.6552 6 10.7424 6 8C6 5.25762 8.68629 2 12 2C15.3137 2 18 5.25762 18 8Z" fill="#A6A6A6"/>
+<circle data-part="center" cx="12" cy="8" r="3" fill="#505050"/>
+</g>
+</svg>

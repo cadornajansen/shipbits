@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <g data-part="agents">
+    <circle data-part="agent-body" cx="12.0847" cy="12.0847" r="8.0847" fill="#505050"/>
+    <g data-part="agent-eyes">
+      <g data-part="agent-eye-left">
+        <ellipse data-part="eye-left" cx="14.2406" cy="11.522" rx="1.33246" ry="2.47424" transform="rotate(-11.328 14.2406 11.522)" fill="#A6A6A6"/>
+      </g>
+      <g data-part="agent-eye-right">
+        <ellipse data-part="eye-right" cx="17.961" cy="10.6071" rx="1" ry="2" transform="rotate(-11.328 17.961 10.6071)" fill="#A6A6A6"/>
+      </g>
+    </g>
+  </g>
+</svg>

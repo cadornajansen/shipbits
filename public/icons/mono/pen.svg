@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pen">
+<g data-part="pen">
+<path data-part="nib" d="M9.01591 8.15963C9.07477 7.75982 9.36848 7.43473 9.7603 7.33574L17.3179 5.42634C17.9501 5.26662 18.5636 5.74492 18.5629 6.39697L18.5546 14.0058C18.5541 14.4282 18.2883 14.8047 17.8905 14.9466L9.03727 18.1045C8.32672 18.3579 7.60211 17.7633 7.71198 17.0169L9.01591 8.15963Z" fill="#505050"/>
+<circle data-part="breather" cx="13.8902" cy="10.9055" r="1.59056" fill="#A6A6A6"/>
+<rect data-part="cap" x="15.0755" y="2.84352" width="8.74351" height="4.00811" rx="1" transform="rotate(40.1361 15.0755 2.84352)" fill="#A6A6A6"/>
+<rect data-part="slit" x="13.3499" y="10.5817" width="1.30582" height="9.03132" rx="0.652912" transform="rotate(40.1361 13.3499 10.5817)" fill="#A6A6A6"/>
+<rect data-part="ink" x="8.4987" y="18.328" width="1.30582" height="3.88849" rx="0.652912" transform="rotate(90 8.4987 18.328)" fill="#A6A6A6"/>
+</g>
+</svg>

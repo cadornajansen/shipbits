@@ -1,0 +1,38 @@
+[
+  {
+    "file": "source-detail-desktop.png",
+    "format": "JPEG",
+    "width": 1425,
+    "height": 990
+  },
+  {
+    "file": "source-home-desktop.png",
+    "format": "JPEG",
+    "width": 1424,
+    "height": 4022
+  },
+  {
+    "file": "source-home-mobile.png",
+    "format": "JPEG",
+    "width": 375,
+    "height": 5728
+  },
+  {
+    "file": "source-install-desktop.png",
+    "format": "JPEG",
+    "width": 1425,
+    "height": 990
+  },
+  {
+    "file": "source-install-mobile.png",
+    "format": "JPEG",
+    "width": 375,
+    "height": 811
+  },
+  {
+    "file": "source-menu-desktop.png",
+    "format": "JPEG",
+    "width": 1425,
+    "height": 990
+  }
+]

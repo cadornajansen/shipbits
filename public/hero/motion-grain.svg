@@ -1,0 +1,26 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="126" height="44" viewBox="0 0 126 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_0_9)">
+<g id="Vector" filter="url(#filter0_g_0_9)">
+<path d="M47.5753 0L22.68 43.9612H0L19.4392 9.63463C22.4526 4.3136 29.9723 0 36.2353 0H47.5753ZM103.193 10.9903C103.193 4.92048 108.27 0 114.533 0C120.796 0 125.873 4.92048 125.873 10.9903C125.873 17.06 120.796 21.9806 114.533 21.9806C108.27 21.9806 103.193 17.06 103.193 10.9903ZM51.8278 0H74.5078L49.6125 43.9612H26.9325L51.8278 0ZM78.6147 0H101.295L81.8554 34.3266C78.8422 39.6477 71.3223 43.9612 65.0594 43.9612H53.7194L78.6147 0Z" fill="url(#paint0_linear_0_9)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_g_0_9" x="-2" y="-2" width="129.873" height="47.9612" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.99900001287460327 0.99900001287460327" numOctaves="3" seed="9521" />
+<feDisplacementMap in="shape" scale="4" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_9">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+<linearGradient id="paint0_linear_0_9" x1="68.5" y1="-1.9478e-07" x2="67.5" y2="44" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.932177" stop-color="#C9C9C9"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+<clipPath id="clip0_0_9">
+<rect width="126" height="44" fill="white"/>
+</clipPath>
+</defs>
+</svg>

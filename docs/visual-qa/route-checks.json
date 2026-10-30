@@ -1,0 +1,182 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/glass",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/metal",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/distressed",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/foil",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/titanium",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/components/ai-chat",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/components/glass-folder",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/how-to-use",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/studio",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/studio/glass",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/studio/metal",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/studio/distressed",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/studio/foil",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/studio/titanium",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/introduction",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/installation",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/accessibility",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/skill",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/pricing",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/sign-in",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/sign-up",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/account",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/feedback",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/support",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/contact",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/terms",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/privacy",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/github",
+    "status": 200,
+    "expected": 200,
+    "mainContent": true
+  },
+  {
+    "route": "/not-a-published-component",
+    "status": 404,
+    "expected": 404,
+    "mainContent": false
+  }
+]
